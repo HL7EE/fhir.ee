@@ -21,6 +21,9 @@ Contains build artefacts. Initially it is builds of Implementation Guides.
 ### fhir.ee
 Contains offcial artefacts and web site
 - \ (root) - The content of current project startting from directory "root"
+- \ImplementationGuide - the root for latest official of IG, For example: 
+  - htttps://fhir.ee/ImplementationGuide/ee-base - The official version of Estonian Base Implementation Guide
+  - htttps://fhir.ee/ImplementationGuide/mpi - The official version of Master Patient Inde (MPI) Implementation Guide
 - redirects - The ability to specify Ngnix instructions to rewrite location of the different resources (mostly terminology). It includes:
   - CodeSystem
   - ValueSet
