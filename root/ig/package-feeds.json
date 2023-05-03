@@ -1,0 +1,17 @@
+{
+  "comment" : "The order of the feeds does not matter, but the order of the package-restrictions does",
+  "feeds": [
+    {
+      "name": "HL7.org FHIR Publications",
+      "url": "http://hl7.org/fhir/package-feed.xml",
+      "errors": "grahame|fhir_org"
+    },
+    ...
+    {
+      "name": "HL7.ee FHIR Publications",
+      "url": "http://fhir.ee/package-feed.xml",
+      "errors": "fhir|kodality_com"
+    },
+    ...
+  ]
+}

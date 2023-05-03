@@ -1,0 +1,28 @@
+{
+  "name" : "hl7.fhir.ee.mpi",
+  "version" : "0.1.0",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20230504133925",
+  "license" : "Apache-2.0",
+  "canonical" : "http://fhir.ee/ImplementationGuide/ee-base",
+  "url" : "http://fhir.ee/ig/ee-base/STU1",
+  "title" : "EEMPI Implementation Guide",
+  "description" : "MPI Implementation Guide supports HL7 FHIR Release 5.0 Resources, Data Types and Vocabulary.",
+  "fhirVersions" : ["5.0.0"],
+  "dependencies" : {
+    "hl7.terminology.r5" : "5.0.0",
+    "hl7.fhir.uv.extensions" : "1.0.0"
+  },
+  "author" : "http://www.hl7.ee",
+  "maintainers" : [
+    {
+      "name" : "Kodality OÜ",
+      "url" : "http://www.kodality.com"
+    }
+  ],
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  }
+}

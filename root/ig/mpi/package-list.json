@@ -1,0 +1,25 @@
+{
+  "package-id": "hl7.fhir.ee.mpi",
+  "canonical": "https://fhir.ee/ImplementationGuide/mpi",
+  "title": "MPI Implementation Guide",
+  "introduction": "Master Patient Index Implementation Guide supports HL7 FHIR Release 5.0 Resources, Data Types and Vocabulary.",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "https://fhir.ee/ig/mpi/build/",
+      "status": "ci-build",
+      "current": true
+    },
+    {
+      "version": "0.1.0",
+      "date": "2023-05-03",
+      "desc": "Initial STU ballot (May 2023 Ballot)",
+      "path": "https://fhir.ee/ig/mpi/STU1/",
+      "status": "ballot",
+      "sequence": "STU 1",
+      "fhirversion": "5.0.0",
+      "current": true
+    }
+  ]
+}
