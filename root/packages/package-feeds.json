@@ -8,8 +8,8 @@
     },
     ...
     {
-      "name": "HL7.ee FHIR Publications",
-      "url": "http://fhir.ee/package-feed.xml",
+      "name": "Estonian FHIR Publications",
+      "url": "http://fhir.ee/packages/package-feed.xml",
       "errors": "fhir|kodality_com"
     },
     ...
