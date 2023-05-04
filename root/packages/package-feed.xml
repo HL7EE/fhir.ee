@@ -2,18 +2,18 @@
   <channel>
     <title>HL7 Estonia Packages</title>
     <description>New Packages published by HL7 Estonia&gt;</description>
-    <link>http://fhir.ee/ig/package-feed.xml</link>
+    <link>http://fhir.ee/packages/package-feed.xml</link>
     <generator>HL7 Estonia Publication tooling</generator>
     <lastBuildDate>Thu, 4 May 2023 01:43:09 +0000</lastBuildDate>
-    <atom:link href="http://fhir.ee/ig/package-feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://fhir.ee/packages/package-feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Thu, 4 May 2023 01:43:09 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
     <item>
       <title>hl7.fhir.ee.base#0.9.0</title>
       <description>Estonian Base Implementation Guide 0.9.0</description>
-      <link>https://fhir.ee/ig/ee-base/STU1/package.tgz</link>
-      <guid isPermaLink="true">https://fhir.ee/ig/ee-base/STU1/package.tgz</guid>
+      <link>https://fhir.ee/packages/ee-base/STU1/package.tgz</link>
+      <guid isPermaLink="true">https://fhir.ee/packages/ee-base/STU1/package.tgz</guid>
       <dc:creator>HL7 Estonia</dc:creator>
       <fhir:version>5.0.0</fhir:version>
       <fhir:kind>IG</fhir:kind>
@@ -24,7 +24,7 @@
       <title>hl7.fhir.ee.mpi#0.1.0</title>
       <description>Estonian Master Patient Index 0.1</description>
       <link>https://fhir.ee/ig/mpi/STU1/package.tgz</link>
-      <guid isPermaLink="true">https://fhir.ee/ig/mpi/STU1/package.tgz</guid>
+      <guid isPermaLink="true">https://fhir.ee/packages/mpi/STU1/package.tgz</guid>
       <dc:creator>HL7 Estonia</dc:creator>
       <fhir:version>5.0.0</fhir:version>
       <fhir:kind>IG</fhir:kind>
