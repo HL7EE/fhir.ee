@@ -1,0 +1,6 @@
+{
+  "packages": {
+    "hl7.fhir.ee.base": "https://fhir.ee/packages/ee-base",
+    "hl7.fhir.ee.mpi": "https://fhir.org/packages/mpi"
+  }
+}
