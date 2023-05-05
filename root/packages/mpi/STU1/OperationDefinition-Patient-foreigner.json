@@ -1,0 +1,101 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Patient-foreigner",
+  "url": "https://fhir.ee/OperationDefinition/Patient-foreigner",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
+  "version": "5.0.0",
+  "name": "Foreigner",
+  "title": "Patient Foreigner",
+  "status": "draft",
+  "kind": "operation",
+  "experimental": false,
+  "date": "2023-03-26T15:21:02+11:00",
+  "publisher": "HL7 Estonia",
+  "description": "The foreigner operation perform complex search over patient resource.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "Estonia",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "Estonia"
+        }
+      ]
+    }
+  ],
+  "affectsState": true,
+  "code": "foreigner",
+  "resource": [
+    "Patient"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "identifier-country",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Identifikaatori väljaandja riigi 3 kohaline kood ISO standardi järgi. Ei ole kohustuslik.",
+      "type": "string"
+    },
+    {
+      "name": "birthdate",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Patient birthdate in form yyyy-mm-dd.",
+      "type": "date"
+    },
+    {
+      "name": "gender",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Patient gender.",
+      "type": "string"
+    },
+    {
+      "name": "given",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "Patient given name. Eesnimi. Otsing sõna alguse järgi, ei ole tõstetundlik.",
+      "type": "string"
+    },
+    {
+      "name": "family",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Patient family name. Perekonna nimi. Otsing sõna alguse järgi, ei ole tõstetundlik.",
+      "type": "string"
+    },
+    {
+      "name": "telecom",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "Telekom'i väärtus, e-mail või tel. number.",
+      "type": "ContactPoint"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Returns Bundle (with type collection) with Patient instances.",
+      "type": "Bundle"
+    }
+  ]
+}

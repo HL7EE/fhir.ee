@@ -1,0 +1,26 @@
+{
+  "resourceType": "Patient",
+  "id": "pat2",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/ee-patient"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.ee/sid/pid/usa/ppn",
+      "value": "N857623628"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "given": [
+        "John"
+      ],
+      "family": "Doe"
+    }
+  ],
+  "gender": "male"
+}

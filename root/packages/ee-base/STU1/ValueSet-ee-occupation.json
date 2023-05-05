@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EEBaseOccupation",
+  "id": "ee-occupation",
+  "title": "Occupation",
+  "description": "Ametinimetus",
+  "version": "0.9.0",
+  "url": "https://fhir.ee/ValueSet/ee-occupation",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/ee-occupation"
+      }
+    ]
+  }
+}

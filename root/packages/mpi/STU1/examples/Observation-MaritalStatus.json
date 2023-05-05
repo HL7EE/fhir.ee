@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "MaritalStatus",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-MaritalStatus"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "social-history",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Social history"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "125680007",
+        "system": "http://snomed.info/sct",
+        "display": "Marital status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pat1"
+  },
+  "issued": "1995-06-21T00:00:00+02:00",
+  "performer": [
+    {
+      "reference": "RelatedPerson/relpat12"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "M",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "display": "Married"
+      }
+    ]
+  }
+}

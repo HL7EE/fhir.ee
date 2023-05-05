@@ -1,0 +1,52 @@
+{
+  "resourceType": "Patient",
+  "id": "pat-unk",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/EEMPIPatientUnknown"
+    ]
+  },
+  "name": [
+    {
+      "use": "nickname",
+      "text": "Malle Maasikas"
+    }
+  ],
+  "address": [
+    {
+      "use": "temp",
+      "country": "EE",
+      "extension": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.ee/NamingSystem/ads-id",
+            "code": "2280361"
+          },
+          "url": "https://fhir.ee/StructureDefinition/Extension-EEBase-ADS"
+        }
+      ],
+      "text": "Valukoja 10, Tallinn"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:pin:hl7.ee:pid:ni:est",
+      "value": "3456346"
+    }
+  ],
+  "active": false,
+  "gender": "male",
+  "birthDate": "1973-02-10",
+  "_birthDate": {
+    "extension": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/date-accuracy-indicator",
+        "valueCoding": {
+          "code": "AAA",
+          "system": "https://fhir.ee/CodeSystem/date-accuracy-indicator",
+          "display": "Day, month and year are accurate"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "PowerOfAttorney",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-PowerOfAttorney"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "186063005",
+        "system": "http://snomed.info/sct",
+        "display": "Power of attorney observable"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pat1"
+  },
+  "effectivePeriod": {
+    "start": "2021-11-23"
+  },
+  "performer": [
+    {
+      "reference": "RelatedPerson/relpat12"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "A",
+        "system": "https://fhir.ee/CodeSystem/power-of-attorney",
+        "display": "A"
+      }
+    ]
+  }
+}

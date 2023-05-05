@@ -1,0 +1,40 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "pid-est-medre",
+  "url": "https://fhir.ee/NamingSystem/pid-est-medre",
+  "name": "MedrePractitonerIdentifier",
+  "title": "Estonian Health Care Professional License Number",
+  "status": "draft",
+  "kind": "identifier",
+  "date": "2022-11-05T11:55:28.6412938+00:00",
+  "publisher": "HL7 Estonia",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.terviseamet.ee"
+        }
+      ]
+    }
+  ],
+  "description": "The license number of Estonian health care professional registered at Health Board.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "EE",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "usage": "Used in resources where the health care professional is identified with a code provided by Estonian Health Board.",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://fhir.ee/sid/pid/est/medre",
+      "preferred": true
+    }
+  ]
+}

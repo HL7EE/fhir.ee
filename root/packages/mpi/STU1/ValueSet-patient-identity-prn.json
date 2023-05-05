@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PatientIdentityPRN",
+  "id": "patient-identity-prn",
+  "title": "List of healthcare facilities' supported identifiers",
+  "description": "List of identifiers supported by healthcare facilities",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/patient-identity-prn",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:prn"
+          }
+        ]
+      }
+    ]
+  }
+}

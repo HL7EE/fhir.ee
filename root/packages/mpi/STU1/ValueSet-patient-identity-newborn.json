@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PatientIdentityNewborn",
+  "id": "patient-identity-newborn",
+  "title": "List of supported identification systems for newborn",
+  "description": "List of supported identification systems for newborn",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/patient-identity-newborn",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:ni"
+          }
+        ]
+      },
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:bct"
+          }
+        ]
+      },
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:prn"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType": "Patient",
+  "id": "pat-newborn",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/EEMPIPatientNewborn"
+    ]
+  },
+  "name": [
+    {
+      "use": "official",
+      "family": "Maasikas"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:pin:hl7.ee:pid:ni:est",
+      "value": "msvgh378544y"
+    }
+  ],
+  "active": true,
+  "gender": "male",
+  "birthDate": "1973-02-10",
+  "multipleBirthInteger": 1
+}

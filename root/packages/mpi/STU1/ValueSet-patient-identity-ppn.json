@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PatientIdentityPPN",
+  "id": "patient-identity-ppn",
+  "title": "List of supported passport types",
+  "description": "List of supported passport types",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/patient-identity-ppn",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:ppn"
+          }
+        ]
+      }
+    ]
+  }
+}

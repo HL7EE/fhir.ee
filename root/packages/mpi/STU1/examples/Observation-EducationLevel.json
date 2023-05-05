@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "EducationLevel",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-EducationLevel"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "social-history",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Social history"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "82589-3",
+        "system": "http://loinc.org",
+        "display": "Highest level of education"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pat1"
+  },
+  "issued": "1995-06-21T00:00:00+02:00",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "224300008",
+        "system": "http://snomed.info/sct",
+        "display": "Received university education"
+      }
+    ]
+  }
+}

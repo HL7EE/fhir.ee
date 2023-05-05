@@ -1,0 +1,610 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "mpi",
+  "url": "https://fhir.ee/ImplementationGuide/mpi",
+  "version": "0.2.0",
+  "name": "MPI",
+  "title": "Master Patient Index",
+  "status": "draft",
+  "publisher": "Kodality OÜ",
+  "contact": [
+    {
+      "name": "Kodality OÜ",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://kodality.com"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "EE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Estonia"
+        }
+      ]
+    }
+  ],
+  "packageId": "mpi",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.uv.extensions",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPIPatientNewborn"
+        },
+        "name": "EE MPI Patient Newborn",
+        "description": "Profiil vastsündinu andmete kirjeldamiseks",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPIPatientStillborn"
+        },
+        "name": "EE MPI Patient Stillborn",
+        "description": "Profiil surnultsündinu andmete kirjeldamiseks",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPIPatientUnknown"
+        },
+        "name": "EE MPI Patient Unknown",
+        "description": "For use in ED, ambulance, for anonymous patients and environmental tests",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPIPatientVerified"
+        },
+        "name": "EE MPI Patient Verified",
+        "description": "MPI Patient verified during reception.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/address-ee"
+        },
+        "name": "Estonian Address",
+        "description": "This profile defines an address structure that localises core concepts, including identifiers and terminology, for use in an Estonian context.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/address-other"
+        },
+        "name": "Foreigner Address",
+        "description": "This profile defines an address structure for non Estonian patients.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MPIRelatedPerson"
+        },
+        "name": "EE MPI Related Person",
+        "description": "Patsient ja tema kontakt- ja seotud isikud.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPI-SocialHistory-Disability"
+        },
+        "name": "EE MPI SocialHistory Disability",
+        "description": "Puue määr",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPI-SocialHistory-EducationLevel"
+        },
+        "name": "EE MPI SocialHistory Education Level",
+        "description": "Haridusetase",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPI-SocialHistory-LegalGuardianStatus"
+        },
+        "name": "EE MPI SocialHistory Legal Guardian Status",
+        "description": "Seadusliku eeskostja staatus",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPI-SocialHistory-MaritalStatus"
+        },
+        "name": "EE MPI SocialHistory Marital Status",
+        "description": "Abielu või suhe liik.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPI-SocialHistory-Occupation"
+        },
+        "name": "EE MPI SocialHistory Occupation",
+        "description": "Töötamine",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EEMPI-SocialHistory-PowerOfAttorney"
+        },
+        "name": "EE MPI SocialHistory Power Of Attorney",
+        "description": "Hooldusõigus",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/date-accuracy-indicator"
+        },
+        "name": "Date Accuracy Indicator",
+        "description": "This extension applies to the [date](http://hl7.org/fhir/R4/datatypes.html#date) and [dateTime](http://hl7.org/fhir/R4/datatypes.html#dateTime) data types and is used to represent the accuracy of the associated date.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-EEBase-ADS"
+        },
+        "name": "EEBase ADS extension",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Extension-EEMPI-PatientAge"
+        },
+        "name": "Extension EEMPI PatientAge",
+        "description": "Patient age measure and unit",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/date-accuracy-indicator"
+        },
+        "name": "Date Accuracy Indicator",
+        "description": "Date Accuracy Indicator",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/disability-level"
+        },
+        "name": "Disability level",
+        "description": "Puude raskusaste",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/education-level"
+        },
+        "name": "Education Level",
+        "description": "Haridustasemed",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/guardian-status"
+        },
+        "name": "Guardian Status",
+        "description": "Eeskostja liik",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/job-type"
+        },
+        "name": "JobType",
+        "description": "Töötamise liik",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/occupation"
+        },
+        "name": "Occupation",
+        "description": "Ametite klassifikaator",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-identity"
+        },
+        "name": "Patient Identity System",
+        "description": "Patient identity system",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-identity-bct"
+        },
+        "name": "List of supported birth certificates",
+        "description": "List of supported birth certificates",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-identity-cz"
+        },
+        "name": "List of supported ID-cards",
+        "description": "List of supported ID-cards",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-identity-ni"
+        },
+        "name": "List of supported national identifiers",
+        "description": "List of supported national identifiers",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-identity-newborn"
+        },
+        "name": "List of supported identification systems for newborn",
+        "description": "List of supported identification systems for newborn",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-identity-ppn"
+        },
+        "name": "List of supported passport types",
+        "description": "List of supported passport types",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-identity-prn"
+        },
+        "name": "List of healthcare facilities' supported identifiers",
+        "description": "List of identifiers supported by healthcare facilities",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-identity-stillborn"
+        },
+        "name": "List of supported identification systems for stillborn",
+        "description": "List of supported identification systems for stillborn",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-identity-unknown"
+        },
+        "name": "List of supported system for unknow patients",
+        "description": "List of supported system for unknow patients",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/power-of-attorney"
+        },
+        "name": "PowerOfAttorney Status",
+        "description": "Hooldusõiguse liik",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/date-accuracy-indicator"
+        },
+        "name": "Date Accuracy Indicator",
+        "description": "Date Accuracy Indicator. Check full list here https://www.healthterminologies.gov.au/integration/R4/fhir/CodeSystem/date-accuracy-indicator-1.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/guardian-status"
+        },
+        "name": "Guardian Status",
+        "description": "Eeskostja liik",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/patient-identity"
+        },
+        "name": "Patient identity code system",
+        "description": "Patient identity code system",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/power-of-attorney"
+        },
+        "name": "PowerOfAttorney Status",
+        "description": "Hooldusõiguse liik",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/Disability"
+        },
+        "name": "Disability",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-Disability"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/EducationLevel"
+        },
+        "name": "EducationLevel",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-EducationLevel"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/LegalGuardianStatus"
+        },
+        "name": "LegalGuardianStatus",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-LegalGuardianStatus"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/MaritalStatus"
+        },
+        "name": "MaritalStatus",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-MaritalStatus"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Observation/Occupation"
+        },
+        "name": "Occupation",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-Occupation"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/Org1"
+        },
+        "name": "ExampleHospital",
+        "isExample": true
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/Patient-education"
+        },
+        "name": "Patient-education",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/Patient-foreigner"
+        },
+        "name": "Patient-foreigner",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/Patient-legal-guardian"
+        },
+        "name": "Patient-legal-guardian",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/Patient-link"
+        },
+        "name": "Patient-link",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/Patient-lookup"
+        },
+        "name": "Patient-lookup",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/Patient-power-of-attorney"
+        },
+        "name": "Patient-power-of-attorney",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/Patient-unlink"
+        },
+        "name": "Patient-unlink",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/PowerOfAttorney"
+        },
+        "name": "PowerOfAttorney",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-PowerOfAttorney"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/ins"
+        },
+        "name": "ExampleHaigekassa",
+        "isExample": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/pat-newborn"
+        },
+        "name": "PatientNewborn",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPIPatientNewborn"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/pat-stillborn"
+        },
+        "name": "PatientStillborn",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPIPatientStillborn"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/pat-unk"
+        },
+        "name": "PatientUnknown",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPIPatientUnknown"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/pat1"
+        },
+        "name": "PatientIgorBossenko2",
+        "description": "Välismaalase kodeerimine.",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPIPatientVerified"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/pat2"
+        },
+        "name": "PatientJohnDoe",
+        "description": "Patsient minimaalse andmekoosseisuga.",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/EEMPIPatientVerified"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/pid-ni-est"
+        },
+        "name": "pid-ni-est",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/relpat11"
+        },
+        "name": "PatientIgorBossenkoSon",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/MPIRelatedPerson"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/relpat12"
+        },
+        "name": "PatientIgorBossenkoWife",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/MPIRelatedPerson"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/synlab"
+        },
+        "name": "ExampleSynlab",
+        "isExample": true
+      }
+    ],
+    "page": {
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "title": "Sissejuhatus",
+          "generation": "markdown",
+          "name": "index.html",
+          "sourceUrl": "index.html"
+        },
+        {
+          "title": "Patsiendid",
+          "generation": "markdown",
+          "name": "patient.html",
+          "sourceUrl": "patient.html"
+        },
+        {
+          "title": "Identifikaatorid",
+          "generation": "markdown",
+          "name": "identifiers.html",
+          "sourceUrl": "identifiers.html"
+        },
+        {
+          "title": "Juhend arendajale",
+          "generation": "markdown",
+          "name": "dev.html",
+          "sourceUrl": "dev.html"
+        },
+        {
+          "title": "Patsientide sidumine ja lahti sidumine",
+          "generation": "markdown",
+          "name": "link.html",
+          "sourceUrl": "link.html"
+        },
+        {
+          "title": "Veakoodid",
+          "generation": "markdown",
+          "name": "errors.html",
+          "sourceUrl": "errors.html"
+        },
+        {
+          "title": "Toetavad operatsioonid",
+          "generation": "markdown",
+          "name": "operations.html",
+          "sourceUrl": "operations.html"
+        }
+      ],
+      "name": "toc.html",
+      "sourceUrl": "toc.html"
+    },
+    "parameter": [
+      {
+        "code": {
+          "code": "copyrightyear",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "2023+"
+      },
+      {
+        "code": {
+          "code": "releaselabel",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "ci-build"
+      }
+    ]
+  }
+}

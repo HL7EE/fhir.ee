@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PatientIdentityUnknown",
+  "id": "patient-identity-unknown",
+  "title": "List of supported system for unknow patients",
+  "description": "List of supported system for unknow patients",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/patient-identity-unknown",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "concept": [
+          {
+            "code": "https://mpi.tehik.ee"
+          }
+        ]
+      },
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:prn"
+          }
+        ]
+      }
+    ]
+  }
+}

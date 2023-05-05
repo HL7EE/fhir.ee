@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PatientIdentity",
+  "id": "patient-identity",
+  "title": "Patient Identity System",
+  "description": "Patient identity system",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/patient-identity",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:ni"
+          },
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:ppn"
+          },
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:cz"
+          },
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:bct"
+          },
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:prn"
+          },
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "https://mpi.tehik.ee"
+          }
+        ]
+      }
+    ]
+  }
+}

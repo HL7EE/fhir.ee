@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DisabilityLevel",
+  "id": "disability-level",
+  "title": "Disability level",
+  "description": "Puude raskusaste",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/disability-level",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "161043008",
+            "display": "Slight",
+            "designation": [
+              {
+                "language": "et",
+                "value": "Kerge puue"
+              }
+            ]
+          },
+          {
+            "code": "161044002",
+            "display": "Moderate",
+            "designation": [
+              {
+                "language": "et",
+                "value": "Keskpuue"
+              }
+            ]
+          },
+          {
+            "code": "161045001",
+            "display": "Severe",
+            "designation": [
+              {
+                "language": "et",
+                "value": "Raske puue"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

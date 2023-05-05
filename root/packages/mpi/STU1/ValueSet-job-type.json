@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "JobType",
+  "id": "job-type",
+  "title": "JobType",
+  "description": "Töötamise liik",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/job-type",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "365539008"
+          }
+        ]
+      }
+    ]
+  }
+}

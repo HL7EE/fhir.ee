@@ -1,0 +1,30 @@
+{
+  "resourceType": "Organization",
+  "id": "ins",
+  "name": "Eesti Haigekassa",
+  "identifier": [
+    {
+      "system": "https://ariregister.rik.ee",
+      "value": "74000091"
+    }
+  ],
+  "alias": [
+    "EHK"
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@tervisekassa.ee"
+        }
+      ],
+      "address": {
+        "line": [
+          "Lastekodu 88"
+        ],
+        "city": "Tallinn"
+      }
+    }
+  ]
+}

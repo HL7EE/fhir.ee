@@ -1,0 +1,634 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.ee.base",
+  "url": "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base",
+  "version": "0.9.0",
+  "name": "EEBase",
+  "title": "Estonian Base Implementation Guide",
+  "status": "draft",
+  "publisher": "HL7 Estonia",
+  "contact": [
+    {
+      "name": "HL7 Estonia",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.hl7.ee"
+        }
+      ]
+    }
+  ],
+  "description": "Eesti FHIR standardi baas juurutusjuhend",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "EE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Estonia"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.ee.base",
+  "license": "Apache-2.0",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.uv.extensions",
+      "version": "current",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-address"
+        },
+        "name": "EEBase Address",
+        "description": "EEBase Address Type",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-encounter"
+        },
+        "name": "EEBase Encounter",
+        "description": "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. Encounter is primarily used to record information about the actual activities that occurred, where Appointment is used to record planned activities.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-episode-of-care"
+        },
+        "name": "EEBase EpisodeOfCare",
+        "description": "An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-healthcare-service"
+        },
+        "name": "EEBase HealthcareService",
+        "description": "The details of a healthcare service available at a location.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-location"
+        },
+        "name": "EEBase Location",
+        "description": "Details and position information for a place where services are provided and resources and participants may be stored, found, contained, or accommodated.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-observation"
+        },
+        "name": "EEBase Observation",
+        "description": "Measurements and simple assertions made about a patient, device or other subject.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-organization"
+        },
+        "name": "EEBase Organization",
+        "description": "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-patient"
+        },
+        "name": "EEBase Patient",
+        "description": "Demographics and other administrative information about an individual or animal receiving care or other health-related services.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-practitioner"
+        },
+        "name": "EEBase Practitioner",
+        "description": "A person who is directly or indirectly involved in the provisioning of healthcare or related services.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-practitioner-role"
+        },
+        "name": "EEBase PractitionerRole",
+        "description": "A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organization for a period of time.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-related-person"
+        },
+        "name": "EEBase RelatedPerson",
+        "description": "Information about a person that is involved in a patient's health or the care for a patient, but who is not the target of healthcare, nor has a formal responsibility in the care process.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-ads"
+        },
+        "name": "EEBase ADS",
+        "description": "EEBase ADS extension",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-ehak"
+        },
+        "name": "EEBase EHAK",
+        "description": "EEBase EHAK extension",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ExtensionEEBaseModeOfArrival"
+        },
+        "name": "EEBase modeOfArrival",
+        "description": "The method that the patient arrived at the facility.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ee-patient-age"
+        },
+        "name": "EEBase PatientAge",
+        "description": "Patient age measure and unit",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ActiveChildrenOfAA"
+        },
+        "name": "ActiveChildrenOfAA",
+        "description": "ActiveChildrenOfAA",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ActiveConcepts"
+        },
+        "name": "Active concepts",
+        "description": "Active concepts",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ChildrenOfAA"
+        },
+        "name": "ChildrenOfAA",
+        "description": "ChildrenOfAA",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-act-priority"
+        },
+        "name": "Act Priority",
+        "description": "Act Priority",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-administrative-gender"
+        },
+        "name": "Administrative Gender",
+        "description": "Administrative Gender",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-encounter-class"
+        },
+        "name": "Encounter Class",
+        "description": "Encounter Class",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-eriala"
+        },
+        "name": "Eriala (kutse)",
+        "description": "Eriala (kutse)",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-identity-active"
+        },
+        "name": "Active Identity Systems",
+        "description": "Active Identity Systems",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-identity-system-pid"
+        },
+        "name": "Person Identity Systems",
+        "description": "Identity system acceptable for organization identification",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-location-form"
+        },
+        "name": "Location Form",
+        "description": "Location Form",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-mode-of-arrival"
+        },
+        "name": "Mode Of Arrival",
+        "description": "Mode Of Arrival",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-occupation"
+        },
+        "name": "Occupation",
+        "description": "Ametinimetus",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-organization-identity"
+        },
+        "name": "Organization Identity Systems",
+        "description": "Identity system acceptable for organization identification",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-organization-type"
+        },
+        "name": "Organization Types",
+        "description": "Organization Types",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-patient-identity"
+        },
+        "name": "Person Identity Systems",
+        "description": "Identity system acceptable for organization identification",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-practitioner-identity"
+        },
+        "name": "Practitioner Identity Systems",
+        "description": "Identity system acceptable for practitioner identification",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-practitioner-role"
+        },
+        "name": "Practitioner roll",
+        "description": "Töötaja roll TTO-s",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-qualification"
+        },
+        "name": "Kvalifikatsioon (Haridus)",
+        "description": "Eriala (kvalifikatsioon)",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ee-specialty"
+        },
+        "name": "Specialty",
+        "description": "Tegevusvaldkond",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ee-eriala"
+        },
+        "name": "TIS erialade loend",
+        "description": "TIS erialade loend",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ee-identity-system"
+        },
+        "name": "Identity Systems",
+        "description": "Description of the identity system concepts acceptable for entity identification",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ee-mode-of-arrival"
+        },
+        "name": "Mode Of Arrival",
+        "description": "The content of this code system is intended to supplement HL7's code system arrivalMode (version 2.1.0) with one additional code ('PV') for using in ValueSets",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ee-occupation"
+        },
+        "name": "Eesti ametite klassifikaator",
+        "description": "Eesti ametite klassifikaator",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/testcs"
+        },
+        "name": "Test code system",
+        "description": "Test code system",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/D04281"
+        },
+        "name": "PractitionerD04281",
+        "description": "Practitioner D04281",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/D05647"
+        },
+        "name": "PractitionerD05647",
+        "description": "Practitioner D05647",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/N00778"
+        },
+        "name": "PractitionerN00778",
+        "description": "Practitioner N00778",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/N12770"
+        },
+        "name": "PractitionerN12770",
+        "description": "Practitioner N12770",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/N13001"
+        },
+        "name": "PractitionerN13001",
+        "description": "Practitioner N13001",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/N14105"
+        },
+        "name": "PractitionerN14105",
+        "description": "Practitioner N14105",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/PractRoleD04281"
+        },
+        "name": "PractitionerRoleD04281",
+        "description": "PractitionerRole D04281",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner-role"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/PractRoleD05647"
+        },
+        "name": "PractitionerRoleD05647",
+        "description": "PractitionerRole D05647",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner-role"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/PractRoleN00778"
+        },
+        "name": "PractitionerRoleN00778",
+        "description": "PractitionerRole N00778",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner-role"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/PractRoleN12770"
+        },
+        "name": "PractitionerRoleN12770",
+        "description": "PractitionerRole N12770",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner-role"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/PractRoleN13001"
+        },
+        "name": "PractitionerRoleN13001",
+        "description": "PractitionerRole N13001",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner-role"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/PractRoleN14105"
+        },
+        "name": "PractitionerRoleN14105",
+        "description": "PractitionerRole N14105",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-practitioner-role"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/ads"
+        },
+        "name": "ads",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/ehak"
+        },
+        "name": "ehak",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/ehif"
+        },
+        "name": "OrganizationTervisekassa",
+        "description": "Organization Tervisekassa",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-organization"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/itk"
+        },
+        "name": "OrganizationITK",
+        "description": "Organization ITK",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-organization"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/org-est-br"
+        },
+        "name": "org-est-br",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/org-est-medre"
+        },
+        "name": "org-est-medre",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/org-vatin"
+        },
+        "name": "org-vatin",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/pat2"
+        },
+        "name": "PatientJohnDoe",
+        "description": "Foreigner with minimal dataset.",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-patient"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/pid-est-medre"
+        },
+        "name": "pid-est-medre",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/pid-est-ni"
+        },
+        "name": "pid-est-ni",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/rh"
+        },
+        "name": "OrganizationRakvereHospital",
+        "description": "Organization Rakvere Hospital",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-organization"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Organization/synlab"
+        },
+        "name": "OrganizationSynlab",
+        "description": "Organization Synlab",
+        "isExample": true,
+        "profile": [
+          "https://fhir.ee/StructureDefinition/ee-organization"
+        ]
+      }
+    ],
+    "page": {
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "title": "Home",
+          "generation": "markdown",
+          "name": "index.html",
+          "sourceUrl": "index.html"
+        },
+        {
+          "title": "Policy",
+          "generation": "markdown",
+          "name": "policy.html",
+          "sourceUrl": "policy.html"
+        }
+      ],
+      "name": "toc.html",
+      "sourceUrl": "toc.html"
+    },
+    "parameter": [
+      {
+        "code": {
+          "code": "copyrightyear",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "2023+"
+      },
+      {
+        "code": {
+          "code": "releaselabel",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "ci-build"
+      }
+    ]
+  }
+}

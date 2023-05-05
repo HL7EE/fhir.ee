@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "PowerOfAttorney",
+  "id": "power-of-attorney",
+  "title": "PowerOfAttorney Status",
+  "description": "Hooldusõiguse liik",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/CodeSystem/power-of-attorney",
+  "concept": [
+    {
+      "code": "A",
+      "display": "A"
+    },
+    {
+      "code": "B",
+      "display": "B"
+    },
+    {
+      "code": "C",
+      "display": "C"
+    }
+  ],
+  "count": 3
+}

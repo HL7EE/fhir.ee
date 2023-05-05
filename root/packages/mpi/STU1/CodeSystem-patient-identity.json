@@ -1,0 +1,104 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "PatientIdentityCS",
+  "id": "patient-identity",
+  "title": "Patient identity code system",
+  "description": "Patient identity code system",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/CodeSystem/patient-identity",
+  "concept": [
+    {
+      "code": "urn:pin:hl7.ee:pid:ni",
+      "display": "Patient national identifier",
+      "definition": "Patsiendi riiklik identifikaator",
+      "concept": [
+        {
+          "code": "urn:pin:hl7.ee:pid:ni:est",
+          "display": "Estonian patient national identifier",
+          "definition": "Eesti isikukood"
+        },
+        {
+          "code": "urn:pin:hl7.ee:pid:ni:uzb",
+          "display": "Uzbekistan patient national identifier",
+          "definition": "Izbekistani PINFL"
+        }
+      ]
+    },
+    {
+      "code": "urn:pin:hl7.ee:pid:ppn",
+      "display": "Patient passport number",
+      "definition": "Patsiendi passinumber",
+      "concept": [
+        {
+          "code": "urn:pin:hl7.ee:pid:ppn:est",
+          "display": "Estonian patient passport",
+          "definition": "Eesti passinumber"
+        }
+      ]
+    },
+    {
+      "code": "urn:pin:hl7.ee:pid:cz",
+      "display": "Patient ID-card",
+      "definition": "Patsiendi ID kaart",
+      "concept": [
+        {
+          "code": "urn:pin:hl7.ee:pid:cz:est",
+          "display": "Estonian patient ID-card",
+          "definition": "Eesti ID-kaart"
+        }
+      ]
+    },
+    {
+      "code": "https://mpi.tehik.ee",
+      "display": "Identifier provided by MPI (Estonian patient register)",
+      "definition": "Patsiendiregistri poolt väljaantud identifikaator"
+    },
+    {
+      "code": "urn:pin:hl7.ee:pid:bct",
+      "display": "Patient birth certificate",
+      "definition": "Patsiendi sünnitunnistus",
+      "concept": [
+        {
+          "code": "urn:pin:hl7.ee:pid:bct:est",
+          "display": "Estonian patient birth certificate",
+          "definition": "Eesti sünnitunnistus"
+        }
+      ]
+    },
+    {
+      "code": "urn:pin:hl7.ee:pid:prn",
+      "display": "Patient identifier issued by healthcare facility",
+      "definition": "Organisatsiooni poolt väljaantud",
+      "concept": [
+        {
+          "code": "urn:pin:hl7.ee:pid:prn:90006399",
+          "display": "PERH patient identifier",
+          "definition": "PERHi poolt väljastatud patsiendi identifikaator"
+        }
+      ]
+    },
+    {
+      "code": "urn:pin:hl7.ee:pid:mrt",
+      "display": "Temporary Medical Record Number",
+      "definition": "Ajutine isiku numbri, mida kasutatakse ainult kuni ametliku numbri määramiseni (Päästeameti case?)"
+    },
+    {
+      "code": "urn:pin:hl7.ee:pid:dr",
+      "display": "Donor identifier",
+      "definition": "Doonori kood"
+    },
+    {
+      "code": "urn:pin:hl7.ee:pid:hc",
+      "display": "EHIC Card number",
+      "definition": "Euroopa kindlustatuse kaart"
+    },
+    {
+      "code": "urn:pin:hl7.ee:pid:u",
+      "display": "Other unspecified patient identifier",
+      "definition": "Muu täpsustamata patsiendi identifikaator"
+    }
+  ],
+  "count": 16
+}

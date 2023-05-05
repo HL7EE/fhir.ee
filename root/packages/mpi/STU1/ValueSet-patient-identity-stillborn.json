@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PatientIdentityStillborn",
+  "id": "patient-identity-stillborn",
+  "title": "List of supported identification systems for stillborn",
+  "description": "List of supported identification systems for stillborn",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/patient-identity-stillborn",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:prn"
+          }
+        ]
+      },
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "concept": [
+          {
+            "code": "https://mpi.tehik.ee"
+          }
+        ]
+      }
+    ]
+  }
+}

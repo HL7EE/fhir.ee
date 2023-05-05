@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "EEBaseEriala",
+  "id": "ee-eriala",
+  "title": "TIS erialade loend",
+  "description": "TIS erialade loend",
+  "version": "0.9.0",
+  "url": "https://fhir.ee/CodeSystem/ee-eriala",
+  "concept": [
+    {
+      "code": "E170",
+      "display": "Kardioloogia"
+    },
+    {
+      "code": "E290",
+      "display": "Pediaatria"
+    },
+    {
+      "code": "E670",
+      "display": "Pediaatria allergoloogia lisapädevusega"
+    },
+    {
+      "code": "N100",
+      "display": "Intensiivõendus"
+    },
+    {
+      "code": "N200",
+      "display": "Kliiniline õendus"
+    },
+    {
+      "code": "N300",
+      "display": "Terviseõendus"
+    },
+    {
+      "code": "N500",
+      "display": "Õde"
+    }
+  ],
+  "experimental": true,
+  "caseSensitive": false,
+  "count": 7
+}

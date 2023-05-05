@@ -1,0 +1,89 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "date-accuracy-indicator",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode": "can-bind"
+    }
+  ],
+  "url": "https://fhir.ee/StructureDefinition/date-accuracy-indicator",
+  "version": "5.0.0",
+  "name": "DateAccuracyIndicator",
+  "title": "Date Accuracy Indicator",
+  "status": "active",
+  "publisher": "HL7 Estonia",
+  "description": "This extension applies to the [date](http://hl7.org/fhir/R4/datatypes.html#date) and [dateTime](http://hl7.org/fhir/R4/datatypes.html#dateTime) data types and is used to represent the accuracy of the associated date.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "EE",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "date"
+    },
+    {
+      "type": "element",
+      "expression": "dateTime"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Date accuracy indicator",
+        "definition": "General date accuracy indicator coding.",
+        "comment": "In some circumstances, systems may capture date or dateTime data that has unknown or estimated parts. This coding indicates the accuracy of the day, month and year parts. This concept is equivalent to Australian Institute of Health and Welfare data element 294418 [Date—accuracy indicator](https://meteor.aihw.gov.au/content/index.phtml/itemId/294418).",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.ee/StructureDefinition/date-accuracy-indicator"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Date accuracy coding",
+        "definition": "Coding of the accuracy of a date.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.ee/ValueSet/date-accuracy-indicator",
+          "description": "Date accuracy coding"
+        }
+      }
+    ]
+  }
+}

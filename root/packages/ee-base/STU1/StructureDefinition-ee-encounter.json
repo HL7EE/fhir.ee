@@ -1,0 +1,209 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ee-encounter",
+  "url": "https://fhir.ee/StructureDefinition/ee-encounter",
+  "version": "1.0.0",
+  "name": "EEBaseEncounter",
+  "title": "EEBase Encounter",
+  "status": "draft",
+  "publisher": "HL7 Estonia",
+  "description": "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient. Encounter is primarily used to record information about the actual activities that occurred, where Appointment is used to record planned activities.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 V2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.extension",
+        "path": "Encounter.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Encounter.extension:modeOfArrival",
+        "path": "Encounter.extension",
+        "sliceName": "modeOfArrival",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.ee/StructureDefinition/ExtensionEEBaseModeOfArrival"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.extension:associatedEncounter",
+        "path": "Encounter.extension",
+        "sliceName": "associatedEncounter",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.priority",
+        "path": "Encounter.priority",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://fhir.ee/ValueSet/ee-act-priority"
+        }
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "https://fhir.ee/StructureDefinition/ee-patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.episodeOfCare",
+        "path": "Encounter.episodeOfCare",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.ee/StructureDefinition/ee-episode-of-care"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.partOf",
+        "path": "Encounter.partOf",
+        "short": "Reference to previous encounter",
+        "definition": "Viide eelmisele külastusele",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.ee/StructureDefinition/ee-encounter"
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.serviceProvider",
+        "path": "Encounter.serviceProvider",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.ee/StructureDefinition/ee-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.participant.actor",
+        "path": "Encounter.participant.actor",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.ee/StructureDefinition/ee-practitioner",
+              "https://fhir.ee/StructureDefinition/ee-practitioner-role",
+              "https://fhir.ee/StructureDefinition/ee-related-person"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.admission.origin",
+        "path": "Encounter.admission.origin",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.ee/StructureDefinition/ee-location",
+              "https://fhir.ee/StructureDefinition/ee-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.admission.destination",
+        "path": "Encounter.admission.destination",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.ee/StructureDefinition/ee-location",
+              "https://fhir.ee/StructureDefinition/ee-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.location.location",
+        "path": "Encounter.location.location",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.ee/StructureDefinition/ee-location"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PowerOfAttorney",
+  "id": "power-of-attorney",
+  "title": "PowerOfAttorney Status",
+  "description": "Hooldusõiguse liik",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/power-of-attorney",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/power-of-attorney"
+      }
+    ]
+  }
+}

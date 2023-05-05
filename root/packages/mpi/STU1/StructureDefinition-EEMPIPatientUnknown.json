@@ -1,0 +1,208 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EEMPIPatientUnknown",
+  "url": "https://fhir.ee/StructureDefinition/EEMPIPatientUnknown",
+  "version": "0.2.0",
+  "name": "EEMPIPatientUnknown",
+  "title": "EE MPI Patient Unknown",
+  "status": "draft",
+  "publisher": "TEHIK",
+  "description": "For use in ED, ambulance, for anonymous patients and environmental tests",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "interface",
+      "uri": "http://hl7.org/fhir/interface",
+      "name": "Interface Pattern"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 V2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "short": "Tundmatu identifikaator"
+      },
+      {
+        "id": "Patient.identifier.system",
+        "path": "Patient.identifier.system",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.ee/ValueSet/patient-identity-unknown"
+        }
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "fixedBoolean": false
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "max": "1"
+      },
+      {
+        "id": "Patient.name.use",
+        "path": "Patient.name.use",
+        "min": 1,
+        "fixedCode": "nickname"
+      },
+      {
+        "id": "Patient.name.text",
+        "path": "Patient.name.text",
+        "short": "Tundmatu patsiendi hüüdnimi",
+        "min": 1
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.prefix",
+        "path": "Patient.name.prefix",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.suffix",
+        "path": "Patient.name.suffix",
+        "max": "0"
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "max": "0"
+      },
+      {
+        "id": "Patient.birthDate.extension",
+        "path": "Patient.birthDate.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.birthDate.extension:age",
+        "path": "Patient.birthDate.extension",
+        "sliceName": "age",
+        "short": "Patsiendi liigikaudne vanus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.ee/StructureDefinition/Extension-EEMPI-PatientAge"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate.extension:accuracyIndicator",
+        "path": "Patient.birthDate.extension",
+        "sliceName": "accuracyIndicator",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.ee/StructureDefinition/date-accuracy-indicator"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "short": "Leiukoht",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "https://fhir.ee/StructureDefinition/address-ee"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address.use",
+        "path": "Patient.address.use",
+        "definition": "Place of finding | Leiukoht",
+        "fixedCode": "temp"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "max": "0"
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "max": "0"
+      },
+      {
+        "id": "Patient.link",
+        "path": "Patient.link",
+        "max": "0"
+      }
+    ]
+  }
+}

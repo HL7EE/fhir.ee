@@ -1,0 +1,34 @@
+{
+  "resourceType": "Patient",
+  "id": "pat-stillborn",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/EEMPIPatientStillborn"
+    ]
+  },
+  "name": [
+    {
+      "use": "nickname",
+      "family": "Maasikas"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:pin:hl7.ee:pid:prn:90006399",
+      "value": "msvgh378544y"
+    }
+  ],
+  "active": false,
+  "gender": "female",
+  "birthDate": "2023-02-14",
+  "_birthDate": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+        "valueDateTime": "2023-02-14T16:00:00.000Z"
+      }
+    ]
+  },
+  "deceasedDateTime": "2023-02-14T16:00:00.000Z",
+  "multipleBirthInteger": 1
+}

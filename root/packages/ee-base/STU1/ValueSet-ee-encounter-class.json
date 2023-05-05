@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EEBaseEncounterClass",
+  "id": "ee-encounter-class",
+  "title": "Encounter Class",
+  "description": "Encounter Class",
+  "version": "0.9.0",
+  "url": "https://fhir.ee/ValueSet/ee-encounter-class",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://terminology.hl7.org/ValueSet/encounter-class"
+        ]
+      }
+    ]
+  }
+}

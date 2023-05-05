@@ -1,0 +1,28 @@
+{
+  "resourceType": "Practitioner",
+  "id": "D04281",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/ee-practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.ee/sid/pro/est/medre",
+      "value": "D04281"
+    },
+    {
+      "system": "https://fhir.ee/sid/pid/est/ni",
+      "value": "XXXXXXXXXXX2"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Arst",
+      "given": [
+        "Hea"
+      ]
+    }
+  ]
+}

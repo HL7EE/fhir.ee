@@ -1,0 +1,408 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EEMPIPatientVerified",
+  "url": "https://fhir.ee/StructureDefinition/EEMPIPatientVerified",
+  "version": "0.2.0",
+  "name": "EEMPIPatientVerified",
+  "title": "EE MPI Patient Verified",
+  "status": "draft",
+  "publisher": "TEHIK",
+  "description": "MPI Patient verified during reception.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "interface",
+      "uri": "http://hl7.org/fhir/interface",
+      "name": "Interface Pattern"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 V2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.system",
+        "path": "Patient.identifier.system",
+        "short": "Identification system",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://fhir.ee/ValueSet/patient-identity"
+        }
+      },
+      {
+        "id": "Patient.identifier.value",
+        "path": "Patient.identifier.value",
+        "short": "Patient identifier or document number",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.period",
+        "path": "Patient.identifier.period",
+        "short": "Validity period of the identifier of identification document.",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier.assigner",
+        "path": "Patient.identifier.assigner",
+        "short": "Organization that issued the document. Can be used as a reference to an organization or as free text."
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "fixedBoolean": true
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Patsiendi nimed. Ametlik nimi on kohustuslik",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:official",
+        "path": "Patient.name",
+        "sliceName": "official",
+        "short": "Ametlik nimi",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:official.use",
+        "path": "Patient.name.use",
+        "min": 1,
+        "fixedCode": "official"
+      },
+      {
+        "id": "Patient.name:official.family",
+        "path": "Patient.name.family",
+        "short": "Perekonnanimi",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:official.given",
+        "path": "Patient.name.given",
+        "short": "Eesnimi",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:official.prefix",
+        "path": "Patient.name.prefix",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:official.period",
+        "path": "Patient.name.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Patsiendi kontaktandmed.",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom.value",
+        "path": "Patient.telecom.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom.period",
+        "path": "Patient.telecom.period",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:mobilePhone",
+        "path": "Patient.telecom",
+        "sliceName": "mobilePhone",
+        "short": "Mobiiltelefon",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:mobilePhone.system",
+        "path": "Patient.telecom.system",
+        "min": 1,
+        "patternCode": "phone",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:mobilePhone.use",
+        "path": "Patient.telecom.use",
+        "min": 1,
+        "patternCode": "mobile",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:homePhone",
+        "path": "Patient.telecom",
+        "sliceName": "homePhone",
+        "short": "Kodune telefon",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:homePhone.system",
+        "path": "Patient.telecom.system",
+        "min": 1,
+        "patternCode": "phone",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:homePhone.use",
+        "path": "Patient.telecom.use",
+        "min": 1,
+        "patternCode": "home",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:workPhone",
+        "path": "Patient.telecom",
+        "sliceName": "workPhone",
+        "short": "Töötelefon",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:workPhone.system",
+        "path": "Patient.telecom.system",
+        "min": 1,
+        "patternCode": "phone",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:workPhone.use",
+        "path": "Patient.telecom.use",
+        "min": 1,
+        "patternCode": "work",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:personalEmail",
+        "path": "Patient.telecom",
+        "sliceName": "personalEmail",
+        "short": "Isiklik e-post",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:personalEmail.system",
+        "path": "Patient.telecom.system",
+        "min": 1,
+        "patternCode": "email",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:personalEmail.use",
+        "path": "Patient.telecom.use",
+        "min": 1,
+        "patternCode": "home",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:workEmail",
+        "path": "Patient.telecom",
+        "sliceName": "workEmail",
+        "short": "Töö e-post",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:workEmail.system",
+        "path": "Patient.telecom.system",
+        "min": 1,
+        "patternCode": "email",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:workEmail.use",
+        "path": "Patient.telecom.use",
+        "min": 1,
+        "patternCode": "work",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.telecom:other",
+        "path": "Patient.telecom",
+        "sliceName": "other",
+        "short": "Muu kontakt",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Patient.telecom:other.system",
+        "path": "Patient.telecom.system",
+        "min": 1,
+        "patternCode": "other",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "country"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Patsiendi aadressid. Eristatakse riigikoodi alusel. Riigikoodiks tuleb kasutada 2 kohalist ISO 3166 koodi",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:ee",
+        "path": "Patient.address",
+        "sliceName": "ee",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "https://fhir.ee/StructureDefinition/address-ee"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address:other",
+        "path": "Patient.address",
+        "sliceName": "other",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "https://fhir.ee/StructureDefinition/address-other"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication",
+        "path": "Patient.communication",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "max": "0"
+      },
+      {
+        "id": "Patient.managingOrganization",
+        "path": "Patient.managingOrganization",
+        "max": "0"
+      },
+      {
+        "id": "Patient.link",
+        "path": "Patient.link",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Patient-power-of-attorney",
+  "url": "https://fhir.ee/OperationDefinition/Patient-power-of-attorney",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
+  "version": "5.0.0",
+  "name": "Power of Attorney status",
+  "title": "Patient power of attorneys",
+  "status": "draft",
+  "kind": "operation",
+  "experimental": false,
+  "date": "2023-03-26T15:21:02+11:00",
+  "publisher": "HL7 Estonia",
+  "description": "The list of power of attorneys in the Population Register.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "Estonia",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "Estonia"
+        }
+      ]
+    }
+  ],
+  "affectsState": true,
+  "code": "power-of-attorney",
+  "resource": [
+    "Patient"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "patient",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "A direct resource reference to the patient resource.",
+      "type": "Reference",
+      "targetProfile": [
+        "http://hl7.org/fhir/StructureDefinition/Patient"
+      ]
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "Returns Bundle (with type 'collection') with Observation instances.",
+      "type": "Bundle"
+    }
+  ]
+}

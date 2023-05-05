@@ -1,0 +1,39 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DateAccuracyIndicator",
+  "id": "date-accuracy-indicator",
+  "title": "Date Accuracy Indicator",
+  "description": "Date Accuracy Indicator. Check full list here https://www.healthterminologies.gov.au/integration/R4/fhir/CodeSystem/date-accuracy-indicator-1.",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/CodeSystem/date-accuracy-indicator",
+  "concept": [
+    {
+      "code": "AAA",
+      "display": "DMY",
+      "definition": "Day, month and year are accurate"
+    },
+    {
+      "code": "AAU",
+      "display": "DM",
+      "definition": "Day and month are accurate, year is unknown"
+    },
+    {
+      "code": "UAA",
+      "display": "MY",
+      "definition": "Day is unknown, month and year are accurate"
+    },
+    {
+      "code": "UEA",
+      "display": "~MY",
+      "definition": "Day is unknown, month is estimated, year is accurate"
+    },
+    {
+      "code": "UUU",
+      "display": "N/A",
+      "definition": "Day, month and year are unknown"
+    }
+  ],
+  "count": 5
+}

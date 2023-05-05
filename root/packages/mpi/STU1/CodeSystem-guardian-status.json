@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "GuardianStatus",
+  "id": "guardian-status",
+  "title": "Guardian Status",
+  "description": "Eeskostja liik",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/CodeSystem/guardian-status",
+  "concept": [
+    {
+      "code": "A",
+      "display": "A"
+    },
+    {
+      "code": "B",
+      "display": "B"
+    },
+    {
+      "code": "C",
+      "display": "C"
+    }
+  ],
+  "count": 3
+}

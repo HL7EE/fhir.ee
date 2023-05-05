@@ -1,0 +1,30 @@
+{
+  "resourceType": "Organization",
+  "id": "synlab",
+  "name": "SYNLAB EESTI OÜ",
+  "identifier": [
+    {
+      "system": "https://ariregister.rik.ee",
+      "value": "11107913"
+    }
+  ],
+  "alias": [
+    "Synlab"
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@synlab.com"
+        }
+      ],
+      "address": {
+        "line": [
+          "Veerenni tn 53a"
+        ],
+        "city": "Tallinn"
+      }
+    }
+  ]
+}

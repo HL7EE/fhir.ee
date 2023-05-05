@@ -1,0 +1,99 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Patient-link",
+  "url": "https://fhir.ee/OperationDefinition/Patient-link",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
+  "version": "5.0.0",
+  "name": "Link",
+  "title": "Patient Link",
+  "status": "draft",
+  "kind": "operation",
+  "experimental": false,
+  "date": "2023-03-26T15:21:02+11:00",
+  "publisher": "HL7 Estonia",
+  "description": "The link operation is used to link two patient resources. One of the two patients is identified as the source and one as the target. The link with type 'replaces' created from source to destination patient, the another link with type 'replaced-byä created from destination to source patient. As result of linking the destination patient is deactivated.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "Estonia",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "Estonia"
+        }
+      ]
+    }
+  ],
+  "affectsState": true,
+  "code": "link",
+  "resource": [
+    "Patient"
+  ],
+  "system": false,
+  "type": true,
+  "instance": false,
+  "parameter": [
+    {
+      "name": "source-patient",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "A direct resource reference to the **source** patient resource (this may include an identifier).",
+      "type": "Reference",
+      "targetProfile": [
+        "http://hl7.org/fhir/StructureDefinition/Patient"
+      ]
+    },
+    {
+      "name": "source-patient-identifier",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "When source-patient-identifiers are provided, the server is expected to perform an internal lookup to identify the source patient record. The server SHALL reject the request if the provided identifiers do not resolve to a single patient record. This resolution MAY occur asynchronously, for example, as part of a review by a user.",
+      "type": "Identifier"
+    },
+    {
+      "name": "target-patient",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "A direct resource reference to the **target** patient resource.\r\rThis is the surviving patient resource, the target for the link.",
+      "type": "Reference",
+      "targetProfile": [
+        "http://hl7.org/fhir/StructureDefinition/Patient"
+      ]
+    },
+    {
+      "name": "target-patient-identifier",
+      "use": "in",
+      "min": 0,
+      "max": "*",
+      "documentation": "When target-patient-identifiers are provided, the server is expected to perform an internal lookup to identify the target patient record. The server SHALL reject the request if the provided identifiers do not resolve to a single patient record. This resolution MAY occur asynchronously, for example, as part of a review by a user.",
+      "type": "Identifier"
+    },
+    {
+      "name": "result-patient",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The details of the Patient resource that is expected to be updated to complete with and must have the same patient.id and provided identifiers included.\r\rThis resource MUST have the link property included referencing the source patient resource.\r\rIt will be used to perform an update on the target patient resource.\r\rIn the absence of this parameter the servers should copy all identifiers from the source patient into the target patient, and include the link property (as shown in the example below).\r\rThis is often used when properties from the source patient are desired to be included in the target resource.\r\rThe receiving system may also apply other internal business rules onto the merge which may make the resource different from what is provided here.",
+      "type": "Patient"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "The status of the response will be one of:\r\r* 200 OK - If the merge request doesn't expect any issues (although warning may be present) for a preview, or was completed without issues if not a preview\r* 202 Accepted - The merge request has been accepted and does not expect any issues and will continue processing the merge in the background, and you can monitor the Task for completion\r* 400 Bad Request - There are errors in the input parameters that need to corrected\r* 422 Unprocessable Entity - Business rules prevent this merge from completing\r\rThe Parameters resource will include:\r\r* The Input parameters to the operation\r* An OperationOutcome containing errors, warnings, and information messages\r* The resulting merged Patient resource (or a patient reference if the patient is not committed)\r* Optionally a Task resource to track any additional processing that was required.",
+      "type": "Patient"
+    }
+  ]
+}

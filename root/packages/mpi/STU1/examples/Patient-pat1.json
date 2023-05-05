@@ -1,0 +1,79 @@
+{
+  "resourceType": "Patient",
+  "id": "pat1",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/EEMPIPatientVerified"
+    ]
+  },
+  "name": [
+    {
+      "use": "official",
+      "given": [
+        "Igor"
+      ],
+      "family": "Bossenko"
+    }
+  ],
+  "address": [
+    {
+      "country": "EE",
+      "extension": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.ee/NamingSystem/ads-id",
+            "code": "2280361"
+          },
+          "url": "https://fhir.ee/StructureDefinition/Extension-EEBase-ADS"
+        }
+      ],
+      "use": "work",
+      "postalCode": "14215",
+      "text": "Valukoja 10, Tallinn"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:pin:hl7.ee:pid:ni:est",
+      "value": "37302102711"
+    },
+    {
+      "system": "urn:pin:hl7.ee:pid:ni:uzb",
+      "value": "31002736540023"
+    },
+    {
+      "system": "urn:pin:hl7.ee:pid:cz:est",
+      "value": "AB0421183",
+      "period": {
+        "end": "2023-12-28"
+      },
+      "assigner": {
+        "display": "Estonian Police and Board Agency"
+      }
+    },
+    {
+      "system": "urn:pin:hl7.ee:pid:ppn:est",
+      "value": "K0307337",
+      "period": {
+        "end": "2023-12-28"
+      },
+      "assigner": {
+        "display": "Estonian Police and Board Agency"
+      }
+    },
+    {
+      "system": "https://mpi.tehik.ee",
+      "value": "82746127612"
+    },
+    {
+      "system": "urn:pin:hl7.ee:pid:prn:90006399",
+      "value": "123e4567-e89b-12d3-a456-426614174000"
+    },
+    {
+      "system": "urn:pin:hl7.ee:pid:u",
+      "value": "90006399:xyz:123e4567-e89b-12d3-a456-426614174000"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1973-02-10"
+}

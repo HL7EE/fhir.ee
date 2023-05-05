@@ -1,0 +1,95 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "address-ee",
+  "url": "https://fhir.ee/StructureDefinition/address-ee",
+  "version": "0.2.0",
+  "name": "EEMpiEstonianAddress",
+  "title": "Estonian Address",
+  "status": "active",
+  "description": "This profile defines an address structure that localises core concepts, including identifiers and terminology, for use in an Estonian context.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "EE",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 V2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "vcard",
+      "uri": "http://w3.org/vcard",
+      "name": "vCard Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Address",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Address",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Address",
+        "path": "Address",
+        "short": "Eesti aadress"
+      },
+      {
+        "id": "Address.extension:ads",
+        "path": "Address.extension",
+        "sliceName": "ads",
+        "short": "ADR-ID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.ee/StructureDefinition/Extension-EEBase-ADS"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Address.use",
+        "path": "Address.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Address.text",
+        "path": "Address.text",
+        "short": "Täisaadressi visuaalne esitlus",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Address.country",
+        "path": "Address.country",
+        "short": "Should use a 2 digit ISO 3166 code",
+        "min": 1,
+        "fixedString": "EE",
+        "mustSupport": true
+      }
+    ]
+  }
+}

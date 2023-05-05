@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PatientIdentityBCT",
+  "id": "patient-identity-bct",
+  "title": "List of supported birth certificates",
+  "description": "List of supported birth certificates",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/patient-identity-bct",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:bct"
+          }
+        ]
+      }
+    ]
+  }
+}

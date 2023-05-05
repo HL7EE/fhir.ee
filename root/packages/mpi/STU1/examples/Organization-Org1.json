@@ -1,0 +1,30 @@
+{
+  "resourceType": "Organization",
+  "id": "Org1",
+  "name": "Kodality General Hospital",
+  "identifier": [
+    {
+      "system": "https://ariregister.rik.ee",
+      "value": "14379569"
+    }
+  ],
+  "alias": [
+    "Kodality"
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@kodality.com"
+        }
+      ],
+      "address": {
+        "line": [
+          "Valukoja 8/2"
+        ],
+        "city": "Tallinn"
+      }
+    }
+  ]
+}

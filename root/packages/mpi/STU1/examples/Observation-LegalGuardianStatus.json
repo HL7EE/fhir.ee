@@ -1,0 +1,42 @@
+{
+  "resourceType": "Observation",
+  "id": "LegalGuardianStatus",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-LegalGuardianStatus"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "1193838006",
+        "system": "http://snomed.info/sct",
+        "display": "Legal guardian status"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pat1"
+  },
+  "effectivePeriod": {
+    "start": "2021-11-23"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Org1"
+    },
+    {
+      "reference": "RelatedPerson/relpat12"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "A",
+        "system": "https://fhir.ee/CodeSystem/guardian-status",
+        "display": "A"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EEBaseIdentitySystemActive",
+  "id": "ee-identity-active",
+  "title": "Active Identity Systems",
+  "description": "Active Identity Systems",
+  "version": "0.9.0",
+  "url": "https://fhir.ee/ValueSet/ee-identity-active",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/ee-identity-system",
+        "filter": [
+          {
+            "property": "status",
+            "op": "=",
+            "value": "A"
+          }
+        ]
+      }
+    ]
+  }
+}

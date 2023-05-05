@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "GuardianStatus",
+  "id": "guardian-status",
+  "title": "Guardian Status",
+  "description": "Eeskostja liik",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/guardian-status",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/guardian-status"
+      }
+    ]
+  }
+}

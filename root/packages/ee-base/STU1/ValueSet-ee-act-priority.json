@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EEBaseActPriority",
+  "id": "ee-act-priority",
+  "title": "Act Priority",
+  "description": "Act Priority",
+  "version": "0.9.0",
+  "url": "https://fhir.ee/ValueSet/ee-act-priority",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+        ]
+      }
+    ]
+  }
+}

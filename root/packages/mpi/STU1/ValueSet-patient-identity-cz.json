@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PatientIdentityCZ",
+  "id": "patient-identity-cz",
+  "title": "List of supported ID-cards",
+  "description": "List of supported ID-cards",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/patient-identity-cz",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/patient-identity",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "urn:pin:hl7.ee:pid:cz"
+          }
+        ]
+      }
+    ]
+  }
+}

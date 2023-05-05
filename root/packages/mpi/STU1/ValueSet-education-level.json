@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EducationLevel",
+  "id": "education-level",
+  "title": "Education Level",
+  "description": "Haridustasemed",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/education-level",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "365460000"
+          }
+        ]
+      }
+    ]
+  }
+}

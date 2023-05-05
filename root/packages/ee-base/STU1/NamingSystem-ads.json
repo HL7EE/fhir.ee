@@ -1,0 +1,40 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "ads",
+  "url": "https://fhir.ee/NamingSystem/ads",
+  "name": "ADS",
+  "title": "Estonian Address Data System",
+  "status": "draft",
+  "kind": "identifier",
+  "date": "2022-11-05T11:45:29.0437162+00:00",
+  "publisher": "HL7 Estonia",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://xgis.maaamet.ee/adsavalik/"
+        }
+      ]
+    }
+  ],
+  "description": "The national identifier of Estonian address data. ADS.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "EE",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "usage": "ADS extension is used in resources which include the address element.",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://fhir.ee/sid/ads",
+      "preferred": true
+    }
+  ]
+}

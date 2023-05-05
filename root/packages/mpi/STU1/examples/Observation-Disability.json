@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "Disability",
+  "meta": {
+    "profile": [
+      "https://fhir.ee/StructureDefinition/EEMPI-SocialHistory-Disability"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "95377-8",
+        "system": "http://loinc.org",
+        "display": "Disability type"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/pat1"
+  },
+  "effectivePeriod": {
+    "start": "2021-11-23"
+  },
+  "performer": [
+    {
+      "reference": "Organization/Org1"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "161044002",
+        "system": "http://snomed.info/sct",
+        "display": "Keskpuue"
+      }
+    ]
+  }
+}

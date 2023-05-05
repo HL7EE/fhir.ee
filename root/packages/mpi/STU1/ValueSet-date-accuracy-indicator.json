@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DateAccuracyIndicator",
+  "id": "date-accuracy-indicator",
+  "title": "Date Accuracy Indicator",
+  "description": "Date Accuracy Indicator",
+  "version": "0.2.0",
+  "url": "https://fhir.ee/ValueSet/date-accuracy-indicator",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.ee/CodeSystem/date-accuracy-indicator"
+      }
+    ]
+  }
+}
