@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Location",
+  "id" : "itk-ed",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-location"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"itk-ed\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;itk-ed&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-location.html\">EEBase Location</a></p></div><p><b>name</b>: ITK Emergency Department</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: 6207040</td></tr></table><p><b>address</b>: Ravi 18, 10138 Tallinn(WORK)</p><p><b>managingOrganization</b>: <a href=\"Organization-itk.html\">Organization/itk</a> &quot;Ida-Tallinna Keskhaigla&quot;</p></div>"
+  },
+  "name" : "ITK Emergency Department",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "6207040"
+    }]
+  }],
+  "address" : {
+    "use" : "work",
+    "text" : "Ravi 18, 10138 Tallinn",
+    "country" : "EE"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/itk"
+  }
+}

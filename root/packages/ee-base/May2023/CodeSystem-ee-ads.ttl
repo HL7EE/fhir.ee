@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/CodeSystem/ee-ads> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-ads"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.ee/CodeSystem/ee-ads</code> provides a fragment that includes following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">377840387000004BW00001SLZ00000000<a name=\"ee-ads-377840387000004BW00001SLZ00000000\"> </a></td><td>Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/CodeSystem/ee-ads"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.0"] ; # 
+  fhir:name [ fhir:v "ADS"] ; # 
+  fhir:title [ fhir:v "ADS"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-05-12T10:59:05+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Estonia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Estonia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Estonian Address Data System."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "377840387000004BW00001SLZ00000000" ] ;
+     fhir:display [ fhir:v "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

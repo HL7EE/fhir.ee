@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="rh"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="rh"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;rh&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-organization.html">EEBase Organization</a></p></div><p><b>identifier</b>: id: 10856624</p><p><b>active</b>: true</p><p><b>name</b>: Rakvere Haigla</p><p><b>alias</b>: RH</p><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td><a href="mailto:info@rh.ee">info@rh.ee</a></td><td>Lõuna põik 1 Rakvere Lääne-Viru EE (WORK)</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.ee/sid/org/est/br"/>
+    <value value="10856624"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Rakvere Haigla"/>
+  <alias value="RH"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="info@rh.ee"/>
+    </telecom>
+    <address>
+      <use value="work"/>
+      <line value="Lõuna põik 1"/>
+      <city value="Rakvere"/>
+      <state value="Lääne-Viru"/>
+      <country value="EE"/>
+    </address>
+  </contact>
+</Organization>

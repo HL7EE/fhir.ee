@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/Organization/itk> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "itk"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-organization"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"itk\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;itk&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-organization.html\">EEBase Organization</a></p></div><p><b>identifier</b>: id: 10822068</p><p><b>active</b>: true</p><p><b>name</b>: Ida-Tallinna Keskhaigla</p><p><b>alias</b>: ITK</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td><a href=\"mailto:info@itk.ee\">info@itk.ee</a></td><td>Ravi tn 18 Tallinn Harju EE (WORK)</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://fhir.ee/sid/org/est/br"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "10822068" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name [ fhir:v "Ida-Tallinna Keskhaigla"] ; # 
+  fhir:alias ( [ fhir:v "ITK"] ) ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@itk.ee" ]
+     ] ) ;
+     fhir:address [
+       fhir:use [ fhir:v "work" ] ;
+       fhir:line ( [ fhir:v "Ravi tn 18" ] ) ;
+       fhir:city [ fhir:v "Tallinn" ] ;
+       fhir:state [ fhir:v "Harju" ] ;
+       fhir:country [ fhir:v "EE" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

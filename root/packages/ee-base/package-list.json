@@ -15,7 +15,7 @@
       "version": "0.9.0",
       "current": true,
       "desc": "Initial STU ballot (May 2023 Ballot)",
-      "path": "https://fhir.ee/ig/ee-base/STU1/",
+      "path": "https://fhir.ee/ig/ee-base/May2023/",
       "status": "ballot",
       "sequence": "STU 1",
       "fhirversion": "5.0.0",

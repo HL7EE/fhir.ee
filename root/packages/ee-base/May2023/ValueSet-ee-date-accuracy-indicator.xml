@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ee-date-accuracy-indicator"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-ee-date-accuracy-indicator.html"><code>https://fhir.ee/CodeSystem/ee-date-accuracy-indicator</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.ee/ValueSet/ee-date-accuracy-indicator"/>
+  <version value="0.9.0"/>
+  <name value="DateAccuracyIndicator"/>
+  <title value="Date Accuracy Indicator"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-05-12T10:59:05+00:00"/>
+  <publisher value="HL7 Estonia"/>
+  <contact>
+    <name value="HL7 Estonia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ee"/>
+    </telecom>
+  </contact>
+  <description value="Date Accuracy Indicator"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir.ee/CodeSystem/ee-date-accuracy-indicator"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/Patient/pat1> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pat1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-patient"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Karu Puhh (OFFICIAL)</b> male, DoB: 1973-02-10 ( id: 37302102711)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">id: K0307337 (period: (?) --&gt; 2023-12-28)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10(WORK)</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://fhir.ee/sid/pid/est/ni"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "37302102711" ]
+  ] [
+     fhir:system [ fhir:v "https://fhir.ee/sid/pid/est/ppn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "K0307337" ] ;
+     fhir:period [
+       fhir:end [ fhir:v "2023-12-28"^^xsd:date ]
+     ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "Estonian Police and Board Agency" ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Puhh" ] ;
+     fhir:given ( [ fhir:v "Karu" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [
+     fhir:v "1973-02-10"^^xsd:date ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://fhir.ee/StructureDefinition/ee-date-accuracy-indicator"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "https://fhir.ee/CodeSystem/ee-date-accuracy-indicator"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AAA" ] ;
+         fhir:display [ fhir:v "DMY" ]
+       ]
+     ] )
+  ] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://fhir.ee/StructureDefinition/ee-ads"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "https://fhir.ee/CodeSystem/ee-ads"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "377840387000004BW00001SLZ00000000" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:text [ fhir:v "Harju maakond, Tallinn, Lasnamäe linnaosa, Valukoja tn 10" ] ;
+     fhir:city [ fhir:v "Tallinn" ] ;
+     fhir:state [ fhir:v "Harju" ] ;
+     fhir:postalCode [ fhir:v "14215" ] ;
+     fhir:country [ fhir:v "EE" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

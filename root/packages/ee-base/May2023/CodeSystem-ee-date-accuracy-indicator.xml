@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ee-date-accuracy-indicator"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://fhir.ee/CodeSystem/ee-date-accuracy-indicator</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">AAA<a name="ee-date-accuracy-indicator-AAA"> </a></td><td>DMY</td><td>Day, month and year are accurate</td></tr><tr><td style="white-space:nowrap">AAU<a name="ee-date-accuracy-indicator-AAU"> </a></td><td>DM</td><td>Day and month are accurate, year is unknown</td></tr><tr><td style="white-space:nowrap">UAA<a name="ee-date-accuracy-indicator-UAA"> </a></td><td>MY</td><td>Day is unknown, month and year are accurate</td></tr><tr><td style="white-space:nowrap">UEA<a name="ee-date-accuracy-indicator-UEA"> </a></td><td>~MY</td><td>Day is unknown, month is estimated, year is accurate</td></tr><tr><td style="white-space:nowrap">UUU<a name="ee-date-accuracy-indicator-UUU"> </a></td><td>N/A</td><td>Day, month and year are unknown</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/CodeSystem/ee-date-accuracy-indicator"/>
+  <version value="0.9.0"/>
+  <name value="DateAccuracyIndicator"/>
+  <title value="Date Accuracy Indicator"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-05-12T10:59:05+00:00"/>
+  <publisher value="HL7 Estonia"/>
+  <contact>
+    <name value="HL7 Estonia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ee"/>
+    </telecom>
+  </contact>
+  <description value="The Date Accuracy Indicator code system defines concepts that indicate the accuracy of components of a reported date. The concepts defined in this code system are equivalent to those defined in the METeOR value domains for Date—accuracy indicator, code AAA (http://meteor.aihw.gov.au/content/index.phtml/itemId/294429)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="AAA"/>
+    <display value="DMY"/>
+    <definition value="Day, month and year are accurate"/>
+  </concept>
+  <concept>
+    <code value="AAU"/>
+    <display value="DM"/>
+    <definition value="Day and month are accurate, year is unknown"/>
+  </concept>
+  <concept>
+    <code value="UAA"/>
+    <display value="MY"/>
+    <definition value="Day is unknown, month and year are accurate"/>
+  </concept>
+  <concept>
+    <code value="UEA"/>
+    <display value="~MY"/>
+    <definition value="Day is unknown, month is estimated, year is accurate"/>
+  </concept>
+  <concept>
+    <code value="UUU"/>
+    <display value="N/A"/>
+    <definition value="Day, month and year are unknown"/>
+  </concept>
+</CodeSystem>

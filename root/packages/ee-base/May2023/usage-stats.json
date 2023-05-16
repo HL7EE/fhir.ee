@@ -1,0 +1,221 @@
+{
+  "package": "hl7.fhir.ee.base",
+  "version": "0.9.0",
+  "fhirVersion": "5.0.0",
+  "jurisdiction": "EE",
+  "extensions": [
+    {
+      "url": "https://fhir.ee/StructureDefinition/ee-ads",
+      "title": "EEBase ADS",
+      "types": [
+        "Coding",
+        "id",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/StructureDefinition/ee-date-accuracy-indicator",
+      "title": "EEBase Date Accuracy Indicator",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/StructureDefinition/ee-ehak",
+      "title": "EEBase EHAK",
+      "types": [
+        "Coding",
+        "id",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/StructureDefinition/ee-mode-of-arrival",
+      "title": "EEBase ModeOfArrival",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://fhir.ee/StructureDefinition/ee-patient-age",
+      "title": "EEBase PatientAge",
+      "types": [
+        "Age",
+        "id",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    }
+  ],
+  "profiles": {
+    "Encounter": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-encounter",
+        "title": "EEBase Encounter"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-episode-of-care",
+        "title": "EEBase EpisodeOfCare"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-healthcare-service",
+        "title": "EEBase HealthcareService"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-location",
+        "title": "EEBase Location"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-observation",
+        "title": "EEBase Observation"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-organization",
+        "title": "EEBase Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-patient",
+        "title": "EEBase Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-practitioner",
+        "title": "EEBase Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-practitioner-role",
+        "title": "EEBase PractitionerRole"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "https://fhir.ee/StructureDefinition/ee-related-person",
+        "title": "EEBase RelatedPerson"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract": [
+      "Address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase": [
+      "Address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/binding-definition": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/no-binding": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://fhir.ee/StructureDefinition/ee-ads": [
+      "Address",
+      "Patient.address"
+    ],
+    "https://fhir.ee/StructureDefinition/ee-date-accuracy-indicator": [
+      "Patient.birthDate",
+      "Patient.deceased[x]"
+    ],
+    "https://fhir.ee/StructureDefinition/ee-ehak": [
+      "Address"
+    ],
+    "https://fhir.ee/StructureDefinition/ee-mode-of-arrival": [
+      "Encounter"
+    ],
+    "https://fhir.ee/StructureDefinition/ee-patient-age": [
+      "Patient.birthDate"
+    ]
+  }
+}

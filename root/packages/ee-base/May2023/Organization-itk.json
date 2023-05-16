@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Organization",
+  "id" : "itk",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"itk\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;itk&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-organization.html\">EEBase Organization</a></p></div><p><b>identifier</b>: id:\u00a010822068</p><p><b>active</b>: true</p><p><b>name</b>: Ida-Tallinna Keskhaigla</p><p><b>alias</b>: ITK</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td><a href=\"mailto:info@itk.ee\">info@itk.ee</a></td><td>Ravi tn 18 Tallinn Harju EE (WORK)</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir.ee/sid/org/est/br",
+    "value" : "10822068"
+  }],
+  "active" : true,
+  "name" : "Ida-Tallinna Keskhaigla",
+  "alias" : ["ITK"],
+  "contact" : [{
+    "telecom" : [{
+      "system" : "email",
+      "value" : "info@itk.ee"
+    }],
+    "address" : {
+      "use" : "work",
+      "line" : ["Ravi tn 18"],
+      "city" : "Tallinn",
+      "state" : "Harju",
+      "country" : "EE"
+    }
+  }]
+}

@@ -1,0 +1,331 @@
+[
+  {
+    "id" : "ee-ads",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/ee-ads",
+    "version" : "0.9.0",
+    "name" : "ADS"
+  },
+  {
+    "id" : "ee-date-accuracy-indicator",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/ee-date-accuracy-indicator",
+    "version" : "0.9.0",
+    "name" : "DateAccuracyIndicator"
+  },
+  {
+    "id" : "ee-identity-system",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/ee-identity-system",
+    "version" : "0.9.0",
+    "name" : "EEBaseIdentitySystem"
+  },
+  {
+    "id" : "ee-medre-specialty",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/ee-medre-specialty",
+    "version" : "0.9.0",
+    "name" : "EEBaseMedreSpecialty"
+  },
+  {
+    "id" : "ee-mode-of-arrival",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/ee-mode-of-arrival",
+    "version" : "0.9.0",
+    "name" : "EEBaseModeOfArrival"
+  },
+  {
+    "id" : "ee-occupation",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/ee-occupation",
+    "version" : "0.9.0",
+    "name" : "EEBaseOccupation"
+  },
+  {
+    "id" : "hl7.fhir.ee.base",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base",
+    "version" : "0.9.0",
+    "name" : "EEBase"
+  },
+  {
+    "id" : "ads",
+    "type" : "NamingSystem",
+    "url" : "https://fhir.ee/NamingSystem/ads",
+    "version" : "0.9.0",
+    "name" : "ADS"
+  },
+  {
+    "id" : "ehak",
+    "type" : "NamingSystem",
+    "url" : "https://fhir.ee/NamingSystem/ehak",
+    "version" : "0.9.0",
+    "name" : "EHAK"
+  },
+  {
+    "id" : "org-est-br",
+    "type" : "NamingSystem",
+    "url" : "https://fhir.ee/NamingSystem/org-est-br",
+    "version" : "0.9.0",
+    "name" : "EstonianBusinessRegistryNumber"
+  },
+  {
+    "id" : "org-est-fi",
+    "type" : "NamingSystem",
+    "url" : "https://fhir.ee/NamingSystem/org-est-fi",
+    "version" : "0.9.0",
+    "name" : "MedreOrganizationLicense"
+  },
+  {
+    "id" : "org-vatin",
+    "type" : "NamingSystem",
+    "url" : "https://fhir.ee/NamingSystem/org-vatin",
+    "version" : "0.9.0",
+    "name" : "VatIdentificationNumber"
+  },
+  {
+    "id" : "pid-est-ni",
+    "type" : "NamingSystem",
+    "url" : "https://fhir.ee/NamingSystem/pid-est-ni",
+    "version" : "0.9.0",
+    "name" : "PidEstNi"
+  },
+  {
+    "id" : "pro-est-pho",
+    "type" : "NamingSystem",
+    "url" : "https://fhir.ee/NamingSystem/pro-est-pho",
+    "version" : "0.9.0",
+    "name" : "MedrePractitonerIdentifier"
+  },
+  {
+    "id" : "ee-address",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-address",
+    "version" : "0.9.0",
+    "name" : "EEBaseAddress"
+  },
+  {
+    "id" : "ee-ads",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-ads",
+    "version" : "0.9.0",
+    "name" : "ExtensionEEBaseADS"
+  },
+  {
+    "id" : "ee-date-accuracy-indicator",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-date-accuracy-indicator",
+    "version" : "0.9.0",
+    "name" : "ExtensionEEBaseDateAccuracyIndicator"
+  },
+  {
+    "id" : "ee-ehak",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-ehak",
+    "version" : "0.9.0",
+    "name" : "ExtensionEEBaseEHAK"
+  },
+  {
+    "id" : "ee-encounter",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-encounter",
+    "version" : "0.9.0",
+    "name" : "EEBaseEncounter"
+  },
+  {
+    "id" : "ee-episode-of-care",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-episode-of-care",
+    "version" : "0.9.0",
+    "name" : "EEBaseEpisodeOfCare"
+  },
+  {
+    "id" : "ee-healthcare-service",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-healthcare-service",
+    "version" : "0.9.0",
+    "name" : "EEBaseHealthcareService"
+  },
+  {
+    "id" : "ee-location",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-location",
+    "version" : "0.9.0",
+    "name" : "EEBaseLocation"
+  },
+  {
+    "id" : "ee-mode-of-arrival",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mode-of-arrival",
+    "version" : "0.9.0",
+    "name" : "ExtensionEEBaseModeOfArrival"
+  },
+  {
+    "id" : "ee-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-observation",
+    "version" : "0.9.0",
+    "name" : "EEBaseObservation"
+  },
+  {
+    "id" : "ee-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-organization",
+    "version" : "0.9.0",
+    "name" : "EEBaseOrganization"
+  },
+  {
+    "id" : "ee-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-patient",
+    "version" : "0.9.0",
+    "name" : "EEBasePatient"
+  },
+  {
+    "id" : "ee-patient-age",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-patient-age",
+    "version" : "0.9.0",
+    "name" : "ExtensionEEBasePatientAge"
+  },
+  {
+    "id" : "ee-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-practitioner",
+    "version" : "0.9.0",
+    "name" : "EEBasePractitioner"
+  },
+  {
+    "id" : "ee-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-practitioner-role",
+    "version" : "0.9.0",
+    "name" : "EEBasePractitionerRole"
+  },
+  {
+    "id" : "ee-related-person",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-related-person",
+    "version" : "0.9.0",
+    "name" : "EEBaseRelatedPerson"
+  },
+  {
+    "id" : "ee-act-priority",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-act-priority",
+    "version" : "0.9.0",
+    "name" : "EEBaseActPriority"
+  },
+  {
+    "id" : "ee-administrative-gender",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-administrative-gender",
+    "version" : "0.9.0",
+    "name" : "EEBaseAdministrativeGender"
+  },
+  {
+    "id" : "ee-ads",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-ads",
+    "version" : "0.9.0",
+    "name" : "ADS"
+  },
+  {
+    "id" : "ee-clinical-specialty",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-clinical-specialty",
+    "version" : "0.9.0",
+    "name" : "EEBaseClinicalSpecialty"
+  },
+  {
+    "id" : "ee-date-accuracy-indicator",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-date-accuracy-indicator",
+    "version" : "0.9.0",
+    "name" : "DateAccuracyIndicator"
+  },
+  {
+    "id" : "ee-degree-license-certificate",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-degree-license-certificate",
+    "version" : "0.9.0",
+    "name" : "EEBaseDegreeLicenseCertificate"
+  },
+  {
+    "id" : "ee-encounter-class",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-encounter-class",
+    "version" : "0.9.0",
+    "name" : "EEBaseEncounterClass"
+  },
+  {
+    "id" : "ee-location-form",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-location-form",
+    "version" : "0.9.0",
+    "name" : "EEBaseLocationForm"
+  },
+  {
+    "id" : "ee-medre-specialty",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-medre-specialty",
+    "version" : "0.9.0",
+    "name" : "EEBaseMedreSpecialty"
+  },
+  {
+    "id" : "ee-mode-of-arrival",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-mode-of-arrival",
+    "version" : "0.9.0",
+    "name" : "EEBaseModeOfArrival"
+  },
+  {
+    "id" : "ee-observation-category",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-observation-category",
+    "version" : "0.9.0",
+    "name" : "EEBaseObservationCategory"
+  },
+  {
+    "id" : "ee-occupation",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-occupation",
+    "version" : "0.9.0",
+    "name" : "EEBaseOccupation"
+  },
+  {
+    "id" : "ee-organization-identity",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-organization-identity",
+    "version" : "0.9.0",
+    "name" : "EEBaseOrganizationIdentity"
+  },
+  {
+    "id" : "ee-organization-type",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-organization-type",
+    "version" : "0.9.0",
+    "name" : "EEBaseOrganizationType"
+  },
+  {
+    "id" : "ee-patient-identity",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-patient-identity",
+    "version" : "0.9.0",
+    "name" : "EEBasePatientIdentity"
+  },
+  {
+    "id" : "ee-practitioner-identity",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-practitioner-identity",
+    "version" : "0.9.0",
+    "name" : "EEBasePractitionerIdentity"
+  },
+  {
+    "id" : "ee-practitioner-role",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-practitioner-role",
+    "version" : "0.9.0",
+    "name" : "EEBasePractitionerRole"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Patient",
+  "id" : "patunk",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Tundmatu naine(NICKNAME)</b> female, DoB:  ( id:\u00a074569215-34534563-mfhsjq)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">false</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir.ee/sid/pid/est/mr",
+    "value" : "74569215-34534563-mfhsjq"
+  }],
+  "active" : false,
+  "name" : [{
+    "use" : "nickname",
+    "text" : "Tundmatu naine"
+  }],
+  "gender" : "female",
+  "_birthDate" : {
+    "extension" : [{
+      "url" : "https://fhir.ee/StructureDefinition/ee-date-accuracy-indicator",
+      "valueCoding" : {
+        "system" : "https://fhir.ee/CodeSystem/ee-date-accuracy-indicator",
+        "code" : "UUU"
+      }
+    },
+    {
+      "url" : "https://fhir.ee/StructureDefinition/ee-patient-age",
+      "valueAge" : {
+        "value" : 40,
+        "unit" : "years",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      }
+    }]
+  }
+}

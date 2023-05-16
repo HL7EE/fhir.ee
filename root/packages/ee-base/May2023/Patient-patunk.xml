@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patunk"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Tundmatu naine(NICKNAME)</b> female, DoB:  ( id: 74569215-34534563-mfhsjq)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">false</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.ee/sid/pid/est/mr"/>
+    <value value="74569215-34534563-mfhsjq"/>
+  </identifier>
+  <active value="false"/>
+  <name>
+    <use value="nickname"/>
+    <text value="Tundmatu naine"/>
+  </name>
+  <gender value="female"/>
+  <birthDate>
+    <extension url="https://fhir.ee/StructureDefinition/ee-date-accuracy-indicator">
+      <valueCoding>
+        <system value="https://fhir.ee/CodeSystem/ee-date-accuracy-indicator"/>
+        <code value="UUU"/>
+      </valueCoding>
+    </extension>
+    <extension url="https://fhir.ee/StructureDefinition/ee-patient-age">
+      <valueAge>
+        <value value="40"/>
+        <unit value="years"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="a"/>
+      </valueAge>
+    </extension>
+  </birthDate>
+</Patient>

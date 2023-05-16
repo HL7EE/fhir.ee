@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/Patient/patunk> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patunk"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-patient"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Tundmatu naine(NICKNAME)</b> female, DoB:  ( id: 74569215-34534563-mfhsjq)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">false</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://fhir.ee/sid/pid/est/mr"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "74569215-34534563-mfhsjq" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "nickname" ] ;
+     fhir:text [ fhir:v "Tundmatu naine" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://fhir.ee/StructureDefinition/ee-date-accuracy-indicator"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "https://fhir.ee/CodeSystem/ee-date-accuracy-indicator"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "UUU" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "https://fhir.ee/StructureDefinition/ee-patient-age"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Age ;
+         fhir:value [ fhir:v "40"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "years" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "a" ]
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

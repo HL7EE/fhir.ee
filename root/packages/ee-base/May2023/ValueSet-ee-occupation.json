@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ee-occupation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ee-occupation.html\"><code>https://fhir.ee/CodeSystem/ee-occupation</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.ee/ValueSet/ee-occupation",
+  "version" : "0.9.0",
+  "name" : "EEBaseOccupation",
+  "title" : "Occupation",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-12T10:59:05+00:00",
+  "publisher" : "HL7 Estonia",
+  "contact" : [{
+    "name" : "HL7 Estonia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    }]
+  }],
+  "description" : "Ametinimetus",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.ee/CodeSystem/ee-occupation"
+    }]
+  }
+}

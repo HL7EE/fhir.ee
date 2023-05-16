@@ -1,0 +1,56 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "PractRoleD04281",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-practitioner-role"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"PractRoleD04281\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;PractRoleD04281&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-practitioner-role.html\">EEBase PractitionerRole</a></p></div><p><b>active</b>: true</p><p><b>period</b>: 2012-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner-D04281.html\">Practitioner/D04281</a> &quot; ARST&quot;</p><p><b>organization</b>: <a href=\"Organization-rh.html\">Organization/rh</a> &quot;Rakvere Haigla&quot;</p><p><b>code</b>: Doctor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-practitioner-role.html\">Practitioner role</a>#doctor)</span>, Kardioloog <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ee-occupation.html\">Classification of occupations</a>#22120901)</span></p><p><b>specialty</b>: Cardiology <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394579002)</span>, Interventional cardiology <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1251549008)</span>, Kardioloogia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ee-medre-specialty.html\">Medre specialty</a>#E170)</span></p></div>"
+  },
+  "active" : true,
+  "period" : {
+    "start" : "2012-01-01"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/D04281"
+  },
+  "organization" : {
+    "reference" : "Organization/rh"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "code" : "doctor",
+      "display" : "Doctor"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/ee-occupation",
+      "code" : "22120901",
+      "display" : "Kardioloog"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "394579002",
+      "display" : "Cardiology"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1251549008",
+      "display" : "Interventional cardiology"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/ee-medre-specialty",
+      "code" : "E170",
+      "display" : "Kardioloogia"
+    }]
+  }]
+}

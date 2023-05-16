@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ee-observation-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html"><code>http://terminology.hl7.org/CodeSystem/observation-category</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.ee/ValueSet/ee-observation-category"/>
+  <version value="0.9.0"/>
+  <name value="EEBaseObservationCategory"/>
+  <title value="Observation category"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-05-12T10:59:05+00:00"/>
+  <publisher value="HL7 Estonia"/>
+  <contact>
+    <name value="HL7 Estonia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ee"/>
+    </telecom>
+  </contact>
+  <description value="Observation category"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ee-patient-identity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="CodeSystem-ee-identity-system.html"><code>https://fhir.ee/CodeSystem/ee-identity-system</code></a> where concept  descends from  <a href="CodeSystem-ee-identity-system.html#ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid">https://fhir.ee/sid/pid</a></li></ul></div>
+  </text>
+  <url value="https://fhir.ee/ValueSet/ee-patient-identity"/>
+  <version value="0.9.0"/>
+  <name value="EEBasePatientIdentity"/>
+  <title value="Person Identity System"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-05-12T10:59:05+00:00"/>
+  <publisher value="HL7 Estonia"/>
+  <contact>
+    <name value="HL7 Estonia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ee"/>
+    </telecom>
+  </contact>
+  <description value="Identity systems acceptable for patient identification"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir.ee/CodeSystem/ee-identity-system"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="https://fhir.ee/sid/pid"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

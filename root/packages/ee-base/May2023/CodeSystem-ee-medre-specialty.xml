@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ee-medre-specialty"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://fhir.ee/CodeSystem/ee-medre-specialty</code> provides a fragment that includes following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">E170<a name="ee-medre-specialty-E170"> </a></td><td>Kardioloogia</td></tr><tr><td style="white-space:nowrap">E290<a name="ee-medre-specialty-E290"> </a></td><td>Pediaatria</td></tr><tr><td style="white-space:nowrap">E670<a name="ee-medre-specialty-E670"> </a></td><td>Pediaatria allergoloogia lisapädevusega</td></tr><tr><td style="white-space:nowrap">N100<a name="ee-medre-specialty-N100"> </a></td><td>Intensiivõendus</td></tr><tr><td style="white-space:nowrap">N200<a name="ee-medre-specialty-N200"> </a></td><td>Kliiniline õendus</td></tr><tr><td style="white-space:nowrap">N300<a name="ee-medre-specialty-N300"> </a></td><td>Terviseõendus</td></tr><tr><td style="white-space:nowrap">N500<a name="ee-medre-specialty-N500"> </a></td><td>Õde</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/CodeSystem/ee-medre-specialty"/>
+  <version value="0.9.0"/>
+  <name value="EEBaseMedreSpecialty"/>
+  <title value="Medre specialty"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-05-12T10:59:05+00:00"/>
+  <publisher value="HL7 Estonia"/>
+  <contact>
+    <name value="HL7 Estonia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ee"/>
+    </telecom>
+  </contact>
+  <description value="Medre specialty (aka 'TAM erialade loend' in Estonian)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="E170"/>
+    <display value="Kardioloogia"/>
+  </concept>
+  <concept>
+    <code value="E290"/>
+    <display value="Pediaatria"/>
+  </concept>
+  <concept>
+    <code value="E670"/>
+    <display value="Pediaatria allergoloogia lisapädevusega"/>
+  </concept>
+  <concept>
+    <code value="N100"/>
+    <display value="Intensiivõendus"/>
+  </concept>
+  <concept>
+    <code value="N200"/>
+    <display value="Kliiniline õendus"/>
+  </concept>
+  <concept>
+    <code value="N300"/>
+    <display value="Terviseõendus"/>
+  </concept>
+  <concept>
+    <code value="N500"/>
+    <display value="Õde"/>
+  </concept>
+</CodeSystem>

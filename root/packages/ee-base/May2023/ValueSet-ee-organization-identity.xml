@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ee-organization-identity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-ee-identity-system.html"><code>https://fhir.ee/CodeSystem/ee-identity-system</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ee-identity-system.html#ee-identity-system-https.58.47.47fhir.46ee.47sid.47org.47est.47fi">https://fhir.ee/sid/org/est/fi</a></td><td/></tr><tr><td><a href="CodeSystem-ee-identity-system.html#ee-identity-system-https.58.47.47fhir.46ee.47sid.47org.47est.47br">https://fhir.ee/sid/org/est/br</a></td><td/></tr><tr><td><a href="CodeSystem-ee-identity-system.html#ee-identity-system-https.58.47.47fhir.46ee.47sid.47org.47vatin">https://fhir.ee/sid/org/vatin</a></td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="https://fhir.ee/ValueSet/ee-organization-identity"/>
+  <version value="0.9.0"/>
+  <name value="EEBaseOrganizationIdentity"/>
+  <title value="Organization Identity System"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-05-12T10:59:05+00:00"/>
+  <publisher value="HL7 Estonia"/>
+  <contact>
+    <name value="HL7 Estonia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ee"/>
+    </telecom>
+  </contact>
+  <description value="Identity systems acceptable for organization identification"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir.ee/CodeSystem/ee-identity-system"/>
+      <concept>
+        <code value="https://fhir.ee/sid/org/est/fi"/>
+      </concept>
+      <concept>
+        <code value="https://fhir.ee/sid/org/est/br"/>
+      </concept>
+      <concept>
+        <code value="https://fhir.ee/sid/org/vatin"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

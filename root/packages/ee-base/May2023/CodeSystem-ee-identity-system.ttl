@@ -1,0 +1,372 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/CodeSystem/ee-identity-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-identity-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>idtype</td><td>http://hl7.org/fhir/concept-properties#idtype</td><td>code</td><td>Identifier type of concept according to http://terminology.hl7.org/CodeSystem/v2-0203</td></tr><tr><td>country</td><td>http://hl7.org/fhir/concept-properties#country</td><td>code</td><td>ISO 3166 аlpha3 country code</td></tr><tr><td>naming-system</td><td/><td>string</td><td>The uri to the related naming system</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Status of the concept according to http://terminology.hl7.org/CodeSystem/v3-ConceptStatus</td></tr></table><p><b>Concepts</b></p><p>This code system <code>https://fhir.ee/CodeSystem/ee-identity-system</code> provides a fragment that includes following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>idtype</b></td><td><b>country</b></td><td><b>naming-system</b></td><td><b>Status</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">https://fhir.ee/sid/org<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47org\"> </a></td><td>Root of identifiers for organization identification</td><td>Identifikaatorid asutustele</td><td/><td/><td/><td>R</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  https://fhir.ee/sid/org/est/br<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47org.47est.47br\"> </a></td><td>Estonian Business Register Code</td><td>Äriregistri number</td><td>XX</td><td>EST</td><td><a href=\"https://fhir.ee/NamingSystem/org-est-br\">https://fhir.ee/NamingSystem/org-est-br</a></td><td>A</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  https://fhir.ee/sid/org/est/fi<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47org.47est.47fi\"> </a></td><td>License number provided by The National Institute for Health Development</td><td>Terviseameti litsentsi number</td><td>FI</td><td>EST</td><td><a href=\"https://fhir.ee/NamingSystem/org-est-fi\">https://fhir.ee/NamingSystem/org-est-fi</a></td><td>A</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  https://fhir.ee/sid/org/vatin<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47org.47vatin\"> </a></td><td>VAT identification number</td><td>KMKR</td><td>TAX</td><td/><td><a href=\"https://fhir.ee/NamingSystem/org-vatin\">https://fhir.ee/NamingSystem/org-vatin</a></td><td>A</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">https://fhir.ee/sid/pid<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid\"> </a></td><td>Root of identifiers for person identification</td><td>Identifikaatorid isikutele</td><td/><td/><td/><td>R</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  https://fhir.ee/sid/pid/est<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47est\"> </a></td><td>Root of Estonian identifiers for person identification</td><td>Eesti identifikaatorid isikutele</td><td/><td>EST</td><td/><td>R</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pid/est/ni<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47est.47ni\"> </a></td><td>Estonian personal national identification code</td><td>Eesti isikukood</td><td>NI</td><td>EST</td><td><a href=\"https://fhir.ee/NamingSystem/pid-est-ni\">https://fhir.ee/NamingSystem/pid-est-ni</a></td><td>A</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pid/est/ppn<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47est.47ppn\"> </a></td><td>Estonian passport number</td><td>Eesti passinumber</td><td>PPN</td><td>EST</td><td><a href=\"http://terminology.hl7.org/NamingSystem/passportNumNS-EST\">http://terminology.hl7.org/NamingSystem/passportNumNS-EST</a></td><td>A</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pid/est/mr<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47est.47mr\"> </a></td><td>MPI issued medical record number</td><td>Patsiendiregistri poolt genereeritud identifikaator</td><td>MR</td><td>EST</td><td/><td>A</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pid/est/npi<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47est.47npi\"> </a></td><td>Stillborn code provided by The National Institute for Health Development</td><td>Surnultsündinu kood genereeritud TAI poolt</td><td>NPI</td><td>EST</td><td/><td>A</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pid/est/prn<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47est.47prn\"> </a></td><td>Namespace for identifier issued by healthcare providers</td><td>Nimeruum TTO poolt genereeritud identifikaatoritele</td><td>PRN</td><td>EST</td><td/><td>R</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      https://fhir.ee/sid/pid/fin/ppn/90006399<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47fin.47ppn.4790006399\"> </a></td><td>North Estonian Medical Center</td><td>Põhja-Eesti Regionaalhaigla</td><td>PRN</td><td>EST</td><td/><td>A</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  https://fhir.ee/sid/pid/deu<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47deu\"> </a></td><td>Root of German identifiers for person identification</td><td>Saksamaa identifikaatorid isikutele</td><td/><td>DEU</td><td/><td>R</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pid/deu/ppn<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47deu.47ppn\"> </a></td><td>German passport number</td><td>Saksamaa passinumber</td><td>PPN</td><td>DEU</td><td><a href=\"http://terminology.hl7.org/NamingSystem/passportNumNS-DEU\">http://terminology.hl7.org/NamingSystem/passportNumNS-DEU</a></td><td>A</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  https://fhir.ee/sid/pid/usa<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47usa\"> </a></td><td>Root of USA identifiers for person identification</td><td>USA identifikaatorid isikutele</td><td/><td>USA</td><td/><td>R</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pid/usa/ppn<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47usa.47ppn\"> </a></td><td>USA passport number</td><td>USA passinumber</td><td>PPN</td><td>USA</td><td><a href=\"http://terminology.hl7.org/NamingSystem/passportNumNS-USA\">http://terminology.hl7.org/NamingSystem/passportNumNS-USA</a></td><td>A</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  https://fhir.ee/sid/pid/fin<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47fin\"> </a></td><td>Root of Finnish identifiers for person identification</td><td>Soome identifikaatorid isikutele</td><td/><td>FIN</td><td/><td>R</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pid/fin/ni<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47fin.47ni\"> </a></td><td>Finnish personal national identification code</td><td>Soome isikukood</td><td>NI</td><td>FIN</td><td/><td>A</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pid/fin/ppn<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid.47fin.47ppn\"> </a></td><td>Finnish passport number</td><td>Soome passinumber</td><td>PPN</td><td>FIN</td><td><a href=\"http://terminology.hl7.org/NamingSystem/passportNumNS-FIN\">http://terminology.hl7.org/NamingSystem/passportNumNS-FIN</a></td><td>A</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">https://fhir.ee/sid/pro<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pro\"> </a></td><td>Root of identifiers for healthcare professionals</td><td>Identifikaatorid tervishoiutöötajatele</td><td/><td/><td/><td>R</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  https://fhir.ee/sid/pro/est<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pro.47est\"> </a></td><td>Root of Estonian identifiers for healthcare professionals</td><td>Eesti identifikaatorid tervishoiutöötajatele</td><td/><td>EST</td><td/><td>R</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    https://fhir.ee/sid/pro/est/pho<a name=\"ee-identity-system-https.58.47.47fhir.46ee.47sid.47pro.47est.47pho\"> </a></td><td>Healthcare professional official ID provided by The National Institute for Health Development</td><td>Tervishoiutöötaja TAM kood</td><td>PHO</td><td>EST</td><td><a href=\"https://fhir.ee/NamingSystem/pro-est-pho\">https://fhir.ee/NamingSystem/pro-est-pho</a></td><td>A</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/CodeSystem/ee-identity-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.0"] ; # 
+  fhir:name [ fhir:v "EEBaseIdentitySystem"] ; # 
+  fhir:title [ fhir:v "Identity System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-05-12T10:59:05+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Estonia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Estonia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Description of the identity system concepts acceptable for entity identification"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "fragment"] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "idtype" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#idtype"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Identifier type of concept according to http://terminology.hl7.org/CodeSystem/v2-0203" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "country" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#country"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "ISO 3166 аlpha3 country code" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "naming-system" ] ;
+     fhir:description [ fhir:v "The uri to the related naming system" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Status of the concept according to http://terminology.hl7.org/CodeSystem/v3-ConceptStatus" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "https://fhir.ee/sid/org" ] ;
+     fhir:display [ fhir:v "Root of identifiers for organization identification" ] ;
+     fhir:definition [ fhir:v "Identifikaatorid asutustele" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "R" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "https://fhir.ee/sid/org/est/br" ] ;
+       fhir:display [ fhir:v "Estonian Business Register Code" ] ;
+       fhir:definition [ fhir:v "Äriregistri number" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "idtype" ] ;
+         fhir:value [ fhir:v "XX" ]
+       ] [
+         fhir:code [ fhir:v "country" ] ;
+         fhir:value [ fhir:v "EST" ]
+       ] [
+         fhir:code [ fhir:v "naming-system" ] ;
+         fhir:value [ fhir:v "https://fhir.ee/NamingSystem/org-est-br" ]
+       ] [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "A" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "https://fhir.ee/sid/org/est/fi" ] ;
+       fhir:display [ fhir:v "License number provided by The National Institute for Health Development" ] ;
+       fhir:definition [ fhir:v "Terviseameti litsentsi number" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "idtype" ] ;
+         fhir:value [ fhir:v "FI" ]
+       ] [
+         fhir:code [ fhir:v "country" ] ;
+         fhir:value [ fhir:v "EST" ]
+       ] [
+         fhir:code [ fhir:v "naming-system" ] ;
+         fhir:value [ fhir:v "https://fhir.ee/NamingSystem/org-est-fi" ]
+       ] [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "A" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "https://fhir.ee/sid/org/vatin" ] ;
+       fhir:display [ fhir:v "VAT identification number" ] ;
+       fhir:definition [ fhir:v "KMKR" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "idtype" ] ;
+         fhir:value [ fhir:v "TAX" ]
+       ] [
+         fhir:code [ fhir:v "naming-system" ] ;
+         fhir:value [ fhir:v "https://fhir.ee/NamingSystem/org-vatin" ]
+       ] [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "A" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "https://fhir.ee/sid/pid" ] ;
+     fhir:display [ fhir:v "Root of identifiers for person identification" ] ;
+     fhir:definition [ fhir:v "Identifikaatorid isikutele" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "R" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "https://fhir.ee/sid/pid/est" ] ;
+       fhir:display [ fhir:v "Root of Estonian identifiers for person identification" ] ;
+       fhir:definition [ fhir:v "Eesti identifikaatorid isikutele" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "R" ]
+       ] [
+         fhir:code [ fhir:v "country" ] ;
+         fhir:value [ fhir:v "EST" ]
+       ] ) ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pid/est/ni" ] ;
+         fhir:display [ fhir:v "Estonian personal national identification code" ] ;
+         fhir:definition [ fhir:v "Eesti isikukood" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "NI" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "EST" ]
+         ] [
+           fhir:code [ fhir:v "naming-system" ] ;
+           fhir:value [ fhir:v "https://fhir.ee/NamingSystem/pid-est-ni" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "A" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pid/est/ppn" ] ;
+         fhir:display [ fhir:v "Estonian passport number" ] ;
+         fhir:definition [ fhir:v "Eesti passinumber" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "PPN" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "EST" ]
+         ] [
+           fhir:code [ fhir:v "naming-system" ] ;
+           fhir:value [ fhir:v "http://terminology.hl7.org/NamingSystem/passportNumNS-EST" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "A" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pid/est/mr" ] ;
+         fhir:display [ fhir:v "MPI issued medical record number" ] ;
+         fhir:definition [ fhir:v "Patsiendiregistri poolt genereeritud identifikaator" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "MR" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "EST" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "A" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pid/est/npi" ] ;
+         fhir:display [ fhir:v "Stillborn code provided by The National Institute for Health Development" ] ;
+         fhir:definition [ fhir:v "Surnultsündinu kood genereeritud TAI poolt" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "NPI" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "EST" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "A" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pid/est/prn" ] ;
+         fhir:display [ fhir:v "Namespace for identifier issued by healthcare providers" ] ;
+         fhir:definition [ fhir:v "Nimeruum TTO poolt genereeritud identifikaatoritele" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "PRN" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "EST" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "R" ]
+         ] ) ;
+         fhir:concept ( [
+           fhir:code [ fhir:v "https://fhir.ee/sid/pid/fin/ppn/90006399" ] ;
+           fhir:display [ fhir:v "North Estonian Medical Center" ] ;
+           fhir:definition [ fhir:v "Põhja-Eesti Regionaalhaigla" ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "idtype" ] ;
+             fhir:value [ fhir:v "PRN" ]
+           ] [
+             fhir:code [ fhir:v "country" ] ;
+             fhir:value [ fhir:v "EST" ]
+           ] [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "A" ]
+           ] )
+         ] )
+       ] )
+     ] [
+       fhir:code [ fhir:v "https://fhir.ee/sid/pid/deu" ] ;
+       fhir:display [ fhir:v "Root of German identifiers for person identification" ] ;
+       fhir:definition [ fhir:v "Saksamaa identifikaatorid isikutele" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "R" ]
+       ] [
+         fhir:code [ fhir:v "country" ] ;
+         fhir:value [ fhir:v "DEU" ]
+       ] ) ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pid/deu/ppn" ] ;
+         fhir:display [ fhir:v "German passport number" ] ;
+         fhir:definition [ fhir:v "Saksamaa passinumber" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "PPN" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "DEU" ]
+         ] [
+           fhir:code [ fhir:v "naming-system" ] ;
+           fhir:value [ fhir:v "http://terminology.hl7.org/NamingSystem/passportNumNS-DEU" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "A" ]
+         ] )
+       ] )
+     ] [
+       fhir:code [ fhir:v "https://fhir.ee/sid/pid/usa" ] ;
+       fhir:display [ fhir:v "Root of USA identifiers for person identification" ] ;
+       fhir:definition [ fhir:v "USA identifikaatorid isikutele" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "R" ]
+       ] [
+         fhir:code [ fhir:v "country" ] ;
+         fhir:value [ fhir:v "USA" ]
+       ] ) ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pid/usa/ppn" ] ;
+         fhir:display [ fhir:v "USA passport number" ] ;
+         fhir:definition [ fhir:v "USA passinumber" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "PPN" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "USA" ]
+         ] [
+           fhir:code [ fhir:v "naming-system" ] ;
+           fhir:value [ fhir:v "http://terminology.hl7.org/NamingSystem/passportNumNS-USA" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "A" ]
+         ] )
+       ] )
+     ] [
+       fhir:code [ fhir:v "https://fhir.ee/sid/pid/fin" ] ;
+       fhir:display [ fhir:v "Root of Finnish identifiers for person identification" ] ;
+       fhir:definition [ fhir:v "Soome identifikaatorid isikutele" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "R" ]
+       ] [
+         fhir:code [ fhir:v "country" ] ;
+         fhir:value [ fhir:v "FIN" ]
+       ] ) ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pid/fin/ni" ] ;
+         fhir:display [ fhir:v "Finnish personal national identification code" ] ;
+         fhir:definition [ fhir:v "Soome isikukood" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "NI" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "FIN" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "A" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pid/fin/ppn" ] ;
+         fhir:display [ fhir:v "Finnish passport number" ] ;
+         fhir:definition [ fhir:v "Soome passinumber" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "PPN" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "FIN" ]
+         ] [
+           fhir:code [ fhir:v "naming-system" ] ;
+           fhir:value [ fhir:v "http://terminology.hl7.org/NamingSystem/passportNumNS-FIN" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "A" ]
+         ] )
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "https://fhir.ee/sid/pro" ] ;
+     fhir:display [ fhir:v "Root of identifiers for healthcare professionals" ] ;
+     fhir:definition [ fhir:v "Identifikaatorid tervishoiutöötajatele" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "R" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "https://fhir.ee/sid/pro/est" ] ;
+       fhir:display [ fhir:v "Root of Estonian identifiers for healthcare professionals" ] ;
+       fhir:definition [ fhir:v "Eesti identifikaatorid tervishoiutöötajatele" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "R" ]
+       ] [
+         fhir:code [ fhir:v "country" ] ;
+         fhir:value [ fhir:v "EST" ]
+       ] ) ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "https://fhir.ee/sid/pro/est/pho" ] ;
+         fhir:display [ fhir:v "Healthcare professional official ID provided by The National Institute for Health Development" ] ;
+         fhir:definition [ fhir:v "Tervishoiutöötaja TAM kood" ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "idtype" ] ;
+           fhir:value [ fhir:v "PHO" ]
+         ] [
+           fhir:code [ fhir:v "country" ] ;
+           fhir:value [ fhir:v "EST" ]
+         ] [
+           fhir:code [ fhir:v "naming-system" ] ;
+           fhir:value [ fhir:v "https://fhir.ee/NamingSystem/pro-est-pho" ]
+         ] [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "A" ]
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
