@@ -20,7 +20,7 @@
      fhir:value [ fhir:v "trial-use" ]
   ] ) ; # 
   fhir:url [ fhir:v "https://fhir.ee/OperationDefinition/patient-power-of-attorney"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "EEMPIPatientPowerOfAttorneyStatus"] ; # 
   fhir:title [ fhir:v "Patient power of attorneys"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

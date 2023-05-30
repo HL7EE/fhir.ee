@@ -6,12 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-disability-level.html"><code>https://fhir.ee/CodeSystem/disability-level</code></a></li></ul></div>
   </text>
   <url value="https://fhir.ee/ValueSet/disability-level"/>
-  <version value="0.2.0"/>
+  <version value="1.0.0"/>
   <name value="EEMPIDisabilityLevel"/>
   <title value="Disability level"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-05-30T09:50:45+03:00"/>
+  <date value="2023-05-30T18:29:05+03:00"/>
   <publisher value="TEHIK"/>
   <contact>
     <name value="TEHIK"/>

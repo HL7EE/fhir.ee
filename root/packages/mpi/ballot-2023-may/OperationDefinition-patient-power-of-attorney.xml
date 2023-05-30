@@ -15,7 +15,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="https://fhir.ee/OperationDefinition/patient-power-of-attorney"/>
-  <version value="0.2.0"/>
+  <version value="1.0.0"/>
   <name value="EEMPIPatientPowerOfAttorneyStatus"/>
   <title value="Patient power of attorneys"/>
   <status value="draft"/>

@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>EEMPI</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi</pre></div>
   </text>
   <url value="https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi"/>
-  <version value="0.2.0"/>
+  <version value="1.0.0"/>
   <name value="EEMPI"/>
   <title value="Patsientide üldandmete teenus / Master Patient Index"/>
   <status value="draft"/>
-  <date value="2023-05-30T09:50:45+03:00"/>
+  <date value="2023-05-30T18:29:05+03:00"/>
   <publisher value="TEHIK"/>
   <contact>
     <name value="TEHIK"/>
@@ -45,7 +45,7 @@
   <dependsOn id="hl7_fhir_ee_base">
     <uri value="https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base"/>
     <packageId value="hl7.fhir.ee.base"/>
-    <version value="current"/>
+    <version value="dev"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -61,7 +61,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="ballot"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -978,7 +978,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="releaselabel"/>
       </code>
-      <value value="ci-build"/>
+      <value value="ballot"/>
     </parameter>
     <parameter>
       <code>

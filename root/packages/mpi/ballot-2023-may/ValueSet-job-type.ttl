@@ -13,12 +13,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  365539008 (Type of job - finding)</li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://fhir.ee/ValueSet/job-type"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "EEMPIJobType"] ; # 
   fhir:title [ fhir:v "JobType"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-05-30T09:50:45+03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-30T18:29:05+03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "TEHIK"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "TEHIK" ] ;

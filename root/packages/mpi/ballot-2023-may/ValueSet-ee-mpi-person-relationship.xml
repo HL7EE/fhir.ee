@@ -6,12 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td><a href="http://snomed.info/id/72705000">72705000</a></td><td>Mother</td><td>Ema</td></tr><tr><td><a href="http://snomed.info/id/66839005">66839005</a></td><td>Father</td><td>Isa</td></tr><tr><td><a href="http://snomed.info/id/67822003">67822003</a></td><td>Child</td><td>Laps</td></tr><tr><td><a href="http://snomed.info/id/127848009">127848009</a></td><td>Spouse</td><td>Abikaasa</td></tr><tr><td><a href="http://snomed.info/id/444210007">444210007</a></td><td>Cohabitee in relationship with subject (person)</td><td>Reg.elukaaslane</td></tr></table></li></ul></div>
   </text>
   <url value="https://fhir.ee/ValueSet/ee-mpi-person-relationship"/>
-  <version value="0.2.0"/>
+  <version value="1.0.0"/>
   <name value="EEMPIPersonRelationship"/>
   <title value="Person Relationship"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-05-30T09:50:45+03:00"/>
+  <date value="2023-05-30T18:29:05+03:00"/>
   <publisher value="TEHIK"/>
   <contact>
     <name value="TEHIK"/>

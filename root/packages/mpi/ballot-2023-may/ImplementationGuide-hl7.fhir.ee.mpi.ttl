@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EEMPI</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "EEMPI"] ; # 
   fhir:title [ fhir:v "Patsientide üldandmete teenus / Master Patient Index"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-05-30T09:50:45+03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-30T18:29:05+03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "TEHIK"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "TEHIK" ] ;
@@ -63,7 +63,7 @@
        fhir:link <https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.ee.base" ] ;
-     fhir:version [ fhir:v "current" ]
+     fhir:version [ fhir:v "dev" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -81,7 +81,7 @@
          fhir:value [ fhir:v "releaselabel" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ci-build" ]
+         fhir:value [ fhir:v "ballot" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -1111,7 +1111,7 @@
          fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "releaselabel" ]
        ] ;
-       fhir:value [ fhir:v "ci-build" ]
+       fhir:value [ fhir:v "ballot" ]
      ] [
        fhir:code [
          fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;

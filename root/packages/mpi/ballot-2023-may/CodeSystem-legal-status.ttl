@@ -13,12 +13,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.ee/CodeSystem/legal-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style=\"white-space:nowrap\">T0<a name=\"legal-status-T0\"> </a></td><td>Teovõimeline</td><td/></tr><tr><td style=\"white-space:nowrap\">T1<a name=\"legal-status-T1\"> </a></td><td>Piiratud teovõimega valimisõiguseta</td><td>Piiratud valimisõiguseta</td></tr><tr><td style=\"white-space:nowrap\">T3<a name=\"legal-status-T3\"> </a></td><td>Piiratud teovõimega valimisõigusega</td><td>Piiratud valimisõigusega</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://fhir.ee/CodeSystem/legal-status"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "EEMPILegalStatus"] ; # 
   fhir:title [ fhir:v "Legal Status"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-05-30T09:50:45+03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-30T18:29:05+03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "TEHIK"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "TEHIK" ] ;

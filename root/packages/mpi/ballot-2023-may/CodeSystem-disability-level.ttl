@@ -13,12 +13,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.ee/CodeSystem/disability-level</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style=\"white-space:nowrap\">keskmine<a name=\"disability-level-keskmine\"> </a></td><td>Keskmine puue</td><td>KESKMINE_PUUE</td></tr><tr><td style=\"white-space:nowrap\">raske<a name=\"disability-level-raske\"> </a></td><td>Raske puue</td><td>RASKE_PUUE</td></tr><tr><td style=\"white-space:nowrap\">sygav<a name=\"disability-level-sygav\"> </a></td><td>Sügav puue</td><td>SYGAV_PUUE</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://fhir.ee/CodeSystem/disability-level"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "EEMPIDisabilityLevel"] ; # 
   fhir:title [ fhir:v "Disability level"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-05-30T09:50:45+03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-30T18:29:05+03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "TEHIK"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "TEHIK" ] ;

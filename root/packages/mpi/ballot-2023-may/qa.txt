@@ -1,9 +1,9 @@
 ﻿EEMPI : Validation Results
 =========================================
 
-err = 0, warn = 16, info = 8
-IG Publisher Version: 1.3.11 Out of date - current version is 1.3.13
-Generated Tue May 30 09:51:44 EEST 2023. FHIR version 5.0.0 for hl7.fhir.ee.mpi#0.2.0 (canonical = https://fhir.ee)
+err = 0, warn = 16, info = 12
+IG Publisher Version: 1.3.12 Out of date - current version is 1.3.13
+Generated Tue May 30 18:30:44 EEST 2023. FHIR version 5.0.0 for hl7.fhir.ee.mpi#1.0.0 (canonical = https://fhir.ee)
  Build Errors : 0 / 3 / 0
  /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/CodeSystem-disability-level : 0 / 0 / 1
  /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/CodeSystem-education-level : 0 / 0 / 1
@@ -35,8 +35,8 @@ Generated Tue May 30 09:51:44 EEST 2023. FHIR version 5.0.0 for hl7.fhir.ee.mpi#
  /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/RelatedPerson-relpat11 : 0 / 0 / 1
  /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/RelatedPerson-relpat12 : 0 / 0 / 1
  /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/StructureDefinition-ee-mpi-patient : 0 / 0 / 1
- /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/StructureDefinition-ee-mpi-patient-newborn : 0 / 0 / 1
- /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/StructureDefinition-ee-mpi-patient-stillborn : 0 / 0 / 1
+ /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/StructureDefinition-ee-mpi-patient-newborn : 0 / 0 / 3
+ /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/StructureDefinition-ee-mpi-patient-stillborn : 0 / 0 / 3
  /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/StructureDefinition-ee-mpi-patient-unknown : 0 / 0 / 1
  /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/StructureDefinition-ee-mpi-patient-verified : 0 / 0 / 1
  /Users/igor/source/hl7/ig-ee-mpi/ig/fsh-generated/resources/StructureDefinition-ee-mpi-related-person : 0 / 0 / 1
@@ -93,35 +93,39 @@ INFORMATION: Patient/pat2: Patient.name[0]: This element does not match any know
 == fsh-generated/resources/RelatedPerson-relpat12.json ==
 == fsh-generated/resources/StructureDefinition-ee-mpi-patient.json ==
 == fsh-generated/resources/StructureDefinition-ee-mpi-patient-newborn.json ==
+INFORMATION: https://fhir.ee/StructureDefinition/ee-mpi-patient-newborn#Patient.telecom: The slice definition for Patient.name has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
+INFORMATION: StructureDefinition/ee-mpi-patient-newborn: StructureDefinition.differential.element.where(path = 'Patient.telecom'): The slice definition for Patient.name has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
 == fsh-generated/resources/StructureDefinition-ee-mpi-patient-stillborn.json ==
+INFORMATION: https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn#Patient.telecom: The slice definition for Patient.name has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
+INFORMATION: StructureDefinition/ee-mpi-patient-stillborn: StructureDefinition.differential.element.where(path = 'Patient.telecom'): The slice definition for Patient.name has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
 == fsh-generated/resources/StructureDefinition-ee-mpi-patient-unknown.json ==
 == fsh-generated/resources/StructureDefinition-ee-mpi-patient-verified.json ==
 == fsh-generated/resources/StructureDefinition-ee-mpi-related-person.json ==
 == fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-disability.json ==
-INFORMATION: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 == fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-education-level.json ==
-INFORMATION: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 == fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.json ==
-INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 == fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-legal-status.json ==
-INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 == fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-marital-status.json ==
-INFORMATION: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 == fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-occupation.json ==
-INFORMATION: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[22].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 == fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-power-of-attorney.json ==
-INFORMATION: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[21].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
-WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[21].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 == fsh-generated/resources/ValueSet-disability-level.json ==
 == fsh-generated/resources/ValueSet-education-level.json ==

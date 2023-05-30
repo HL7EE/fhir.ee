@@ -13,12 +13,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.ee/CodeSystem/power-of-attorney</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">H9<a name=\"power-of-attorney-H9\"> </a></td><td>Lapse eraldamine vanemast</td></tr><tr><td style=\"white-space:nowrap\">H11<a name=\"power-of-attorney-H11\"> </a></td><td>Osaline isikuhooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H21<a name=\"power-of-attorney-H21\"> </a></td><td>Osaline varahooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H12<a name=\"power-of-attorney-H12\"> </a></td><td>Piiratud isikuhooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H22<a name=\"power-of-attorney-H22\"> </a></td><td>Piiratud varahooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H10<a name=\"power-of-attorney-H10\"> </a></td><td>Täielik isikuhooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H20<a name=\"power-of-attorney-H20\"> </a></td><td>Täielik varahooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H19<a name=\"power-of-attorney-H19\"> </a></td><td>Vanema õigused</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://fhir.ee/CodeSystem/power-of-attorney"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
   fhir:name [ fhir:v "EEMPIPowerOfAttorney"] ; # 
   fhir:title [ fhir:v "PowerOfAttorney Status"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-05-30T09:50:45+03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-30T18:29:05+03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "TEHIK"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "TEHIK" ] ;

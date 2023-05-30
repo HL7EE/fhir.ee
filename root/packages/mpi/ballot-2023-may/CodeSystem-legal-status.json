@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.ee/CodeSystem/legal-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style=\"white-space:nowrap\">T0<a name=\"legal-status-T0\"> </a></td><td>Teovõimeline</td><td/></tr><tr><td style=\"white-space:nowrap\">T1<a name=\"legal-status-T1\"> </a></td><td>Piiratud teovõimega valimisõiguseta</td><td>Piiratud valimisõiguseta</td></tr><tr><td style=\"white-space:nowrap\">T3<a name=\"legal-status-T3\"> </a></td><td>Piiratud teovõimega valimisõigusega</td><td>Piiratud valimisõigusega</td></tr></table></div>"
   },
   "url" : "https://fhir.ee/CodeSystem/legal-status",
-  "version" : "0.2.0",
+  "version" : "1.0.0",
   "name" : "EEMPILegalStatus",
   "title" : "Legal Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-05-30T09:50:45+03:00",
+  "date" : "2023-05-30T18:29:05+03:00",
   "publisher" : "TEHIK",
   "contact" : [{
     "name" : "TEHIK",
