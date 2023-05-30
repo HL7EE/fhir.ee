@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Observation",
+  "id" : "LegalGuardianStatus",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"LegalGuardianStatus\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;LegalGuardianStatus&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html\">EE MPI SocialHistory Legal Guardian Status</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Legal guardian status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1193838006)</span></p><p><b>subject</b>: <a href=\"Patient-pat1.html\">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>effective</b>: 2021-11-23 --&gt; (ongoing)</p><p><b>performer</b>: </p><ul><li><a href=\"Organization-Org1.html\">Organization/Org1</a> &quot;Kodality General Hospital&quot;</li><li><a href=\"RelatedPerson-relpat12.html\">RelatedPerson/relpat12</a> &quot;&quot;</li></ul><p><b>value</b>: Legal guardian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#58626002)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "1193838006",
+      "display" : "Legal guardian status"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/pat1"
+  },
+  "effectivePeriod" : {
+    "start" : "2021-11-23"
+  },
+  "performer" : [{
+    "reference" : "Organization/Org1"
+  },
+  {
+    "reference" : "RelatedPerson/relpat12"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "58626002",
+      "display" : "Legal guardian"
+    }]
+  }
+}

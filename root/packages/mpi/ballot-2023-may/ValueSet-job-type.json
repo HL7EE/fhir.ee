@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "job-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  365539008 (Type of job - finding)</li></ul></div>"
+  },
+  "url" : "https://fhir.ee/ValueSet/job-type",
+  "version" : "0.2.0",
+  "name" : "EEMPIJobType",
+  "title" : "JobType",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-30T09:50:45+03:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    }]
+  }],
+  "description" : "Töötamise liik",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "365539008"
+      }]
+    }]
+  }
+}

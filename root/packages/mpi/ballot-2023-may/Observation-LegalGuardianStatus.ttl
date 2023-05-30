@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/Observation/LegalGuardianStatus> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LegalGuardianStatus"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"LegalGuardianStatus\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;LegalGuardianStatus&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html\">EE MPI SocialHistory Legal Guardian Status</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Legal guardian status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1193838006)</span></p><p><b>subject</b>: <a href=\"Patient-pat1.html\">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>effective</b>: 2021-11-23 --&gt; (ongoing)</p><p><b>performer</b>: </p><ul><li><a href=\"Organization-Org1.html\">Organization/Org1</a> &quot;Kodality General Hospital&quot;</li><li><a href=\"RelatedPerson-relpat12.html\">RelatedPerson/relpat12</a> &quot;&quot;</li></ul><p><b>value</b>: Legal guardian <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#58626002)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1193838006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1193838006" ] ;
+       fhir:display [ fhir:v "Legal guardian status" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.ee/Patient/pat1> ;
+     fhir:reference [ fhir:v "Patient/pat1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2021-11-23"^^xsd:date ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <https://fhir.ee/Organization/Org1> ;
+     fhir:reference [ fhir:v "Organization/Org1" ]
+  ] [
+     fhir:link <https://fhir.ee/RelatedPerson/relpat12> ;
+     fhir:reference [ fhir:v "RelatedPerson/relpat12" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:58626002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "58626002" ] ;
+       fhir:display [ fhir:v "Legal guardian" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

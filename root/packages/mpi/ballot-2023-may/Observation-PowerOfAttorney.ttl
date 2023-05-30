@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/Observation/PowerOfAttorney> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PowerOfAttorney"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"PowerOfAttorney\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;PowerOfAttorney&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html\">EE MPI SocialHistory Power Of Attorney</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Power of attorney observable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#186063005)</span></p><p><b>subject</b>: <a href=\"Patient-pat1.html\">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>effective</b>: 2021-11-23 --&gt; (ongoing)</p><p><b>performer</b>: <a href=\"RelatedPerson-relpat12.html\">RelatedPerson/relpat12</a> &quot;&quot;</p><p><b>value</b>: Täielik isikuhooldusõigus <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-power-of-attorney.html\">PowerOfAttorney Status</a>#H10)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:186063005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "186063005" ] ;
+       fhir:display [ fhir:v "Power of attorney observable" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.ee/Patient/pat1> ;
+     fhir:reference [ fhir:v "Patient/pat1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2021-11-23"^^xsd:date ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <https://fhir.ee/RelatedPerson/relpat12> ;
+     fhir:reference [ fhir:v "RelatedPerson/relpat12" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.ee/CodeSystem/power-of-attorney"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "H10" ] ;
+       fhir:display [ fhir:v "Täielik isikuhooldusõigus" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

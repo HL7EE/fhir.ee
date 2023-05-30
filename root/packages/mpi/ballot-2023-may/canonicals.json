@@ -1,0 +1,247 @@
+[
+  {
+    "id" : "disability-level",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/disability-level",
+    "version" : "0.2.0",
+    "name" : "EEMPIDisabilityLevel"
+  },
+  {
+    "id" : "education-level",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/education-level",
+    "version" : "0.2.0",
+    "name" : "EEMPIEducationLevel"
+  },
+  {
+    "id" : "legal-status",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/legal-status",
+    "version" : "0.2.0",
+    "name" : "EEMPILegalStatus"
+  },
+  {
+    "id" : "power-of-attorney",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.ee/CodeSystem/power-of-attorney",
+    "version" : "0.2.0",
+    "name" : "EEMPIPowerOfAttorney"
+  },
+  {
+    "id" : "identity-system-to-oid",
+    "type" : "ConceptMap",
+    "url" : "https://fhir.ee/ConceptMap/identity-system-to-oid",
+    "version" : "0.2.0",
+    "name" : "IdentitySystemToOID"
+  },
+  {
+    "id" : "hl7.fhir.ee.mpi",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi",
+    "version" : "0.2.0",
+    "name" : "EEMPI"
+  },
+  {
+    "id" : "patient-education",
+    "type" : "OperationDefinition",
+    "url" : "https://fhir.ee/OperationDefinition/patient-education",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientEducationStatus"
+  },
+  {
+    "id" : "patient-foreigner",
+    "type" : "OperationDefinition",
+    "url" : "https://fhir.ee/OperationDefinition/patient-foreigner",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientForeignerSearch"
+  },
+  {
+    "id" : "patient-generate-mrn",
+    "type" : "OperationDefinition",
+    "url" : "https://fhir.ee/OperationDefinition/patient-generate-mrn",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientGenerateMRN"
+  },
+  {
+    "id" : "patient-legal-guardian",
+    "type" : "OperationDefinition",
+    "url" : "https://fhir.ee/OperationDefinition/patient-legal-guardian",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientLegalGuardianStatus"
+  },
+  {
+    "id" : "patient-link",
+    "type" : "OperationDefinition",
+    "url" : "https://fhir.ee/OperationDefinition/patient-link",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientLink"
+  },
+  {
+    "id" : "patient-lookup",
+    "type" : "OperationDefinition",
+    "url" : "https://fhir.ee/OperationDefinition/patient-lookup",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientLookup"
+  },
+  {
+    "id" : "patient-power-of-attorney",
+    "type" : "OperationDefinition",
+    "url" : "https://fhir.ee/OperationDefinition/patient-power-of-attorney",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientPowerOfAttorneyStatus"
+  },
+  {
+    "id" : "patient-unlink",
+    "type" : "OperationDefinition",
+    "url" : "https://fhir.ee/OperationDefinition/patient-unlink",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientUnlink"
+  },
+  {
+    "id" : "ee-mpi-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatient"
+  },
+  {
+    "id" : "ee-mpi-patient-newborn",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient-newborn",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientNewborn"
+  },
+  {
+    "id" : "ee-mpi-patient-stillborn",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientStillborn"
+  },
+  {
+    "id" : "ee-mpi-patient-unknown",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient-unknown",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientUnknown"
+  },
+  {
+    "id" : "ee-mpi-patient-verified",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient-verified",
+    "version" : "0.2.0",
+    "name" : "EEMPIPatientVerified"
+  },
+  {
+    "id" : "ee-mpi-related-person",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-related-person",
+    "version" : "0.2.0",
+    "name" : "MPIRelatedPerson"
+  },
+  {
+    "id" : "ee-mpi-socialhistory-disability",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-disability",
+    "version" : "0.2.0",
+    "name" : "EEMPISocialHistoryDisability"
+  },
+  {
+    "id" : "ee-mpi-socialhistory-education-level",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-education-level",
+    "version" : "0.2.0",
+    "name" : "EEMPISocialHistoryEducationLevel"
+  },
+  {
+    "id" : "ee-mpi-socialhistory-legal-guardian-status",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status",
+    "version" : "0.2.0",
+    "name" : "EEMPISocialHistoryLegalGuardianStatus"
+  },
+  {
+    "id" : "ee-mpi-socialhistory-legal-status",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-status",
+    "version" : "0.2.0",
+    "name" : "EEMPISocialHistoryLegalStatus"
+  },
+  {
+    "id" : "ee-mpi-socialhistory-marital-status",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-marital-status",
+    "version" : "0.2.0",
+    "name" : "EEMPISocialHistoryMaritalStatus"
+  },
+  {
+    "id" : "ee-mpi-socialhistory-occupation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-occupation",
+    "version" : "0.2.0",
+    "name" : "EEMPISocialHistoryOccupation"
+  },
+  {
+    "id" : "ee-mpi-socialhistory-power-of-attorney",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney",
+    "version" : "0.2.0",
+    "name" : "EEMPISocialHistoryPowerOfAttorney"
+  },
+  {
+    "id" : "disability-level",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/disability-level",
+    "version" : "0.2.0",
+    "name" : "EEMPIDisabilityLevel"
+  },
+  {
+    "id" : "education-level",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/education-level",
+    "version" : "0.2.0",
+    "name" : "EEMPIEducationLevel"
+  },
+  {
+    "id" : "ee-mpi-person-relationship",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-mpi-person-relationship",
+    "version" : "0.2.0",
+    "name" : "EEMPIPersonRelationship"
+  },
+  {
+    "id" : "ee-mpi-person-relationship-class",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/ee-mpi-person-relationship-class",
+    "version" : "0.2.0",
+    "name" : "EEMPIPersonRelationshipClass"
+  },
+  {
+    "id" : "guardian-status",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/guardian-status",
+    "version" : "0.2.0",
+    "name" : "EEMPIGuardianStatus"
+  },
+  {
+    "id" : "job-type",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/job-type",
+    "version" : "0.2.0",
+    "name" : "EEMPIJobType"
+  },
+  {
+    "id" : "legal-status",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/legal-status",
+    "version" : "0.2.0",
+    "name" : "EEMPILegalStatus"
+  },
+  {
+    "id" : "power-of-attorney",
+    "type" : "ValueSet",
+    "url" : "https://fhir.ee/ValueSet/power-of-attorney",
+    "version" : "0.2.0",
+    "name" : "EEMPIPowerOfAttorney"
+  }
+]
