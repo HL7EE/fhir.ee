@@ -1,0 +1,72 @@
+{
+  "resourceType" : "Observation",
+  "id" : "BloodPressure",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"BloodPressure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;BloodPressure&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-observation.html\">EEBase Observation</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Blood Pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#75367002)</span></p><p><b>subject</b>: <a href=\"Patient-pat1.html\">Patient/pat1</a> &quot; METS&quot;</p><p><b>effective</b>: 2021-11-23</p><p><b>performer</b>: <a href=\"Organization-rh.html\">Organization/rh</a> &quot;Rakvere Haigla&quot;</p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic Blood Pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#271649006)</span></p><p><b>value</b>: 120 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic Blood Pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#271650006)</span></p><p><b>value</b>: 80 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Body position for blood pressure measurement <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#424724000)</span></p><p><b>value</b>: Sitting position <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#33586001)</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "75367002",
+      "display" : "Blood Pressure"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/pat1"
+  },
+  "effectiveDateTime" : "2021-11-23",
+  "performer" : [{
+    "reference" : "Organization/rh"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "271649006",
+        "display" : "Systolic Blood Pressure"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 120,
+      "unit" : "mmHg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "271650006",
+        "display" : "Diastolic Blood Pressure"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 80,
+      "unit" : "mmHg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "424724000",
+        "display" : "Body position for blood pressure measurement"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "33586001",
+        "display" : "Sitting position"
+      }]
+    }
+  }]
+}

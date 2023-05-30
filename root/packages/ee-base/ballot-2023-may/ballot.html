@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.EE.BASE\IG vastuvõtmise protsess - FHIR v5.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7.fhir.ee.template.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Estonian Base Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ballot
+
+
+
+  <img alt="Estonia flag" src="assets/images/est.svg" height="16" title="Estonia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="policy.html">Policy</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">ToC</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+      <li>
+        <a href="download.html">Downloads</a>
+      </li>
+      <li>
+        <a href="ballot.html">IG vastuvõtmise protsess</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R5/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>IG vastuvõtmise protsess</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Estonian Base Implementation Guide - Local Development build (v1.0.0). See the <a href="https://fhir.ee/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>IG vastuvõtmise protsess</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h2 id="ballot-hl7-fhir-ee-base-ja-ee-mpi-juurutusjuhendite-kohta">Ballot HL7® FHIR® EE Base ja EE MPI* juurutusjuhendite kohta.</h2>
+
+<p>Kutsume Teid osalema <strong>HL7® FHIR® <a href="https://fhir.ee/ig/ee-base/ballot-2023-may">EE Base</a> ja <a href="https://fhir.ee/ig/mpi/ballot-2023-may">EE MPI</a> juurutusjuhendite</strong> (LINGID!!) esimeste avaldatavate versioonide tagasisidestamisele. Juurutusjuhend (ingl k. <em>Implementation Guide</em>, IG)  sisaldab põhilisi FHIR-i rakendamise reegleid (eelkõige laiendeid, profiile, identifikaatoreid ja terminoloogiat) Eesti kontekstis. EE Base juurutusjuhend on abstraktne üksus, mis on aluseks teistele (k.a. EE MPI) FHIR-i juurutusjuhenditele. Juurutusjuhend on loodud olema dünaamiline üksus, mida pidevalt täiustatakse ja hooldatakse, tuginedes peamiselt FHIR-i kogukonna tagasisidele ja kasutuskogemusele Eestis ning laiemalt.</p>
+
+<h2 id="mis-on-hl7-ballot">Mis on HL7 Ballot**?</h2>
+
+<p>Hääletamine (tagasisidestamine) ehk <em>Balloting</em> on protsess, mida HL7 kasutab, et võimaldada laiemal kogukonnal kommenteerida HL7 standardeid ja juurutusjuhendeid. Autorid saavad seejärel kommentaarid üle vaadata, tehes vajadusel nende alusel uuendusi juurutusjuhendites. Balloting protsessi kasutatakse laialdase konsensuse tagamiseks järgmise protsessi kaudu:</p>
+
+<ul>
+  <li>Kommentaaride ja ettepanekute tegemiseks on konkreetne periood (ingl k. <em>Ballot Period</em>), mis kestab <strong>29.05-9.06.2023</strong>.</li>
+  <li>Juurutusjuhenditest (EE Base ja EE MPI) luuakse koopia, mis jääb muutumatuks kogu hääletamisperioodi jooksul. Seda koopiat saavad ballotil osalejad tagasisidestada.</li>
+  <li>Igaüks saab juurutusjuhendeid tagasisidestada (ingl k. <em>Ballot Comment</em>), lisades <strong>GitHubi</strong> sissekande (juhised allpool) hoidlasse (ingl k. <em>repository</em>), kus juurutusjuhendit talletatakse.</li>
+  <li>Kõik kommentaarid vaadatakse tehnilise töörühma<em>** poolt läbi. Igal kommentaaril on tulemus (ingl k. *Disposition</em>), mis võib, kuid ei pruugi kaasa tuua muudatusi juurutusjuhendis. Tulemus, sealhulgas tulemuse mis tahes põhjendus, salvestatakse kommentaarina teema juurde, mida igaüks saab vaadata.</li>
+</ul>
+
+<h2 id="kus-asuvad-ee-base-ja-ee-mpi-juurutusjuhendid">Kus asuvad EE Base ja EE MPI juurutusjuhendid?</h2>
+
+<p>Juurutusjuhendi Ballot Versioon EE Base asub <strong><a href="https://fhir.ee/ig/ee-base/ballot-2023-may">siin</a></strong> (link!!) ja Ballot Versioon EE MPI <strong><a href="https://fhir.ee/ig/mpi/ballot-2023-may">siin</a></strong> (link!!). EE Base koosneb kümnest profiilist, EE MPI kaheteistkümnest profiilist, mis on leitavad vahelehel „Artifacts” või „Artefaktid“. Lisaks on juurutusjuhendites kirjeldused ka andmetüüpide (<em>data type</em>), laiendite (<em>extension</em>), loendite (<em>Value Set</em>) ning koodisüsteemide (<em>Code System</em>) kohta.</p>
+
+<h2 id="kuidas-luua-ballot-kommentaare">Kuidas luua Ballot kommentaare?</h2>
+
+<p>Balloti käigus tekkinud kommentaarid salvestatakse Juurutusjuhendi algallikasse, milleks on <strong>siin</strong>(link!!) (EE Base) ja <strong>siin</strong>(link!!) (EE MPI) asuvad GitHubi hoidlad. Balloti raames loodud teemapüstitused (Issue) on GitHubi teisel vahekaardil (link!!).</p>
+<ul>
+  <li>Esiteks vajate GitHubi kontot. Kui teil seda veel pole, minge <a href="https://github.com/">GitHubi</a> ja klõpsake paremas ülanurgas lingil „Sign up“ ja järgige sealt antud juhiseid.</li>
+  <li>Järgmisena sirvige HL7 Estonia ig-ee-base ja ig-ee-mpi teemapüstituste (Issues) lehte</li>
+  <li>Paremal (praeguse teemade loendi kohal) on nupp pealkirjaga „New Issue”. Klõpsake seda ja kuvatakse uue teemapüstituse (issue) loomise aken.</li>
+  <li>Igal teemapüstitusel on pealkiri ja kirjeldus</li>
+  <li>Sisestage kommentaari esitamiseks mõtestatud pealkiri. Näiteks: „EEBase Patient profiilist puudub perekonnanime element“ või „EE MPI Patient unknown seotud Value Set vajab täiendust“.</li>
+  <li>Sisestage kirjelduse väljale ülejäänud üksikasjad. Lisage kommenteeritava elemendi lehe URL. Sisu oleneb kommentaari olemusest – kui kommenteerite teksti, lisage soovitatud tekst ja kus seda peaks rakendama.</li>
+  <li>Soovi korral saate kasutada ka silte (labels), kuid need ei ole kohustuslikud.</li>
+  <li>Saate seadistada ka teavitused, et teid teavitataks igast teie probleemiga seotud tegevusest. Üksikasjad siin.</li>
+  <li>Kommentaaride näiteid:
+    <ul>
+      <li>Soovitatud tekst andmeelemendi definitsiooni selgemaks muutmiseks.</li>
+      <li>Kommentaar laienduse sisu kohta – näiteks lisaelemendid, mis võivad olla kasulikud.</li>
+      <li>Kommentaar laienduse andmetüübi kohta – kas on olemas parem alternatiiv, mida tuleks kasutada?</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Antud Balloti osana võetakse arvesse ainult juurutusjuhendi praeguse sisu kohta tehtud märkusi. Kõik soovitused täiendava sisu (nt laiendused või profiilid) kohta lükatakse edasi kuni järgmise uuenduseni.</p>
+
+<h2 id="mis-saab-balloti-kommentaaridest-pärast-esitamist">Mis saab Balloti kommentaaridest pärast esitamist?</h2>
+
+<p>Igaüks võib teie püstitatud teemapunkti kommenteerida, kuid ainult tehnilisel töörühmal*** on õigus otsustada kommentaari tulemuste üle. Töörühm koguneb peale balloti lõppu ja otsustab balloti raames esitatud tagasiside üle.</p>
+
+<p>Kui teil on antud protsessi kohta küsimusi, võtke meiega ühendust <strong>fhir@tehik.ee</strong> .</p>
+
+<p><br />
+<br /></p>
+
+<p>* EE MPI = Master Patient Index (Patsientide üldandmete teenus)</p>
+
+<p>** hea eestikeelse vaste puudumise tõttu kasutame siin ja edaspidi ingliskeelset sõna ballot</p>
+
+<p>*** tehniline töörühm on moodustatud loodava HL7 Estonia asutajaliikmete poolt esitatud vabatahtlikest</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ee">HL7 Estonia</a>.  Package hl7.fhir.ee.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, May 29, 2023 20:07+0300">2023-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Custom part including Mermaid -->
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    window.onload = () => mermaid.run({nodes: document.querySelectorAll('pre.language-mermaid > code')})
+  </script>
+
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

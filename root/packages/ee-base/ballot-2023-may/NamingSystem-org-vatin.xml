@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="org-vatin"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>https://fhir.ee/NamingSystem/org-vatin</td></tr><tr><td>Version</td><td>1.0.0</td></tr><tr><td>Name</td><td>OrgVATIN</td></tr><tr><td>Title</td><td>VAT identification number</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>VAT identification number.</p>
+</div></td></tr><tr><td>Publisher</td><td>HL7 Estonia</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://fhir.ee/sid/org/vatin</td><td>true</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/NamingSystem/org-vatin"/>
+  <version value="1.0.0"/>
+  <name value="OrgVATIN"/>
+  <title value="VAT identification number"/>
+  <status value="draft"/>
+  <kind value="identifier"/>
+  <date value="2022-11-05T12:40:30.7439354+00:00"/>
+  <publisher value="HL7 Estonia"/>
+  <contact>
+    <name value="HL7 Estonia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ee"/>
+    </telecom>
+  </contact>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+      <code value="TAX"/>
+    </coding>
+  </type>
+  <description value="VAT identification number."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <usage value="Used in resources defining the identifier for a taxable person (business) or non-taxable legal entity that is registered for VAT."/>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://fhir.ee/sid/org/vatin"/>
+    <preferred value="true"/>
+  </uniqueId>
+</NamingSystem>

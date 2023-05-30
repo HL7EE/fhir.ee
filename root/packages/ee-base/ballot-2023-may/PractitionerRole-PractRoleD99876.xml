@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="PractRoleD99876"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-practitioner-role"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="PractRoleD99876"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;PractRoleD99876&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-practitioner-role.html">EEBase PractitionerRole</a></p></div><p><b>active</b>: true</p><p><b>period</b>: 2012-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href="Practitioner-D99876.html">Practitioner/D99876</a> &quot; ARST&quot;</p><p><b>organization</b>: <a href="Organization-rh.html">Organization/rh</a> &quot;Rakvere Haigla&quot;</p><p><b>code</b>: Doctor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-practitioner-role.html">Practitioner role</a>#doctor)</span>, Pediaater <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-ee-occupation.html">Classification of Occupations</a>#22122501)</span></p><p><b>specialty</b>: Pediatric specialty <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#394537008)</span>, Pediatric immunology <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#418535003)</span>, Allergy - specialty <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#408439002)</span>, Pediaatria <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-ee-medre-specialty.html">Medre Specialty</a>#E290)</span>, Pediaatria allergoloogia lisapädevusega <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-ee-medre-specialty.html">Medre Specialty</a>#E670)</span></p></div>
+  </text>
+  <active value="true"/>
+  <period>
+    <start value="2012-01-01"/>
+  </period>
+  <practitioner>
+    <reference value="Practitioner/D99876"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/rh"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/practitioner-role"/>
+      <code value="doctor"/>
+      <display value="Doctor"/>
+    </coding>
+  </code>
+  <code>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/ee-occupation"/>
+      <code value="22122501"/>
+      <display value="Pediaater"/>
+    </coding>
+  </code>
+  <specialty>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394537008"/>
+      <display value="Pediatric specialty"/>
+    </coding>
+  </specialty>
+  <specialty>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="418535003"/>
+      <display value="Pediatric immunology"/>
+    </coding>
+  </specialty>
+  <specialty>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="408439002"/>
+      <display value="Allergy - specialty"/>
+    </coding>
+  </specialty>
+  <specialty>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/ee-medre-specialty"/>
+      <code value="E290"/>
+      <display value="Pediaatria"/>
+    </coding>
+  </specialty>
+  <specialty>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/ee-medre-specialty"/>
+      <code value="E670"/>
+      <display value="Pediaatria allergoloogia lisapädevusega"/>
+    </coding>
+  </specialty>
+</PractitionerRole>

@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ee-identity-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ee-identity-system.html\"><code>https://fhir.ee/CodeSystem/ee-identity-system</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.ee/ValueSet/ee-identity-system",
+  "version" : "1.0.0",
+  "name" : "EEBaseIdentitySystem",
+  "title" : "Identity System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-05-29T20:07:00+03:00",
+  "publisher" : "HL7 Estonia",
+  "contact" : [{
+    "name" : "HL7 Estonia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    }]
+  }],
+  "description" : "All identification systems have ever been used for identification.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.ee/CodeSystem/ee-identity-system"
+    }]
+  }
+}

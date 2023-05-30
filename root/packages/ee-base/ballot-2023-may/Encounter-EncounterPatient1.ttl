@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/Encounter/EncounterPatient1> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EncounterPatient1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-encounter"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EncounterPatient1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EncounterPatient1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-encounter.html\">EEBase Encounter</a></p></div><p><b>Encounter Mode Of Arrival</b>: Ambulance (Details: http://terminology.hl7.org/CodeSystem/v2-0430 code A = 'Ambulance', stated as 'Ambulance')</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html\">ActCode</a>#IMP)</span></p><p><b>subject</b>: <a href=\"Patient-pat1.html\">Patient/pat1</a> &quot; METS&quot;</p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare-eoc1.html\">EpisodeOfCare/eoc1</a></p><p><b>serviceProvider</b>: <a href=\"Organization-rh.html\">Organization/rh</a> &quot;Rakvere Haigla&quot;</p><p><b>actualPeriod</b>: 2023-05-09 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td>*</td><td><span>: Emergency Waiting Room</span></td><td>active</td><td>2023-05-09 19:00:00+0200 --&gt; (ongoing)</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0430"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "A" ] ;
+       fhir:display [ fhir:v "Ambulance" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:class ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IMP" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://fhir.ee/Patient/pat1> ;
+     fhir:reference [ fhir:v "Patient/pat1" ]
+  ] ; # 
+  fhir:episodeOfCare ( [
+     fhir:link <https://fhir.ee/EpisodeOfCare/eoc1> ;
+     fhir:reference [ fhir:v "EpisodeOfCare/eoc1" ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://fhir.ee/Organization/rh> ;
+     fhir:reference [ fhir:v "Organization/rh" ]
+  ] ; # 
+  fhir:actualPeriod [
+     fhir:start [ fhir:v "2023-05-09"^^xsd:date ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:display [ fhir:v "Emergency Waiting Room" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2023-05-09T19:00:00+02:00"^^xsd:dateTime ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

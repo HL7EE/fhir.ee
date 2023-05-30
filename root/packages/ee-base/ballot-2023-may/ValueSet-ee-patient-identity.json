@@ -1,0 +1,46 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ee-patient-identity",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"CodeSystem-ee-identity-system.html\"><code>https://fhir.ee/CodeSystem/ee-identity-system</code></a> where concept  descends from  <a href=\"CodeSystem-ee-identity-system.html#ee-identity-system-https.58.47.47fhir.46ee.47sid.47pid\">https://fhir.ee/sid/pid</a> and status  =  A</li></ul></div>"
+  },
+  "url" : "https://fhir.ee/ValueSet/ee-patient-identity",
+  "version" : "1.0.0",
+  "name" : "EEBasePatientIdentity",
+  "title" : "Person Identity System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-05-29T20:07:00+03:00",
+  "publisher" : "HL7 Estonia",
+  "contact" : [{
+    "name" : "HL7 Estonia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    }]
+  }],
+  "description" : "Identity systems acceptable for patient identification",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.ee/CodeSystem/ee-identity-system",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "https://fhir.ee/sid/pid"
+      },
+      {
+        "property" : "status",
+        "op" : "=",
+        "value" : "A"
+      }]
+    }]
+  }
+}

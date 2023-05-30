@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ee-ads",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ee-ads.html\"><code>https://fhir.ee/CodeSystem/ee-ads</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.ee/ValueSet/ee-ads",
+  "version" : "1.0.0",
+  "name" : "EEBaseADS",
+  "title" : "ADS",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-29T20:07:00+03:00",
+  "publisher" : "HL7 Estonia",
+  "contact" : [{
+    "name" : "HL7 Estonia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    }]
+  }],
+  "description" : "Estonian Address Data System.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.ee/CodeSystem/ee-ads"
+    }]
+  }
+}

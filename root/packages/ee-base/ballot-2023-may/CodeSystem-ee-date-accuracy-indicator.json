@@ -1,0 +1,142 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ee-date-accuracy-indicator",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://fhir.ee/CodeSystem/ee-date-accuracy-indicator</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AAA<a name=\"ee-date-accuracy-indicator-AAA\"> </a></td><td>Day, month and year are accurate</td></tr><tr><td style=\"white-space:nowrap\">AAE<a name=\"ee-date-accuracy-indicator-AAE\"> </a></td><td>Day and month are accurate, year is estimated</td></tr><tr><td style=\"white-space:nowrap\">AAU<a name=\"ee-date-accuracy-indicator-AAU\"> </a></td><td>Day and month are accurate, year is unknown</td></tr><tr><td style=\"white-space:nowrap\">AEA<a name=\"ee-date-accuracy-indicator-AEA\"> </a></td><td>Day is accurate, month is estimated, year is accurate</td></tr><tr><td style=\"white-space:nowrap\">AEE<a name=\"ee-date-accuracy-indicator-AEE\"> </a></td><td>Day is accurate, month and year are estimated</td></tr><tr><td style=\"white-space:nowrap\">AEU<a name=\"ee-date-accuracy-indicator-AEU\"> </a></td><td>Day is accurate, month is estimated, year is unknown</td></tr><tr><td style=\"white-space:nowrap\">AUA<a name=\"ee-date-accuracy-indicator-AUA\"> </a></td><td>Day is accurate, month is unknown, year is accurate</td></tr><tr><td style=\"white-space:nowrap\">AUE<a name=\"ee-date-accuracy-indicator-AUE\"> </a></td><td>Day is accurate, month is unknown, year is estimated</td></tr><tr><td style=\"white-space:nowrap\">AUU<a name=\"ee-date-accuracy-indicator-AUU\"> </a></td><td>Day is accurate, month and year are unknown</td></tr><tr><td style=\"white-space:nowrap\">EAA<a name=\"ee-date-accuracy-indicator-EAA\"> </a></td><td>Day is estimated, month and year are accurate</td></tr><tr><td style=\"white-space:nowrap\">EAE<a name=\"ee-date-accuracy-indicator-EAE\"> </a></td><td>Day is estimated, month is accurate, year is estimated</td></tr><tr><td style=\"white-space:nowrap\">EAU<a name=\"ee-date-accuracy-indicator-EAU\"> </a></td><td>Day is estimated, month is accurate, year is unknown</td></tr><tr><td style=\"white-space:nowrap\">EEA<a name=\"ee-date-accuracy-indicator-EEA\"> </a></td><td>Day and month are estimated, year is accurate</td></tr><tr><td style=\"white-space:nowrap\">EEE<a name=\"ee-date-accuracy-indicator-EEE\"> </a></td><td>Day, month and year are estimated</td></tr><tr><td style=\"white-space:nowrap\">EEU<a name=\"ee-date-accuracy-indicator-EEU\"> </a></td><td>Day and month are estimated, year is unknown</td></tr><tr><td style=\"white-space:nowrap\">EUA<a name=\"ee-date-accuracy-indicator-EUA\"> </a></td><td>Day is estimated, month is unknown, year is accurate</td></tr><tr><td style=\"white-space:nowrap\">EUE<a name=\"ee-date-accuracy-indicator-EUE\"> </a></td><td>Day is estimated, month is unknown, year is estimated</td></tr><tr><td style=\"white-space:nowrap\">EUU<a name=\"ee-date-accuracy-indicator-EUU\"> </a></td><td>Day is estimated, month and year are unknown</td></tr><tr><td style=\"white-space:nowrap\">UAA<a name=\"ee-date-accuracy-indicator-UAA\"> </a></td><td>Day is unknown, month and year are accurate</td></tr><tr><td style=\"white-space:nowrap\">UAE<a name=\"ee-date-accuracy-indicator-UAE\"> </a></td><td>Day is unknown, month is accurate, year is estimated</td></tr><tr><td style=\"white-space:nowrap\">UAU<a name=\"ee-date-accuracy-indicator-UAU\"> </a></td><td>Day is unknown, month is accurate, year is unknown</td></tr><tr><td style=\"white-space:nowrap\">UEA<a name=\"ee-date-accuracy-indicator-UEA\"> </a></td><td>Day is unknown, month is estimated, year is accurate</td></tr><tr><td style=\"white-space:nowrap\">UEE<a name=\"ee-date-accuracy-indicator-UEE\"> </a></td><td>Day is unknown, month and year are estimated</td></tr><tr><td style=\"white-space:nowrap\">UEU<a name=\"ee-date-accuracy-indicator-UEU\"> </a></td><td>Day is unknown, month is estimated, year is unknown</td></tr><tr><td style=\"white-space:nowrap\">UUA<a name=\"ee-date-accuracy-indicator-UUA\"> </a></td><td>Day and month are unknown, year is accurate</td></tr><tr><td style=\"white-space:nowrap\">UUE<a name=\"ee-date-accuracy-indicator-UUE\"> </a></td><td>Day and month are unknown, year is estimated</td></tr><tr><td style=\"white-space:nowrap\">UUU<a name=\"ee-date-accuracy-indicator-UUU\"> </a></td><td>Day, month and year are unknown</td></tr></table></div>"
+  },
+  "url" : "https://fhir.ee/CodeSystem/ee-date-accuracy-indicator",
+  "version" : "1.0.0",
+  "name" : "EEBaseDateAccuracyIndicator",
+  "title" : "Date Accuracy Indicator",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2023-05-29T20:07:00+03:00",
+  "publisher" : "HL7 Estonia",
+  "contact" : [{
+    "name" : "HL7 Estonia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    }]
+  }],
+  "description" : "The Date Accuracy Indicator code system defines concepts that indicate the accuracy of components of a reported date. The concepts defined in this code system are equivalent to those defined in the METeOR value domains for Date—accuracy indicator, code AAA (http://meteor.aihw.gov.au/content/index.phtml/itemId/294429).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 27,
+  "concept" : [{
+    "code" : "AAA",
+    "display" : "Day, month and year are accurate"
+  },
+  {
+    "code" : "AAE",
+    "display" : "Day and month are accurate, year is estimated"
+  },
+  {
+    "code" : "AAU",
+    "display" : "Day and month are accurate, year is unknown"
+  },
+  {
+    "code" : "AEA",
+    "display" : "Day is accurate, month is estimated, year is accurate"
+  },
+  {
+    "code" : "AEE",
+    "display" : "Day is accurate, month and year are estimated"
+  },
+  {
+    "code" : "AEU",
+    "display" : "Day is accurate, month is estimated, year is unknown"
+  },
+  {
+    "code" : "AUA",
+    "display" : "Day is accurate, month is unknown, year is accurate"
+  },
+  {
+    "code" : "AUE",
+    "display" : "Day is accurate, month is unknown, year is estimated"
+  },
+  {
+    "code" : "AUU",
+    "display" : "Day is accurate, month and year are unknown"
+  },
+  {
+    "code" : "EAA",
+    "display" : "Day is estimated, month and year are accurate"
+  },
+  {
+    "code" : "EAE",
+    "display" : "Day is estimated, month is accurate, year is estimated"
+  },
+  {
+    "code" : "EAU",
+    "display" : "Day is estimated, month is accurate, year is unknown"
+  },
+  {
+    "code" : "EEA",
+    "display" : "Day and month are estimated, year is accurate"
+  },
+  {
+    "code" : "EEE",
+    "display" : "Day, month and year are estimated"
+  },
+  {
+    "code" : "EEU",
+    "display" : "Day and month are estimated, year is unknown"
+  },
+  {
+    "code" : "EUA",
+    "display" : "Day is estimated, month is unknown, year is accurate"
+  },
+  {
+    "code" : "EUE",
+    "display" : "Day is estimated, month is unknown, year is estimated"
+  },
+  {
+    "code" : "EUU",
+    "display" : "Day is estimated, month and year are unknown"
+  },
+  {
+    "code" : "UAA",
+    "display" : "Day is unknown, month and year are accurate"
+  },
+  {
+    "code" : "UAE",
+    "display" : "Day is unknown, month is accurate, year is estimated"
+  },
+  {
+    "code" : "UAU",
+    "display" : "Day is unknown, month is accurate, year is unknown"
+  },
+  {
+    "code" : "UEA",
+    "display" : "Day is unknown, month is estimated, year is accurate"
+  },
+  {
+    "code" : "UEE",
+    "display" : "Day is unknown, month and year are estimated"
+  },
+  {
+    "code" : "UEU",
+    "display" : "Day is unknown, month is estimated, year is unknown"
+  },
+  {
+    "code" : "UUA",
+    "display" : "Day and month are unknown, year is accurate"
+  },
+  {
+    "code" : "UUE",
+    "display" : "Day and month are unknown, year is estimated"
+  },
+  {
+    "code" : "UUU",
+    "display" : "Day, month and year are unknown"
+  }]
+}

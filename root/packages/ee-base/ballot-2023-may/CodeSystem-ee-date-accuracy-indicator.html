@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.EE.BASE\Date Accuracy Indicator - FHIR v5.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7.fhir.ee.template.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6.37"}
+    h3,h4,h5,h6{--heading-prefix:"6.37"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Estonian Base Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ballot
+
+
+
+  <img alt="Estonia flag" src="assets/images/est.svg" height="16" title="Estonia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="policy.html">Policy</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">ToC</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+      <li>
+        <a href="download.html">Downloads</a>
+      </li>
+      <li>
+        <a href="ballot.html">IG vastuvõtmise protsess</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R5/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Date Accuracy Indicator</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Estonian Base Implementation Guide - Local Development build (v1.0.0). See the <a href="https://fhir.ee/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-ee-date-accuracy-indicator.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ee-date-accuracy-indicator.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-ee-date-accuracy-indicator.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Date Accuracy Indicator
+(Experimental)
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir.ee/CodeSystem/ee-date-accuracy-indicator<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir.ee/CodeSystem/ee-date-accuracy-indicator"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir.ee/CodeSystem/ee-date-accuracy-indicator|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-05-29
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">EEBaseDateAccuracyIndicator</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>The Date Accuracy Indicator code system defines concepts that indicate the accuracy of components of a reported date. The concepts defined in this code system are equivalent to those defined in the METeOR value domains for Date—accuracy indicator, code AAA (http://meteor.aihw.gov.au/content/index.phtml/itemId/294429).</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<h3 id="guide-for-use">Guide for use</h3>
+<p>Any combination of the values A, E, U representing the corresponding level of accuracy of each date component of the reported date.</p>
+
+<p>This data element consists of a combination of three codes, each of which denotes the accuracy of one date component:</p>
+
+<ul>
+  <li>A – the referred date component is accurate</li>
+  <li>E – the referred date component is not known but is estimated</li>
+  <li>U – the referred date component is not known and not estimated.</li>
+</ul>
+
+<p>This data element contains positional fields (DMY) that reflects the order of the date components in the format (DDMMYYYY) of the reported date:</p>
+<ul>
+  <li>Field 1 (D) – refers to the accuracy of the day component;</li>
+  <li>Field 2 (M) – refers to the accuracy of the month component;</li>
+  <li>Field 3 (Y) – refers to the accuracy of the year component.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data domain</th>
+      <th>Date component (for a format DDMMYYYY)</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>(D)ay</td>
+      <td>(M)onth</td>
+      <td>(Y)ear</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>Accurate</td>
+      <td>A</td>
+      <td>A</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Estimated</td>
+      <td>E</td>
+      <td>E</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example 1: If a date has been sourced from a reliable source and is known as accurate then the Date accuracy indicator should be informed as (AAA).</p>
+
+<p>Example 2: If only the age of the person is known and there is no certainty of the accuracy of this, then the Date accuracy indicator should be informed as (UUE). That is the day and month are “unknown” and the year is “estimated”.</p>
+
+<p>Example 3: If a person was brought in unconscious to an emergency department of a hospital and the only information available was from a relative who was certain of the age and the birthday’s ‘month’ then the Date accuracy indicator should be informed as (UAA). A year derived from an accurate month and accurate age is always an accurate year.</p>
+
+<p>Copyright: <a href="https://meteor.aihw.gov.au/content/294429">METEOR Metadata Online Registry</a></p>
+
+</div>
+
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-ee-date-accuracy-indicator.html">EEBaseDateAccuracyIndicator</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://fhir.ee/CodeSystem/ee-date-accuracy-indicator</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">AAA<a name="ee-date-accuracy-indicator-AAA"> </a></td><td>Day, month and year are accurate</td></tr><tr><td style="white-space:nowrap">AAE<a name="ee-date-accuracy-indicator-AAE"> </a></td><td>Day and month are accurate, year is estimated</td></tr><tr><td style="white-space:nowrap">AAU<a name="ee-date-accuracy-indicator-AAU"> </a></td><td>Day and month are accurate, year is unknown</td></tr><tr><td style="white-space:nowrap">AEA<a name="ee-date-accuracy-indicator-AEA"> </a></td><td>Day is accurate, month is estimated, year is accurate</td></tr><tr><td style="white-space:nowrap">AEE<a name="ee-date-accuracy-indicator-AEE"> </a></td><td>Day is accurate, month and year are estimated</td></tr><tr><td style="white-space:nowrap">AEU<a name="ee-date-accuracy-indicator-AEU"> </a></td><td>Day is accurate, month is estimated, year is unknown</td></tr><tr><td style="white-space:nowrap">AUA<a name="ee-date-accuracy-indicator-AUA"> </a></td><td>Day is accurate, month is unknown, year is accurate</td></tr><tr><td style="white-space:nowrap">AUE<a name="ee-date-accuracy-indicator-AUE"> </a></td><td>Day is accurate, month is unknown, year is estimated</td></tr><tr><td style="white-space:nowrap">AUU<a name="ee-date-accuracy-indicator-AUU"> </a></td><td>Day is accurate, month and year are unknown</td></tr><tr><td style="white-space:nowrap">EAA<a name="ee-date-accuracy-indicator-EAA"> </a></td><td>Day is estimated, month and year are accurate</td></tr><tr><td style="white-space:nowrap">EAE<a name="ee-date-accuracy-indicator-EAE"> </a></td><td>Day is estimated, month is accurate, year is estimated</td></tr><tr><td style="white-space:nowrap">EAU<a name="ee-date-accuracy-indicator-EAU"> </a></td><td>Day is estimated, month is accurate, year is unknown</td></tr><tr><td style="white-space:nowrap">EEA<a name="ee-date-accuracy-indicator-EEA"> </a></td><td>Day and month are estimated, year is accurate</td></tr><tr><td style="white-space:nowrap">EEE<a name="ee-date-accuracy-indicator-EEE"> </a></td><td>Day, month and year are estimated</td></tr><tr><td style="white-space:nowrap">EEU<a name="ee-date-accuracy-indicator-EEU"> </a></td><td>Day and month are estimated, year is unknown</td></tr><tr><td style="white-space:nowrap">EUA<a name="ee-date-accuracy-indicator-EUA"> </a></td><td>Day is estimated, month is unknown, year is accurate</td></tr><tr><td style="white-space:nowrap">EUE<a name="ee-date-accuracy-indicator-EUE"> </a></td><td>Day is estimated, month is unknown, year is estimated</td></tr><tr><td style="white-space:nowrap">EUU<a name="ee-date-accuracy-indicator-EUU"> </a></td><td>Day is estimated, month and year are unknown</td></tr><tr><td style="white-space:nowrap">UAA<a name="ee-date-accuracy-indicator-UAA"> </a></td><td>Day is unknown, month and year are accurate</td></tr><tr><td style="white-space:nowrap">UAE<a name="ee-date-accuracy-indicator-UAE"> </a></td><td>Day is unknown, month is accurate, year is estimated</td></tr><tr><td style="white-space:nowrap">UAU<a name="ee-date-accuracy-indicator-UAU"> </a></td><td>Day is unknown, month is accurate, year is unknown</td></tr><tr><td style="white-space:nowrap">UEA<a name="ee-date-accuracy-indicator-UEA"> </a></td><td>Day is unknown, month is estimated, year is accurate</td></tr><tr><td style="white-space:nowrap">UEE<a name="ee-date-accuracy-indicator-UEE"> </a></td><td>Day is unknown, month and year are estimated</td></tr><tr><td style="white-space:nowrap">UEU<a name="ee-date-accuracy-indicator-UEU"> </a></td><td>Day is unknown, month is estimated, year is unknown</td></tr><tr><td style="white-space:nowrap">UUA<a name="ee-date-accuracy-indicator-UUA"> </a></td><td>Day and month are unknown, year is accurate</td></tr><tr><td style="white-space:nowrap">UUE<a name="ee-date-accuracy-indicator-UUE"> </a></td><td>Day and month are unknown, year is estimated</td></tr><tr><td style="white-space:nowrap">UUU<a name="ee-date-accuracy-indicator-UUU"> </a></td><td>Day, month and year are unknown</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ee">HL7 Estonia</a>.  Package hl7.fhir.ee.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, May 29, 2023 20:07+0300">2023-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Custom part including Mermaid -->
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    window.onload = () => mermaid.run({nodes: document.querySelectorAll('pre.language-mermaid > code')})
+  </script>
+
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

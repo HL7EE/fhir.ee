@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ee-encounter-class",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Import all the codes that are contained in <a href=\"http://terminology.hl7.org/5.0.0/ValueSet-encounter-class.html\">Encounter class</a></li></ul></div>"
+  },
+  "url" : "https://fhir.ee/ValueSet/ee-encounter-class",
+  "version" : "1.0.0",
+  "name" : "EEBaseEncounterClass",
+  "title" : "Encounter Class",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-05-29T20:07:00+03:00",
+  "publisher" : "HL7 Estonia",
+  "contact" : [{
+    "name" : "HL7 Estonia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    }]
+  }],
+  "description" : "This value set defines a set of codes that can be used to indicate the class of encounter: a specific code indicating class of service provided.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://terminology.hl7.org/ValueSet/encounter-class"]
+    }]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType" : "EpisodeOfCare",
+  "id" : "eoc1",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-episode-of-care"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: EpisodeOfCare</b><a name=\"eoc1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource EpisodeOfCare &quot;eoc1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-episode-of-care.html\">EEBase EpisodeOfCare</a></p></div><p><b>identifier</b>: id:\u00a0123</p><p><b>status</b>: active</p><p><b>patient</b>: <a href=\"Patient-pat1.html\">Patient/pat1</a> &quot; METS&quot;</p><p><b>managingOrganization</b>: <a href=\"Organization-rh.html\">Organization/rh</a> &quot;Rakvere Haigla&quot;</p><p><b>period</b>: 2023-05-09 --&gt; (ongoing)</p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://rh.ee/episodeofcare-identifier",
+    "value" : "123"
+  }],
+  "status" : "active",
+  "patient" : {
+    "reference" : "Patient/pat1"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/rh"
+  },
+  "period" : {
+    "start" : "2023-05-09"
+  }
+}

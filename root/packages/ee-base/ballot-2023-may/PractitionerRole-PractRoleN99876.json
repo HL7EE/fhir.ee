@@ -1,0 +1,49 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "PractRoleN99876",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-practitioner-role"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"PractRoleN99876\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;PractRoleN99876&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-practitioner-role.html\">EEBase PractitionerRole</a></p></div><p><b>active</b>: true</p><p><b>period</b>: 2012-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <a href=\"Practitioner-N99876.html\">Practitioner/N99876</a> &quot; ÕDE&quot;</p><p><b>organization</b>: <a href=\"Organization-rh.html\">Organization/rh</a> &quot;Rakvere Haigla&quot;</p><p><b>code</b>: Nurse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-practitioner-role.html\">Practitioner role</a>#nurse)</span>, Õde <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ee-occupation.html\">Classification of Occupations</a>#22210502)</span></p><p><b>specialty</b>: Emergency medicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#773568002)</span>, Intensiivõendus <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ee-medre-specialty.html\">Medre Specialty</a>#N100)</span></p></div>"
+  },
+  "active" : true,
+  "period" : {
+    "start" : "2012-01-01"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/N99876"
+  },
+  "organization" : {
+    "reference" : "Organization/rh"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "code" : "nurse",
+      "display" : "Nurse"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/ee-occupation",
+      "code" : "22210502",
+      "display" : "Õde"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "773568002",
+      "display" : "Emergency medicine"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://fhir.ee/CodeSystem/ee-medre-specialty",
+      "code" : "N100",
+      "display" : "Intensiivõendus"
+    }]
+  }]
+}

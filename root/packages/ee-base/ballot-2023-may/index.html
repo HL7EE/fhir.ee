@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.EE.BASE\Home - FHIR v5.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7.fhir.ee.template.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Estonian Base Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ballot
+
+
+
+  <img alt="Estonia flag" src="assets/images/est.svg" height="16" title="Estonia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="policy.html">Policy</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">ToC</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+      <li>
+        <a href="download.html">Downloads</a>
+      </li>
+      <li>
+        <a href="ballot.html">IG vastuvõtmise protsess</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R5/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Estonian Base Implementation Guide - Local Development build (v1.0.0). See the <a href="https://fhir.ee/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-05-29
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">EEBase</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#audience" id="markdown-toc-audience">Audience</a></li>
+  <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+</ul>
+
+</div>
+<div class="alert alert-warning">
+
+<b>Please note:</b>
+<br />
+<ul>
+     <li>Some of the URLs might not be resolvable yet, there may be a few broken links.</li>
+     <li>Some of the CodeSystems and ValueSets are still in development.</li>
+     <li>There is no working FHIR reference server yet.</li>
+     <li>Official contacts and the list of contributors/reviewers will be added in the near future. Until then the main contact point for inquiries is <b>fhir@tehik.ee</b>.</li>
+</ul> 
+
+</div>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>The EEBase Implementation Guide covers a set of national base profiles, terminology components and guiding principles based on <a href="http://hl7.org/fhir/R5/index.html">FHIR®© version R5</a>. The switch from document-based data exchange to a more granular one will be realized as a transitional process. The development of this Implementation Guide should be considered the first step in helping event-based health data exchange to become a real-life scenario in Estonia.</p>
+
+<p>This guide serves the purpose of simplifying the process of implementing FHIR and thus increasing interoperability and clinical data quality in the Estonian context by including the following components:</p>
+<ul>
+  <li>FHIR resources tailored for local use, e.g. <strong>base profiles</strong>, whereas conformance requirements, must support flags and binding strengths have been held to as minimum as possible to support <a href="https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_Profiling_Guidelines_R4#Open_vs._closed_world_modeling">open-world modeling</a>;</li>
+  <li>Ready-to-use <strong>CodeSystems</strong> and <strong>ValueSets</strong> developed for Estonian healthcare data exchange specifically.</li>
+</ul>
+
+<p>The conformance and terminology resources in EEBase are in English due to FHIR being an international standard. The only exceptions are some of the CodeSystems and ValueSets, where displays and descriptions are in Estonian.</p>
+
+<p>Even though the initial draft of the EEBase Implementation Guide was developed in March 2022 - May 2023 as part of project “Estonian National Health Information System support for event-based data exchange”, it should be regarded as the intellectual property of a community of contributors and reviewers who have provided valuable input during the validation process of this guide.</p>
+
+<h3 id="audience">Audience</h3>
+<p>This document aims to provide standardized clinical data components and instructional materials to both implementation guide author communities and vendor communities. Users of this guide are expected to be familiar with FHIR, at least to some degree, to find additional information from the <a href="http://hl7.org/fhir/">official specification page</a> if needed. Implementation of, testing and offering feedback on this specification is highly encouraged. Readers of this guide are welcome to find the appropriate e-mail address on the <a href="contact.html">Contact Us</a> page in case of questions, suggestions, information requests, or collaboration offers.</p>
+
+<h3 id="scope">Scope</h3>
+<p>From the perspective of future and current implementers, it is most logical to divide the content of the EEBase Implementation Guide into three parts by the function they serve:</p>
+<ul>
+  <li><strong>FHIR profiles and extensions</strong> suitable for use in the Estonian healthcare domain specifically. Each profile has its dedicated page for details on example use cases, usage instructions and descriptions of data items. For a general overview of all profiles and extensions in this guide, it is suggested to look at the <a href="artifacts.html">Artifacts Summary</a>. According to the “open-world” model it is best to approach changing the cardinalities with caution. This is due to the fact that in derived profiles, cardinalities could be restricted only, but not widened. To make EEBase profiles as flexible as possible, the developers of EEBase followed the principle where most of the cardinalities were left as in the FHIR specification. <strong>Please note that EEBase profiles are intended as a starting point for utilizing the possibilities offered by FHIR for specific use cases, projects and/or services. The profiles provided should not be considered suitable for the basis for a completely described deployable service in and of itself but must be used as a base profile to derive additional profiles from</strong>;</li>
+  <li><strong>CodeSystems and ValueSets</strong> specially developed for EEBase (this means that CodeSystems and ValueSets developed by HL7 are not included in this IG even when bound with data elements in EEBase profiles, as the latest documentation of these artefacts could be found on <a href="http://hl7.org/fhir/terminologies-systems.html">FHIR’s webpage</a>). 
+For maximum interoperability, it is encouraged to use stable identifiers (either a URI or OID) in profiles. For that purpose, the authors of this implementation guide have utilized the <a href="artifacts.html#terminology-naming-systems">NamingSystem</a> resources. For more information on using terminology, see the Profiling Guidelines section on the <a href="artifacts.html">Artifacts Summary</a> page and pages under the Terminology tab;</li>
+  <li><strong>Policy</strong> from general compliance principles to FHIR operations to be followed when implementing FHIR within your jurisdiction. For more information, see the <a href="policy.html">Policy</a> page.</li>
+</ul>
+
+<h4 id="how-to-read-this-guide">How to Read This Guide</h4>
+
+<p>This Guide is divided into several pages, which are listed at the top of each page in the menu bar.</p>
+
+<ul>
+  <li><a href="index.html">Home</a>: The home page provides the introduction and background for EEBase.</li>
+  <li><a href="policy.html">Policy</a>: The Policy page provides the set of rules for FHIR standard developers in Estonia.
+    <ul>
+      <li><a href="policy.html#general">General</a></li>
+      <li><a href="policy.html#conformance">Conformance</a></li>
+      <li><a href="policy.html#profiling">Profiling</a></li>
+      <li><a href="policy.html#versioning">Versioning</a></li>
+      <li><a href="policy.html#naming">Naming</a></li>
+      <li><a href="policy.html#resource-identifiers">Resource identifiers</a></li>
+      <li><a href="policy.html#publishing">Publishing</a></li>
+      <li><a href="policy.html#serialization">Serialization</a></li>
+      <li><a href="policy.html#fhir-operations">FHIR operations</a></li>
+      <li><a href="policy.html#health-services">Health services</a></li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifacts</a>: This page provides a list of the FHIR artifacts defined as part of this implementation guide.
+    <ul>
+      <li>The <a href="artifacts.html#structures-resource-profiles">Profiles</a>, which have been defined for the EEBase:
+        <ul>
+          <li><a href="StructureDefinition-ee-encounter.html">EEBaseEncounter</a></li>
+          <li><a href="StructureDefinition-ee-episode-of-care.html">EEBaseEpisodeOfCare</a></li>
+          <li><a href="StructureDefinition-ee-healthcare-service.html">EEBaseHealthcareService</a></li>
+          <li><a href="StructureDefinition-ee-location.html">EEBaseLocation</a></li>
+          <li><a href="StructureDefinition-ee-observation.html">EEBaseObservation</a></li>
+          <li><a href="StructureDefinition-ee-organization.html">EEBaseOrganization</a></li>
+          <li><a href="StructureDefinition-ee-patient.html">EEBasePatient</a></li>
+          <li><a href="StructureDefinition-ee-practitioner.html">EEBasePractitioner</a></li>
+          <li><a href="StructureDefinition-ee-practitioner-role.html">EEBasePractitionerRole</a></li>
+          <li><a href="StructureDefinition-ee-related-person.html">EEBaseRelatedPerson</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="download.html">Download</a>: List of downloads available.</li>
+  <li><a href="contact.html">Contact Us</a>: How to Contact the key parties associated with this implementation guide.</li>
+</ul>
+
+<!--button onclick="topFunction()" id="topButton" title="Back to top">top</button-->
+
+<!-- <div class="alert alert-warning">
+
+* Licensing and Publisher *
+
+Copyright © 2022+ HL7 Estonia Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at https://www.hl7.org/fhir/license.html.
+
+Developed and authored by HL7 Estonia Base Development Team and published by HL7 Estonia.
+
+</div> -->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ee">HL7 Estonia</a>.  Package hl7.fhir.ee.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, May 29, 2023 20:07+0300">2023-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Custom part including Mermaid -->
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    window.onload = () => mermaid.run({nodes: document.querySelectorAll('pre.language-mermaid > code')})
+  </script>
+
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

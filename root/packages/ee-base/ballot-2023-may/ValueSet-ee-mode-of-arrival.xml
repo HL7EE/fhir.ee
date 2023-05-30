@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ee-mode-of-arrival"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0430.html"><code>http://terminology.hl7.org/CodeSystem/v2-0430</code></a></li><li>Include all codes defined in <a href="CodeSystem-ee-mode-of-arrival.html"><code>https://fhir.ee/CodeSystem/ee-mode-of-arrival</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.ee/ValueSet/ee-mode-of-arrival"/>
+  <version value="1.0.0"/>
+  <name value="EEBaseModeOfArrival"/>
+  <title value="Mode Of Arrival"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-05-29T20:07:00+03:00"/>
+  <publisher value="HL7 Estonia"/>
+  <contact>
+    <name value="HL7 Estonia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ee"/>
+    </telecom>
+  </contact>
+  <description value="Mode Of Arrival"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from HL7 Terminology, which is copyright © 2002+ HL7"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0430"/>
+    </include>
+    <include>
+      <system value="https://fhir.ee/CodeSystem/ee-mode-of-arrival"/>
+    </include>
+  </compose>
+</ValueSet>

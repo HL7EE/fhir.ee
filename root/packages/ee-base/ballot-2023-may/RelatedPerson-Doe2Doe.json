@@ -1,0 +1,33 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "Doe2Doe",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-related-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"Doe2Doe\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;Doe2Doe&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-related-person.html\">EEBase RelatedPerson</a></p></div><p><b>patient</b>: <a href=\"Patient-pat2.html\">Patient/pat2</a> &quot; DOE&quot;</p><p><b>relationship</b>: Next of kin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleClass.html\">RoleClass</a>#NOK)</span>, Wife <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#127850001)</span></p><p><b>name</b>: Jane Doe </p><p><b>gender</b>: female</p></div>"
+  },
+  "patient" : {
+    "reference" : "Patient/pat2"
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+      "code" : "NOK",
+      "display" : "Next of kin"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "127850001",
+      "display" : "Wife"
+    }]
+  }],
+  "name" : [{
+    "family" : "Doe",
+    "given" : ["Jane"]
+  }],
+  "gender" : "female"
+}

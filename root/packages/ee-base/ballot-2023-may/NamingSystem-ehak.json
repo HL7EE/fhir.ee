@@ -1,0 +1,42 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "ehak",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://fhir.ee/NamingSystem/ehak</td></tr><tr><td>Version</td><td>1.0.0</td></tr><tr><td>Name</td><td>EHAK</td></tr><tr><td>Title</td><td>Estonian Administrative and Settlement Classification</td></tr><tr><td>Status</td><td>draft</td></tr><tr><td>Definition</td><td><div><p>The national code system of Estonian administrative and settlement data. EHAK.</p>\n</div></td></tr><tr><td>Publisher</td><td>HL7 Estonia</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://fhir.ee/sid/ehak</td><td>true</td></tr><tr><td>OID</td><td>1.3.6.1.4.1.28284.6.2.3.2</td><td>false</td></tr></table></div>"
+  },
+  "url" : "https://fhir.ee/NamingSystem/ehak",
+  "version" : "1.0.0",
+  "name" : "EHAK",
+  "title" : "Estonian Administrative and Settlement Classification",
+  "status" : "draft",
+  "kind" : "codesystem",
+  "date" : "2022-11-05T11:45:29.0437162+00:00",
+  "publisher" : "HL7 Estonia",
+  "contact" : [{
+    "name" : "HL7 Estonia",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ee"
+    }]
+  }],
+  "description" : "The national code system of Estonian administrative and settlement data. EHAK.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "usage" : "EHAK extension is used in resources which include the address element.",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "https://fhir.ee/sid/ehak",
+    "preferred" : true
+  },
+  {
+    "type" : "oid",
+    "value" : "1.3.6.1.4.1.28284.6.2.3.2",
+    "preferred" : false
+  }]
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="N99876"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="N99876"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;N99876&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-practitioner.html">EEBase Practitioner</a></p></div><p><b>identifier</b>: id: N99876, id: 38001010015</p><p><b>active</b>: true</p><p><b>name</b>: Kari Õde </p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Registered Nurse <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0360.html">degreeLicenseCertificate</a>#RN)</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.ee/sid/pro/est/pho"/>
+    <value value="N99876"/>
+  </identifier>
+  <identifier>
+    <system value="https://fhir.ee/sid/pid/est/ni"/>
+    <value value="38001010015"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Õde"/>
+    <given value="Kari"/>
+  </name>
+  <qualification>
+    <code>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0360"/>
+        <code value="RN"/>
+        <display value="Registered Nurse"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/ValueSet/ee-organization-identity> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ee-organization-identity"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-ee-identity-system.html\"><code>https://fhir.ee/CodeSystem/ee-identity-system</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-ee-identity-system.html#ee-identity-system-https.58.47.47fhir.46ee.47sid.47org.47est.47fi\">https://fhir.ee/sid/org/est/fi</a></td><td>License number provided by The National Institute for Health Development</td><td>Terviseameti litsentsi number</td></tr><tr><td><a href=\"CodeSystem-ee-identity-system.html#ee-identity-system-https.58.47.47fhir.46ee.47sid.47org.47est.47br\">https://fhir.ee/sid/org/est/br</a></td><td>Estonian Business Register Code</td><td>Äriregistri number</td></tr><tr><td><a href=\"CodeSystem-ee-identity-system.html#ee-identity-system-https.58.47.47fhir.46ee.47sid.47org.47vatin\">https://fhir.ee/sid/org/vatin</a></td><td>VAT identification number</td><td>KMKR</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/ValueSet/ee-organization-identity"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEBaseOrganizationIdentity"] ; # 
+  fhir:title [ fhir:v "Organization Identity System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-05-29T20:07:00+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Estonia"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Estonia" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Identity systems acceptable for organization identification"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://fhir.ee/CodeSystem/ee-identity-system"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "https://fhir.ee/sid/org/est/fi" ]
+       ] [
+         fhir:code [ fhir:v "https://fhir.ee/sid/org/est/br" ]
+       ] [
+         fhir:code [ fhir:v "https://fhir.ee/sid/org/vatin" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/RelatedPerson/Doe2Doe> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Doe2Doe"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-related-person"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-related-person>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"Doe2Doe\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;Doe2Doe&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-related-person.html\">EEBase RelatedPerson</a></p></div><p><b>patient</b>: <a href=\"Patient-pat2.html\">Patient/pat2</a> &quot; DOE&quot;</p><p><b>relationship</b>: Next of kin <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleClass.html\">RoleClass</a>#NOK)</span>, Wife <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#127850001)</span></p><p><b>name</b>: Jane Doe </p><p><b>gender</b>: female</p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://fhir.ee/Patient/pat2> ;
+     fhir:reference [ fhir:v "Patient/pat2" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NOK" ] ;
+       fhir:display [ fhir:v "Next of kin" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a sct:127850001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "127850001" ] ;
+       fhir:display [ fhir:v "Wife" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Doe" ] ;
+     fhir:given ( [ fhir:v "Jane" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] . # 
+
+# -------------------------------------------------------------------------------------
+

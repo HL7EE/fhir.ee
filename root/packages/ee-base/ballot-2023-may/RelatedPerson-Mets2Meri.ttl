@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/RelatedPerson/Mets2Meri> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Mets2Meri"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-related-person"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-related-person>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"Mets2Meri\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;Mets2Meri&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-related-person.html\">EEBase RelatedPerson</a></p></div><p><b>patient</b>: <a href=\"Patient-pat1.html\">Patient/pat1</a> &quot; METS&quot;</p><p><b>relationship</b>: emergency contact <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-RoleClass.html\">RoleClass</a>#ECON)</span>, Friend <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#113163005)</span></p><p><b>name</b>: Mari Meri</p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://fhir.ee/Patient/pat1> ;
+     fhir:reference [ fhir:v "Patient/pat1" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ECON" ] ;
+       fhir:display [ fhir:v "emergency contact" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a sct:113163005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "113163005" ] ;
+       fhir:display [ fhir:v "Friend" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Mari Meri" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

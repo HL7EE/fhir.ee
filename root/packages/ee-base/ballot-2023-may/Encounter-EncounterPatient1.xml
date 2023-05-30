@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="EncounterPatient1"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-encounter"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="EncounterPatient1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;EncounterPatient1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-encounter.html">EEBase Encounter</a></p></div><p><b>Encounter Mode Of Arrival</b>: Ambulance (Details: http://terminology.hl7.org/CodeSystem/v2-0430 code A = 'Ambulance', stated as 'Ambulance')</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html">ActCode</a>#IMP)</span></p><p><b>subject</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; METS&quot;</p><p><b>episodeOfCare</b>: <a href="EpisodeOfCare-eoc1.html">EpisodeOfCare/eoc1</a></p><p><b>serviceProvider</b>: <a href="Organization-rh.html">Organization/rh</a> &quot;Rakvere Haigla&quot;</p><p><b>actualPeriod</b>: 2023-05-09 --&gt; (ongoing)</p><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td>*</td><td><span>: Emergency Waiting Room</span></td><td>active</td><td>2023-05-09 19:00:00+0200 --&gt; (ongoing)</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival">
+    <valueCoding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0430"/>
+      <code value="A"/>
+      <display value="Ambulance"/>
+    </valueCoding>
+  </extension>
+  <status value="in-progress"/>
+  <class>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="IMP"/>
+    </coding>
+  </class>
+  <subject>
+    <reference value="Patient/pat1"/>
+  </subject>
+  <episodeOfCare>
+    <reference value="EpisodeOfCare/eoc1"/>
+  </episodeOfCare>
+  <serviceProvider>
+    <reference value="Organization/rh"/>
+  </serviceProvider>
+  <actualPeriod>
+    <start value="2023-05-09"/>
+  </actualPeriod>
+  <location>
+    <location>
+      <display value="Emergency Waiting Room"/>
+    </location>
+    <status value="active"/>
+    <period>
+      <start value="2023-05-09T19:00:00+02:00"/>
+    </period>
+  </location>
+</Encounter>

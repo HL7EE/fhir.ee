@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/HealthcareService/HealthcareServiceExample> a fhir:HealthcareService ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HealthcareServiceExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-healthcare-service"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-healthcare-service>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: HealthcareService</b><a name=\"HealthcareServiceExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource HealthcareService &quot;HealthcareServiceExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-healthcare-service.html\">EEBase HealthcareService</a></p></div><p><b>identifier</b>: id: HS-12</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-rh.html\">Organization/rh: Rakvere Haigla</a> &quot;Rakvere Haigla&quot;</p><p><b>category</b>: Counselling <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#409063005 &quot;Counseling&quot;)</span></p><p><b>type</b>: Psychotherapy (specialty) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394913002)</span>, Psychiatry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394587001)</span></p><p><b>specialty</b>: Mental illness (specialty) (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394816006)</span></p><p><b>name</b>: Consulting psychologists and/or psychology services</p><p><b>serviceProvisionCode</b>: Fees apply <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-service-provision-conditions.html\">ServiceProvisionConditions</a>#cost)</span></p><p><b>appointmentRequired</b>: true</p><blockquote><p><b>availability</b></p><blockquote><p><b>availableTime</b></p></blockquote><blockquote><p><b>availableTime</b></p></blockquote><blockquote><p><b>availableTime</b></p></blockquote><blockquote><p><b>notAvailableTime</b></p></blockquote><blockquote><p><b>notAvailableTime</b></p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://rh.ee/shared-ids"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HS-12" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:providedBy [
+     fhir:link <https://fhir.ee/Organization/rh> ;
+     fhir:reference [ fhir:v "Organization/rh" ] ;
+     fhir:display [ fhir:v "Rakvere Haigla" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:409063005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "409063005" ] ;
+       fhir:display [ fhir:v "Counseling" ]
+     ] ) ;
+     fhir:text [ fhir:v "Counselling" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:394913002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "394913002" ] ;
+       fhir:display [ fhir:v "Psychotherapy (specialty)" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a sct:394587001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "394587001" ] ;
+       fhir:display [ fhir:v "Psychiatry" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       a sct:394816006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "394816006" ] ;
+       fhir:display [ fhir:v "Mental illness (specialty) (qualifier value)" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Consulting psychologists and/or psychology services"] ; # 
+  fhir:serviceProvisionCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-provision-conditions"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cost" ] ;
+       fhir:display [ fhir:v "Fees apply" ]
+     ] )
+  ] ) ; # 
+  fhir:appointmentRequired [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:availability ( [
+     fhir:availableTime ( [
+       fhir:daysOfWeek ( [ fhir:v "wed" ] ) ;
+       fhir:allDay [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:daysOfWeek ( [ fhir:v "mon" ] [ fhir:v "tue" ] [ fhir:v "thu" ] [ fhir:v "fri" ] ) ;
+       fhir:availableStartTime [ fhir:v "08:30:00"^^xsd:time ] ;
+       fhir:availableEndTime [ fhir:v "05:30:00"^^xsd:time ]
+     ] [
+       fhir:daysOfWeek ( [ fhir:v "sat" ] [ fhir:v "fri" ] ) ;
+       fhir:availableStartTime [ fhir:v "09:30:00"^^xsd:time ] ;
+       fhir:availableEndTime [ fhir:v "04:30:00"^^xsd:time ]
+     ] ) ;
+     fhir:notAvailableTime ( [
+       fhir:description [ fhir:v "Christmas/Boxing Day, Reduced capacity is available during the Christmas period" ] ;
+       fhir:during [
+         fhir:start [ fhir:v "2023-12-25"^^xsd:date ] ;
+         fhir:end [ fhir:v "2023-12-26"^^xsd:date ]
+       ]
+     ] [
+       fhir:description [ fhir:v "New Years Day" ] ;
+       fhir:during [
+         fhir:start [ fhir:v "2024-01-01"^^xsd:date ] ;
+         fhir:end [ fhir:v "2024-01-01"^^xsd:date ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,92 @@
+{
+  "resourceType" : "HealthcareService",
+  "id" : "HealthcareServiceExample",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-healthcare-service"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: HealthcareService</b><a name=\"HealthcareServiceExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource HealthcareService &quot;HealthcareServiceExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-healthcare-service.html\">EEBase HealthcareService</a></p></div><p><b>identifier</b>: id:\u00a0HS-12</p><p><b>active</b>: true</p><p><b>providedBy</b>: <a href=\"Organization-rh.html\">Organization/rh: Rakvere Haigla</a> &quot;Rakvere Haigla&quot;</p><p><b>category</b>: Counselling <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#409063005 &quot;Counseling&quot;)</span></p><p><b>type</b>: Psychotherapy (specialty) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394913002)</span>, Psychiatry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394587001)</span></p><p><b>specialty</b>: Mental illness (specialty) (qualifier value) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394816006)</span></p><p><b>name</b>: Consulting psychologists and/or psychology services</p><p><b>serviceProvisionCode</b>: Fees apply <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-service-provision-conditions.html\">ServiceProvisionConditions</a>#cost)</span></p><p><b>appointmentRequired</b>: true</p><blockquote><p><b>availability</b></p><blockquote><p><b>availableTime</b></p></blockquote><blockquote><p><b>availableTime</b></p></blockquote><blockquote><p><b>availableTime</b></p></blockquote><blockquote><p><b>notAvailableTime</b></p></blockquote><blockquote><p><b>notAvailableTime</b></p></blockquote></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://rh.ee/shared-ids",
+    "value" : "HS-12"
+  }],
+  "active" : true,
+  "providedBy" : {
+    "reference" : "Organization/rh",
+    "display" : "Rakvere Haigla"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "409063005",
+      "display" : "Counseling"
+    }],
+    "text" : "Counselling"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "394913002",
+      "display" : "Psychotherapy (specialty)"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "394587001",
+      "display" : "Psychiatry"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "394816006",
+      "display" : "Mental illness (specialty) (qualifier value)"
+    }]
+  }],
+  "name" : "Consulting psychologists and/or psychology services",
+  "serviceProvisionCode" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/service-provision-conditions",
+      "code" : "cost",
+      "display" : "Fees apply"
+    }]
+  }],
+  "appointmentRequired" : true,
+  "availability" : [{
+    "availableTime" : [{
+      "daysOfWeek" : ["wed"],
+      "allDay" : true
+    },
+    {
+      "daysOfWeek" : ["mon",
+      "tue",
+      "thu",
+      "fri"],
+      "availableStartTime" : "08:30:00",
+      "availableEndTime" : "05:30:00"
+    },
+    {
+      "daysOfWeek" : ["sat",
+      "fri"],
+      "availableStartTime" : "09:30:00",
+      "availableEndTime" : "04:30:00"
+    }],
+    "notAvailableTime" : [{
+      "description" : "Christmas/Boxing Day, Reduced capacity is available during the Christmas period",
+      "during" : {
+        "start" : "2023-12-25",
+        "end" : "2023-12-26"
+      }
+    },
+    {
+      "description" : "New Years Day",
+      "during" : {
+        "start" : "2024-01-01",
+        "end" : "2024-01-01"
+      }
+    }]
+  }]
+}

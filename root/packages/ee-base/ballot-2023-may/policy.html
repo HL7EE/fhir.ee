@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.EE.BASE\Policy - FHIR v5.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7.fhir.ee.template.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Estonian Base Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ballot
+
+
+
+  <img alt="Estonia flag" src="assets/images/est.svg" height="16" title="Estonia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="policy.html">Policy</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">ToC</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Links
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="contact.html">Contact Us</a>
+      </li>
+      <li>
+        <a href="download.html">Downloads</a>
+      </li>
+      <li>
+        <a href="ballot.html">IG vastuvõtmise protsess</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R5/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Policy</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Estonian Base Implementation Guide - Local Development build (v1.0.0). See the <a href="https://fhir.ee/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Policy</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#general" id="markdown-toc-general">General</a></li>
+  <li><a href="#conformance" id="markdown-toc-conformance">Conformance</a></li>
+  <li><a href="#profiling" id="markdown-toc-profiling">Profiling</a></li>
+  <li><a href="#versioning" id="markdown-toc-versioning">Versioning</a></li>
+  <li><a href="#naming" id="markdown-toc-naming">Naming</a></li>
+  <li><a href="#resource-identifiers" id="markdown-toc-resource-identifiers">Resource identifiers</a></li>
+  <li><a href="#publishing" id="markdown-toc-publishing">Publishing</a></li>
+  <li><a href="#serialization" id="markdown-toc-serialization">Serialization</a></li>
+  <li><a href="#fhir-operations" id="markdown-toc-fhir-operations">FHIR operations</a></li>
+  <li><a href="#health-services" id="markdown-toc-health-services">Health Services</a></li>
+</ul>
+
+</div>
+<!--div class="alert alert-warning">
+
+<b>Work in progress.</b>
+This section of the Implementation Guide is subject to change.
+
+</div-->
+
+<!--button onclick="topFunction()" id="topButton" title="Back to top">top</button-->
+<hr />
+
+<h3 id="general">General</h3>
+
+<h4 id="fhir-gen-01-hl7-fhir-standard-compliance">FHIR-GEN-01 <strong>HL7 FHIR standard compliance</strong>.</h4>
+<ul>
+  <li>All FHIR implementations <strong>MUST</strong> comply with the HL7 FHIR standard.</li>
+  <li>All implementations of FHIR interfaces <strong>MUST</strong> comply with the requirements outlined in the relevant release of the HL7 FHIR standards, as outlined on <a href="http://fhir.hl7.org">fhir.hl7.org</a>.</li>
+</ul>
+
+<h4 id="fhir-gen-02-availability-of-fhir-resources-on-a-public-server">FHIR-GEN-02 <strong>Availability of FHIR resources on a public server</strong>.</h4>
+<ul>
+  <li>All FHIR resources are published on a public FHIR reference server.</li>
+  <li>All FHIR resources relating to national systems and other nationally defined FHIR API profiles (including StructureDefinitions, ValueSets, OperationDefinitions, ImplementationGuides, etc.) that are ready for external use (in either DRAFT or ACTIVE status) <strong>MUST</strong> also be made available the HL7 Estonia reference server api.fhir.ee.</li>
+  <li>Resources that are part of the National Estonian Health System (TIS) <strong>MUST</strong> also be published on a TEHIK branded public FHIR server fhir.tehik.ee.</li>
+</ul>
+
+<h4 id="fhir-gen-03-avoid-fhir-document-paradigm">FHIR-GEN-03 <strong>Avoid FHIR Document Paradigm</strong></h4>
+<ul>
+  <li>Avoid FHIR <a href="http://www.hl7.org/fhir/documents.html">Document Paradigm</a> when possible. Use <a href="http://www.hl7.org/fhir/http.html">REST</a> and <a href="http://www.hl7.org/fhir/messaging.html">Messaging Paradigms</a> instead.</li>
+</ul>
+
+<hr />
+
+<h3 id="conformance">Conformance</h3>
+
+<h4 id="fhir-conf-01-support-conformance">FHIR-CONF-01 <strong>Support conformance</strong></h4>
+<ul>
+  <li>All servers offering a FHIR API <strong>MUST</strong> publish a FHIR conformance/capability statement (in the form of a CapabilityStatement resource) at the root URL of their FHIR Server. Following HL7 EEBase-CapabilityStatement profile.</li>
+</ul>
+
+<hr />
+
+<h3 id="profiling">Profiling</h3>
+<h4 id="fhir-profile-01-profile-tree">FHIR-PROFILE-01 <strong>Profile tree</strong></h4>
+<p>The FHIR standard provides a mechanism to specialise and extend FHIR resources by creating <a href="https://www.hl7.org/fhir/profiling.html">profiles</a>.
+In Estonia, profiles are developed according to the following “levels”:</p>
+<ul>
+  <li>Level 1: The base <a href="http://hl7.org/fhir/resourcelist.html">FHIR resource profiles</a> defined by HL7 International.</li>
+  <li>Level 2: The ‘Estonian Base Profiles’ are Estonia-wide profiles curated through the HL7 FHIR Estonia community and published on the HL7 Estonia FHIR reference server.</li>
+  <li>Level 3: The implementation-specific profiles for a particular system or domain. <br />Profiles for upTIS are published on the TEHIK FHIR Reference Server. <br />Profiles for Tervisekassa projects are published on the HL7 Estonia FHIR Reference Server.</li>
+</ul>
+
+<h4 id="fhir-profile-02-summary-field">FHIR-PROFILE-02 <strong>Summary field</strong></h4>
+<ul>
+  <li>Profiles <strong>MUST NOT</strong> define alternate summary fields for resources.- All FHIR base resources have several fields defined as ‘summary’ fields, which appear when the client requests summary versions of the resource to be returned (for example, in <a href="https://www.hl7.org/fhir/search.html#summary">search results</a>). These summary fields can only be defined in base resources and cannot be changed in any profiles.</li>
+</ul>
+
+<h4 id="fhir-profile-03-must-support">FHIR-PROFILE-03 <strong>Must Support</strong></h4>
+<ul>
+  <li>If <em>mustSupport</em> is true, conformant resource authors SHALL be capable of providing a value for the element and resource consumers SHALL be capable of extracting and doing something useful with the data element. If false, the element may be ignored and not supported.</li>
+  <li>The <em>mustSupport</em> is used in the profiles where standard developers want to leave an element as “optional”, but want to state that implementers playing in a particular space <strong>must support</strong> that element.</li>
+</ul>
+
+<hr />
+
+<h3 id="versioning">Versioning</h3>
+<h4 id="fhir-ver-01-versioning-of-profiles-and-resources">FHIR-VER-01: <strong>Versioning of Profiles and Resources</strong></h4>
+<ul>
+  <li>Nationally defined FHIR profiles will be versioned during development using Git, following the standard GitFlow model. The versioning for published artefacts will broadly follow <a href="http://semver.org/">semantic versioning standards</a>.
+The major and minor versions will be visible, and the patch version <strong>MAY</strong> also be exposed. 
+Version numbers held in profiles and resource instanced <strong>MUST</strong> therefore be in one of the following forms:
+MAJOR – e.g. 1
+MAJOR.MINOR – e.g. 1.0
+MAJOR.MINOR.PATCH – e.g. 1.0.2</li>
+  <li>The version number <b>MUST NOT</b> be included in the profile name.</li>
+  <li>The version number <b>MUST</b> be used as the profile version attribute.</li>
+</ul>
+
+<p>Example of a version number in Estonian base Organization</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"StructureDefinition"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EEBaseOrganization"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://fhir.ee/StructureDefinition/ee-organization"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.0.0"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<hr />
+
+<h3 id="naming">Naming</h3>
+<p>To promote consistency and make it easier for implementers to locate suitable profiles, extensions, value sets and others for their projects, a naming strategy will be adopted for EEBase-defined FHIR assets or FHIR assets derived from the EEBase. All EEBase-derived implementation guides and FHIR assets <strong>MUST</strong> follow these rules to claim conformace with the EEBase.
+For detailed definitions of concepts discussed within this guidance document, refer to the appropriate published version of the <a href="http://www.hl7.org/fhir/">FHIR standard</a>.</p>
+
+<h4 id="fhir-name-01-convention-for-profile-definition">FHIR-NAME-01: <strong>Convention for Profile definition</strong></h4>
+<p>FHIR Profile name <strong>MUST</strong> follow an agreed format. 
+The FHIR profile name consists of several logical name segments:</p>
+<ul>
+  <li><strong>Base URL</strong>: The <strong>URL</strong> used for standard publishing. For example, <a href="http://fhir.hl7.org">hl7.org</a> for HL7 International and <a href="https://fhir.ee">fhir.ee</a> for HL7 Estonia. <strong>Mandatory</strong>.
+    <ul>
+      <li>Check the full <a href="#health-services">list</a> of providers.</li>
+      <li>You can register your project with fhir.ee namespace through <a href="contact.html">HL7 Estonia Board</a>.</li>
+    </ul>
+  </li>
+  <li><strong>Base</strong>: The provider name. May differ for <em>resource name</em> and for <em>id</em>. <strong>Mandatory</strong>.
+    <ul>
+      <li>The base for Estonian Base is <strong>EEBase</strong> for resource names and <strong>ee</strong> for id-s.</li>
+    </ul>
+  </li>
+  <li><strong>ResourceType</strong>: The name of the FHIR Resource Type or the category of FHIR Resource. <strong>Mandatory</strong>.</li>
+  <li><strong>BusinessNames</strong>: Business names are only used where mutiple profiles exist for a given base resource type. <strong>Optional</strong>.</li>
+  <li>No business version information is allowed in the  resource URL.</li>
+  <li>Name segments <strong>SHOULD</strong> be U.S. English (spelled correctly)</li>
+</ul>
+
+<p>The FHIR profile consists of (computable) name, id and url:</p>
+<ul>
+  <li><strong>Resource Name</strong>: The [<strong>Base</strong>], [<strong>ResourceType</strong>] and [<b>BusinessNames</b>] without hyphen (-) <strong>SHOULD</strong> be used as resource name. Segment names in FHIR Profile resource name <strong>MUST</strong> follow <a href="https://www.theserverside.com/definition/Pascal-case">Pascal case convention</a>. Resource name also known as computable name that <strong>MAY</strong> be used for code generation.</li>
+  <li><strong>Resource Id</strong>: The [<strong>Base</strong>]-[<strong>ResourceType</strong>]-[<strong>BusinessNames</strong>] with hyphen (-) and in lower-case is <strong>RECOMMENDED</strong> for this purpose.</li>
+  <li><strong>Resource Url</strong>: URL reuse the resource id - [<strong>Base URL</strong>]/StructureDefinition/[<strong>Resource Id</strong>].</li>
+  <li><strong>Title</strong>: The title of the resource MUST be the [<strong>Base</strong>], [<strong>ResourceType</strong>] and [<strong>BusinessNames</strong>] with added spaces to make it human readable and understandable.</li>
+</ul>
+
+<p>Examples:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource Name</th>
+      <th>Resource Id</th>
+      <th>Resource Url</th>
+      <th>Resource Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EEBasePatient</td>
+      <td>ee-patient</td>
+      <td>https://fhir.ee/StructureDefinition/ee-patient</td>
+      <td>EEBase Patient</td>
+    </tr>
+    <tr>
+      <td>EEBaseAddress</td>
+      <td>ee-address</td>
+      <td>https://fhir.ee/StructureDefinition/ee-address</td>
+      <td>EEBase Address</td>
+    </tr>
+    <tr>
+      <td>EEMPIPatientUnknown</td>
+      <td>ee-mpi-patient-unknown</td>
+      <td>https://fhir.ee/StructureDefinition/ee-mpi-patient-unknown</td>
+      <td>EE MPI Patient Unknown</td>
+    </tr>
+    <tr>
+      <td>EEMPISocialHistoryEducationLevel</td>
+      <td>ee-mpi-socialhistory-education-level</td>
+      <td>https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-education-level</td>
+      <td>EE MPI SocialHistory Education Level</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="fhir-name-02-convention-for-extension-definition">FHIR-NAME-02: <strong>Convention for Extension definition</strong></h4>
+<p>FHIR Extension <strong>MUST</strong> follow an agreed format.</p>
+
+<p>The name of FHIR extension follows the rules of the FHIR profile. The only difference FHIR Extension should have word “Extension” at the beging of <strong>Resource Name</strong>.</p>
+
+<p>Examples:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource Name</th>
+      <th>Resource Id</th>
+      <th>Resource Url</th>
+      <th>Resource Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ExtensionEEBaseADS</td>
+      <td>ee-ads</td>
+      <td>https://fhir.ee/StructureDefinition/ee-ads</td>
+      <td>EEBase ADS</td>
+    </tr>
+    <tr>
+      <td>ExtensionEEBaseModeOfArrival</td>
+      <td>ee-mode-of-arrival</td>
+      <td>https://fhir.ee/StructureDefinition/ee-mode-of-arrival</td>
+      <td>EEBase ModeOfArrival</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="fhir-name-03-convention-for-operationdefinition-resource-definition">FHIR-NAME-03: <strong>Convention for OperationDefinition resource definition</strong></h4>
+<p>FHIR OperationDefinition <strong>MUST</strong> follow an agreed format.</p>
+
+<p>The FHIR operation name consists of several logical name segments:</p>
+<ul>
+  <li><strong>Base URL</strong>: The <strong>URL</strong> used for standard publishing. See profile definition.</li>
+  <li><strong>Base</strong>: The provider name. See profile definition.</li>
+  <li><strong>BusinessNames</strong>: The business name of OperationDefinition. <strong>Mandatory</strong>.</li>
+  <li>No business version information is allowed in the  resource URL.</li>
+</ul>
+
+<p>The FHIR operation consists of (computable) name, id and url:</p>
+<ul>
+  <li><strong>Resource Name</strong>: The [<strong>Base</strong>] and [<b>BusinessNames</b>] without hyphen (-) <strong>SHOULD</strong> be used as resource name. Segment names in FHIR operation name <strong>MUST</strong> follow <a href="https://www.theserverside.com/definition/Pascal-case">Pascal case convention</a>. Operation name also known as computable name that <strong>MAY</strong> be used for code generation.</li>
+  <li><strong>Resource Id</strong>: The [<strong>Base</strong>]-[<strong>BusinessNames</strong>] with hyphen (-) and in lower-case is <strong>RECOMMENDED</strong> for this purpose.</li>
+  <li><strong>Resource Url</strong>: URL reuse the resource id - [<strong>Base URL</strong>]/OperationDefinition/[<strong>Resource Id</strong>].</li>
+  <li><strong>Title</strong>: The title of the resource MUST be the [<strong>Base</strong>] and [<strong>BusinessNames</strong>] with added spaces to make it human readable and understandable.</li>
+</ul>
+
+<p>Examples:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource Name</th>
+      <th>Resource Id</th>
+      <th>Resource Url</th>
+      <th>Resource Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EEMPIPatientEducationStatus</td>
+      <td>patient-education</td>
+      <td>https://fhir.ee/OperationDefinition/patient-education</td>
+      <td>EEMPI Patient Education Status</td>
+    </tr>
+    <tr>
+      <td>EEMPIPatientLink</td>
+      <td>patient-link</td>
+      <td>https://fhir.ee/OperationDefinition/patient-link</td>
+      <td>EEMPI Patient Link</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="fhir-name-04-external-codesystem-and-valueset-names">FHIR-NAME-04: <strong>External CodeSystem and ValueSet names</strong></h4>
+<ul>
+  <li>The FHIR-managed <a href="https://terminology.hl7.org/codesystems.html">CodeSystems</a> <strong>SHOULD</strong> use names defined by FHIR working groups.</li>
+  <li>The FHIR-managed <a href="https://terminology.hl7.org/valuesets.html">ValueSets</a> <strong>SHOULD</strong>* use names defined by FHIR working groups.</li>
+  <li>Some ValueSets that use SNOMED CT will refer directly to SNOMED CT artefacts, for example, SNOMED CT Ref Sets, and there will not be a need to create a CodeSystem resource. There may be other ValueSets which follow the same principles, for example, LOINC.</li>
+</ul>
+
+<hr />
+
+<h4 id="fhir-name-05-codesystem-name-convention">FHIR-NAME-05: <strong>CodeSystem name convention</strong></h4>
+<p>FHIR CodeSystems <strong>MUST</strong> follow an agreed format.</p>
+
+<p>The code systems name segments are defined as follows:</p>
+<ul>
+  <li><strong>Base URL</strong>: The URL used for standard publishing. <em>See profile definition.</em></li>
+  <li><strong>Base</strong>: The standard provider name. <em>See profile definition</em>. <strong>Conditional</strong>.</li>
+  <li><strong>BusinessNames</strong>: The business names of the CodeSystem. The CodeSystem name <strong>MUST</strong> have at least one BusinessName segment. Where a CodeSystem <strong>MAY</strong> is used across several domains, business names <strong>SHOULD</strong> reflect that. <strong>Mandatory.</strong></li>
+  <li>Name segments <strong>SHOULD</strong> be U.S. English (spelled correctly)</li>
+</ul>
+
+<p>The CodeSystem consists of (computable) name, id and url:</p>
+<ul>
+  <li><strong>Resource Name</strong>: [Base] and [BusinessNames] without hyphen (-) <strong>SHOULD</strong> be used as the resource name. Segment names in FHIR CodeSystem <strong>MUST</strong> follow <a href="https://www.theserverside.com/definition/Pascal-case">Pascal case convention</a>.</li>
+  <li><strong>Resource Id</strong>: [Base] and [BusinessNames] in lowercase where every word is separated with a hyphen (-).</li>
+  <li><strong>Resource Url</strong>: URL reuse the resource id - [<strong>Base URL</strong>]/CodeSystem/[<strong>Resource Id</strong>].</li>
+  <li><strong>Resource Title</strong>: The resource’s title <strong>MUST</strong> be [Base] and [BusinessNames] with added spaces to make it human-readable and understandable.</li>
+</ul>
+
+<p>Example:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource Name</th>
+      <th>Resource Id</th>
+      <th>Resource Url</th>
+      <th>Resource Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EEBaseIdentitySystem</td>
+      <td>ee-identity-system</td>
+      <td>https://fhir.ee/CodeSystem/ee-identity-system</td>
+      <td>Identity System</td>
+    </tr>
+    <tr>
+      <td>EEBaseADS</td>
+      <td>ee-ads</td>
+      <td>https://fhir.ee/CodeSystem/ee-ads</td>
+      <td>ADS</td>
+    </tr>
+    <tr>
+      <td>EEMPIEducationLevel</td>
+      <td>education-level</td>
+      <td>https://fhir.ee/CodeSystem/education-level</td>
+      <td>Education Level</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="fhir-name-06-valueset-name-convention">FHIR-NAME-06: <strong>ValueSet name convention</strong></h4>
+<p>FHIR ValueSet <strong>MUST</strong> follow an agreed format.</p>
+
+<p><em>See CodeSystem convention.</em>
+The only difference is resource url:</p>
+<ul>
+  <li><strong>Resource Url</strong>: URL reuse the resource id - [<strong>Base URL</strong>]/ValueSet/[<strong>$ResourceId</strong>].</li>
+</ul>
+
+<p>Examples:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource Name</th>
+      <th>Resource Id</th>
+      <th>Resource Url</th>
+      <th>Resource Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EEBasePatientIdentity</td>
+      <td>ee-patient-identity</td>
+      <td>https://fhir.ee/ValueSet/ee-patient-identity</td>
+      <td>Person Identity System</td>
+    </tr>
+    <tr>
+      <td>EEBaseADS</td>
+      <td>ee-ads</td>
+      <td>https://fhir.ee/ValueSet/ee-ads</td>
+      <td>ADS</td>
+    </tr>
+    <tr>
+      <td>EEMPIEducationLevel</td>
+      <td>education-level</td>
+      <td>https://fhir.ee/ValueSet/education-level</td>
+      <td>Education Level</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="fhir-name-07-namingsystem-name-convention">FHIR-NAME-07: <strong>NamingSystem name convention</strong></h4>
+<p>FHIR NamingSystem <strong>MUST</strong> follow an agreed format.</p>
+
+<p>The code systems name segments are defined as follows:</p>
+<ul>
+  <li><strong>Base URL</strong>: The URL used for standard publishing. <em>See profile definition.</em></li>
+  <li><strong>Base</strong>: The standard provider name. <em>See profile definition</em>. <strong>Optional</strong>.</li>
+  <li><strong>BusinessNames</strong>: The business names of the identifier system.</li>
+  <li>Name segments <strong>SHOULD</strong> be U.S. English (spelled correctly).</li>
+</ul>
+
+<p>The NamingSystem consists of (computable) name, id and url:</p>
+<ul>
+  <li><strong>Resource Name</strong>: [Base] and [BusinessNames] without hyphen (-) <strong>SHOULD</strong> be used as the resource name.</li>
+  <li><strong>Resource Id</strong>: [Base] and [BusinessNames] in lowercase where every word is separated with a hyphen (-).</li>
+  <li><strong>Resource Url</strong>: URL reuse the resource id - [<strong>Base URL</strong>]/NamingSystem/[<strong>Resource Id</strong>].</li>
+  <li><strong>Resource Title</strong>: The human-readable and understandable resource’s title.</li>
+</ul>
+
+<p>Examples:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource Name</th>
+      <th>Resource Id</th>
+      <th>Resource Url</th>
+      <th>Resource Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ADS</td>
+      <td>ads</td>
+      <td>https://fhir.ee/NamingSystem/ads</td>
+      <td>ADS</td>
+    </tr>
+    <tr>
+      <td>PidEstNi</td>
+      <td>pid-est-ni</td>
+      <td>https://fhir.ee/NamingSystem/pid-est-ni</td>
+      <td>Estonian Personal National Identification Code</td>
+    </tr>
+    <tr>
+      <td>OrgVATIN</td>
+      <td>org-vatin</td>
+      <td>https://fhir.ee/NamingSystem/org-vatin</td>
+      <td>VAT identification number</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="resource-identifiers">Resource identifiers</h3>
+
+<h4 id="fhir-id-01-fhir-resource-id">FHIR-ID-01 <strong>FHIR resource ID</strong></h4>
+<ul>
+  <li>Resource IDs <strong>MUST</strong> be generated only by FHIR server.</li>
+  <li>Business ID-s <strong>MUST NOT</strong> be used as the resource ID.</li>
+</ul>
+
+<h4 id="fhir-id-02-references-between-rest-resources">FHIR-ID-02 <strong>References between REST resources</strong></h4>
+<ul>
+  <li>References between ReST resources <strong>SHOULD</strong> be literal references without FHIR server path but <strong>MAY</strong> be logical references.
+    <ul>
+      <li>When using the FHIR ReST Paradigm, resources <b>SHOULD</b> reference other resources via URL (i.e. a <a href="https://www.hl7.org/fhir/references.html#literal">literal reference</a> in the FHIR standard). The resource owner should (where possible) only reference other resources that they can be relatively confident consumers of their API will be able to resolve and retrieve. For referencing other things outside this, a logical reference <strong>SHOULD</strong> be used.</li>
+      <li>Note: URL references to other resources will (by default) return the latest version of the referenced resource. If this isn’t desirable, the resource owner may either contain the resource or use a versioned URL as a literal reference.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="fhir-id-03-logical-references">FHIR-ID-03 <strong>Logical references</strong></h4>
+<ul>
+  <li>References in FHIR messaging <strong>SHOULD</strong> be logical references.</li>
+  <li>When using the FHIR Messaging Paradigm, messages will likely include references to external resources. These references <strong>SHOULD</strong> use an identifier from a known NamingSystem. This is known as a logical reference in the FHIR standard. The NamingSystem URI <strong>SHOULD</strong> be searchable on a FHIR Reference server to return the NamingSystem resource that describes the identifiers used (for example, <a href="https://fhir.ee/NamingSystem">https://fhir.ee/NamingSystem</a>).</li>
+</ul>
+
+<hr />
+
+<h3 id="publishing">Publishing</h3>
+
+<h4 id="fhir-pub-01-official-repository">FHIR-PUB-01 <strong>Official repository</strong></h4>
+<ul>
+  <li>The Github repository for Estonian FHIR Base is <a href="https://github.com/HL7EE/ig-ee-base">https://github.com/HL7EE/ig-ee-base</a>.</li>
+</ul>
+
+<h4 id="fhir-pub-02-availability-of-source-code">FHIR-PUB-02 <strong>Availability of source code</strong></h4>
+<ul>
+  <li>All FHIR resources relating to national systems and other nationally defined FHIR API profiles (including StructureDefinitions, ValueSets, OperationDefinitions, ImplementationGuides and others) <strong>MUST</strong> be held on a publicly available GitHub repository which <strong>MAY</strong> be synchronised with a Simplifier project.</li>
+</ul>
+
+<h4 id="fhir-pub-03-development-of-standard">FHIR-PUB-03 <strong>Development of standard</strong></h4>
+<ul>
+  <li>Comments, feedback and suggestions from developers on FHIR resources (and associated documentation) <strong>SHOULD</strong> be managed through Github using the standard features for raising and tracking issues on the appropriate project.
+    <ul>
+      <li>Use <a href="https://github.com/HL7EE/ig-ee-base/issues">https://github.com/HL7EE/ig-ee-base/issues</a> for HL7EE EEBase issue mananagement.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="fhir-pub-04-pattern-for-uri-s">FHIR-PUB-04 <strong>Pattern for URI-s</strong></h4>
+<ul>
+  <li>All FHIR resource URIs must be resolvable URLs.
+    <ul>
+      <li>The new URI-s SHOULD be registred in <a href="https://github.com/HL7EE/fhir.ee">GitHub fhir.ee project</a></li>
+    </ul>
+  </li>
+  <li>All FHIR resources relating to national systems and other nationally defined FHIR API profiles (including StructureDefinitions, ValueSets, OperationDefinitions, ImplementationGuides and others) <strong>MUST</strong> have a URI that is a resolvable URL. Usually, this will be the URL of the resource on the FHIR API reference server (fhir.ee).</li>
+</ul>
+
+<h4 id="fhir-pub-05-packaging">FHIR-PUB-05 <strong>Packaging</strong></h4>
+<ul>
+  <li>All FHIR resources <strong>MUST</strong> be made publicly available as FHIR Implementation Guide and released as a FHIR package.</li>
+  <li>All FHIR packages that may be used as dependecy for other packages <strong>SHOULD</strong> uploaded to <a href="https://fhir.ee/packages">Estonian FHIR Packages Repository</a> through <a href="https://github.com/HL7EE/fhir.ee">GitHub fhir.ee project</a>.</li>
+</ul>
+
+<hr />
+
+<h3 id="serialization">Serialization</h3>
+
+<h4 id="fhir-ser-01-supported-mime-types">FHIR-SER-01 <strong>Supported mime-types</strong></h4>
+<ul>
+  <li>FHIR REST APIs <strong>MUST</strong> support JSON serialisation and <strong>SHOULD</strong> also support XML serialisation.
+    <ul>
+      <li>All FHIR ReST endpoints <strong>MUST</strong> support JSON formatted requests/responses.</li>
+      <li>FHIR ReST endpoints <strong>SHOULD</strong> also support XML formatted requests/responses.</li>
+      <li>The serialisation mime-types supported <strong>MUST</strong> be declared in the Conformance/CapabilityStatement resource for the endpoint, and the server <strong>MUST</strong> use the usual FHIR mechanisms to allow clients to request a specific Content Type as per the FHIR spec (servers may choose to reject the use of XML if it is not supported).</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="fhir-ser-02-allowed-namespaces">FHIR-SER-02 <strong>Allowed namespaces</strong></h4>
+<ul>
+  <li>Namespaces outside those defined in the FHIR specification <strong>MUST NOT</strong> be used.
+    <ul>
+      <li>The FHIR standard <a href="http://hl7.org/implement/standards/fhir/xml.html">specifies a specific namespace</a> for FHIR XML elements, with a second namespace for XHTML content in narrative sections. Those specifying FHIR APIs <strong>MUST</strong> not use other namespaces in their APIs.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="fhir-operations">FHIR operations</h3>
+<h4 id="fhir-oper-01-reuse-standard-fhir-operation">FHIR-OPER-01 <strong>Reuse standard FHIR operation</strong></h4>
+<ul>
+  <li>Where a request maps to a <a href="http://hl7.org/fhir/operationslist.html">standard FHIR operation</a>, the standard operation <strong>SHOULD</strong> be used.</li>
+</ul>
+
+<h4 id="fhir-oper-02-define-new-fhir-operation-when-needed">FHIR-OPER-02 <strong>Define new FHIR operation when needed</strong></h4>
+<ul>
+  <li>More complex and behaviours involving updates to multiple resources or complex querying or composition of resources <strong>MAY</strong> use an RPC-style FHIR Operation.</li>
+</ul>
+
+<hr />
+
+<h3 id="health-services">Health Services</h3>
+
+<h4 id="fhir-serv-01-fhir-resource-base-paths">FHIR-SERV-01 <strong>FHIR resource base Paths</strong></h4>
+<ul>
+  <li>National FHIR resources <b>MUST</b> use consistent basePaths.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>API Name</th>
+      <th>Provider code</th>
+      <th>Base url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Estonian (FHIR) Base</td>
+      <td>EE</td>
+      <td>https://fhir.ee</td>
+    </tr>
+    <tr>
+      <td>Estonian National Health Services</td>
+      <td>EETIS</td>
+      <td>https://tis.tehik.ee/fhir</td>
+    </tr>
+    <tr>
+      <td>Estonian Health Insurance Fund</td>
+      <td>EEHIF</td>
+      <td>https://fhir.ee</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ee">HL7 Estonia</a>.  Package hl7.fhir.ee.base#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, May 29, 2023 20:07+0300">2023-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Custom part including Mermaid -->
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    window.onload = () => mermaid.run({nodes: document.querySelectorAll('pre.language-mermaid > code')})
+  </script>
+
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
