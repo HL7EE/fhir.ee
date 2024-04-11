@@ -6,12 +6,10 @@
       "url": "http://hl7.org/fhir/package-feed.xml",
       "errors": "grahame|fhir_org"
     },
-    ...
     {
       "name": "Estonian FHIR Publications",
       "url": "http://fhir.ee/packages/package-feed.xml",
-      "errors": "fhir|kodality_com"
-    },
-    ...
+      "errors": "fhir|hl7_ee"
+    }
   ]
 }
