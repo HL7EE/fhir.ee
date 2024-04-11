@@ -4,9 +4,9 @@
     <description>New Packages published by HL7 Estonia</description>
     <link>http://fhir.ee/packages/package-feed.xml</link>
     <generator>HL7 Estonia Publication tooling</generator>
-    <lastBuildDate>Thu, 4 May 2023 01:43:09 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 April 2023 01:43:09 +0000</lastBuildDate>
     <atom:link href="http://fhir.ee/packages/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 4 May 2023 01:43:09 +0000</pubDate>
+    <pubDate>Fri, 12 April 2024 01:43:09 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
     <item>
@@ -17,8 +17,8 @@
       <dc:creator>HL7 Estonia</dc:creator>
       <fhir:version>5.0.0</fhir:version>
       <fhir:kind>IG</fhir:kind>
-      <pubDate>Thu, 20 Apr 2023 01:43:09 +0000</pubDate>
-      <fhir:details>Publication run at 20/04/2023 by EC2AMAZ-U8GKRC1 using vVersion 1.3.4 (Git# b9e58ebc9169). Built 2023-03-29T15:55:51.502Z (21 days old) source id Unknown (todo) Run #26</fhir:details>
+      <pubDate>Fri, 12 April 2024 01:43:09 +0000</pubDate>
+      <!--fhir:details>Publication run at 20/04/2023 by EC2AMAZ-U8GKRC1 using vVersion 1.3.4 (Git# b9e58ebc9169). Built 2023-03-29T15:55:51.502Z (21 days old) source id Unknown (todo) Run #26</fhir:details-->
     </item>
     <item>
       <title>hl7.fhir.ee.mpi#1.0.1</title>
@@ -28,8 +28,8 @@
       <dc:creator>HL7 Estonia</dc:creator>
       <fhir:version>5.0.0</fhir:version>
       <fhir:kind>IG</fhir:kind>
-      <pubDate>Wed, 19 Apr 2023 02:58:59 +0000</pubDate>
-      <fhir:details>Publication run at 19/04/2023 by EC2AMAZ-U8GKRC1 using vVersion 1.3.4 (Git# b9e58ebc9169). Built 2023-03-29T15:55:51.502Z (20 days old) source id Unknown (todo) Run #25</fhir:details>
+      <pubDate>Fri, 12 April 2024 02:58:59 +0000</pubDate>
+      <!--fhir:details>Publication run at 19/04/2023 by EC2AMAZ-U8GKRC1 using vVersion 1.3.4 (Git# b9e58ebc9169). Built 2023-03-29T15:55:51.502Z (20 days old) source id Unknown (todo) Run #25</fhir:details-->
     </item>
   </channel>
 </rss>
