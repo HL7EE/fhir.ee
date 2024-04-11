@@ -1,14 +1,14 @@
 {
   "name" : "hl7.fhir.ee.mpi",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "tools-version" : 3,
   "type" : "IG",
   "date" : "20230504133925",
-  "license" : "Apache-2.0",
+  "license" : "MIT",
   "canonical" : "http://fhir.ee/ImplementationGuide/mpi",
-  "url" : "http://fhir.ee/ig/mpi/STU1",
+  "url" : "http://fhir.ee/ig/mpi/1.0.1",
   "title" : "EEMPI Implementation Guide",
-  "description" : "MPI Implementation Guide supports HL7 FHIR Release 5.0 Resources, Data Types and Vocabulary.",
+  "description" : "Master Patient Index Implementation Guide.",
   "fhirVersions" : ["5.0.0"],
   "dependencies" : {
     "hl7.terminology.r5" : "5.0.0",

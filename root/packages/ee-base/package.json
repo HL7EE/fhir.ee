@@ -1,12 +1,12 @@
 {
   "name" : "hl7.fhir.ee.base",
-  "version" : "0.9.0",
+  "version" : "0.9.2",
   "tools-version" : 3,
   "type" : "IG",
   "date" : "20230504133925",
-  "license" : "Apache-2.0",
+  "license" : "MIT",
   "canonical" : "http://fhir.ee/ImplementationGuide/ee-base",
-  "url" : "http://fhir.ee/packages/ee-base/STU1",
+  "url" : "http://fhir.ee/packages/ee-base/0.9.2",
   "title" : "EEBase Implementation Guide",
   "description" : "Estonian Base Implementation Guide supports HL7 FHIR Release 5.0 Resources, Data Types and Vocabulary.",
   "fhirVersions" : ["5.0.0"],
@@ -18,8 +18,8 @@
   "author" : "http://www.hl7.ee",
   "maintainers" : [
     {
-      "name" : "Kodality OÜ",
-      "url" : "http://www.kodality.com"
+      "name" : "HL7 Estonia",
+      "url" : "http://www.hl7.ee"
     }
   ],
   "directories" : {
