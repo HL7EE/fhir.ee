@@ -12,8 +12,8 @@
     <item>
       <title>hl7.fhir.ee.base#0.9.2</title>
       <description>Estonian Base Implementation Guide 0.9.2</description>
-      <link>https://fhir.ee/packages/ee-base/r1/package.tgz</link>
-      <guid isPermaLink="true">https://fhir.ee/packages/ee-base/r1/package.tgz</guid>
+      <link>https://fhir.ee/packages/ee-base/r1/site/package.tgz</link>
+      <guid isPermaLink="true">https://fhir.ee/packages/ee-base/r1/site/package.tgz</guid>
       <dc:creator>HL7 Estonia</dc:creator>
       <fhir:version>5.0.0</fhir:version>
       <fhir:kind>IG</fhir:kind>
@@ -23,8 +23,8 @@
     <item>
       <title>hl7.fhir.ee.mpi#1.0.1</title>
       <description>Estonian Master Patient Index 1.0.1</description>
-      <link>https://fhir.ee/ig/mpi/r1/package.tgz</link>
-      <guid isPermaLink="true">https://fhir.ee/packages/mpi/STU1/package.tgz</guid>
+      <link>https://fhir.ee/ig/mpi/r1/site/package.tgz</link>
+      <guid isPermaLink="true">https://fhir.ee/packages/mpi/r1/site/package.tgz</guid>
       <dc:creator>HL7 Estonia</dc:creator>
       <fhir:version>5.0.0</fhir:version>
       <fhir:kind>IG</fhir:kind>
