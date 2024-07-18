@@ -1,5 +1,7 @@
 {
   "packages": {
+    "ee.fhir.terminology": "https://fhir.ee/packages/terminology",
+    "ee.fhir.base": "https://fhir.ee/packages/ee-base",
     "hl7.fhir.ee.base": "https://fhir.ee/packages/ee-base",
     "hl7.fhir.ee.mpi": "https://fhir.ee/packages/mpi"
   }
