@@ -1,0 +1,30 @@
+{
+  "name" : "ee.fhir.terminology",
+  "version" : "0.0.1",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20240718175952",
+  "license" : "MIT",
+  "canonical" : "https://fhir.ee",
+  "notForPublication" : false,
+  "url" : "https://fhir.ee/ig/terminology/0.0.1",
+  "title" : "Estonian Terminology resources",
+  "description" : "Terminoloogia mis on kasutusel juurutusjuhendites (built Thu, Jul 18, 2024 17:59+0300+03:00)",
+  "fhirVersions" : ["5.0.0"],
+  "dependencies" : {
+    "hl7.terminology.r5" : "6.0.0",
+    "hl7.fhir.uv.extensions" : "current"
+  },
+  "author" : "HL7 Estonia",
+  "maintainers" : [
+    {
+      "name" : "HL7 Estonia",
+      "url" : "https://www.hl7.ee"
+    }
+  ],
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  },
+  "jurisdiction" : "urn:iso:std:iso:3166#EE"
+}

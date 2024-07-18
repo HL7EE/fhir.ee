@@ -1,0 +1,25 @@
+{
+    "package-id": "ee.fhir.terminology",
+    "canonical": "https://fhir.ee/terminology",
+    "title": "Estonian Base Implementation Guide (EEBase)",
+    "introduction": "Estonian Base Implementation Guide supports HL7 FHIR Release 5.0 Resources, Data Types and Vocabulary.",
+    "list": [
+        {
+        "version": "current",
+        "current": true,
+        "desc": "Continuous Integration Build (latest in version control)",
+        "path": "https://fhir.ee/ig/terminology/0.0.1",
+        "status": "ci-build"
+        },
+        {
+        "version": "0.0.1",
+        "current": true,
+        "desc": "Trial version 0.0.1",
+        "path": "https://fhir.ee/ig/terminology/0.0.1",
+        "status": "trial-use",
+        "sequence": "STU 2",
+        "fhirversion": "5.0.0",
+        "date": "2024-07-18"
+        }
+    ]
+}
