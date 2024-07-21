@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "tools-version": 3,
   "type": "IG",
-  "date": "20240718181009",
+  "date": "20240721181009",
   "license": "MIT",
   "canonical": "https://fhir.ee/ig/base",
   "url": "https://fhir.ee/ig/ee-base/1.1.0",
@@ -13,7 +13,6 @@
     "5.0.0"
   ],
   "dependencies": {
-    "hl7.fhir.uv.extensions": "5.1.0",
     "ee.fhir.terminology": "^0.0.1"
   },
   "author": "http://www.hl7.ee",
@@ -29,3 +28,4 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
+
