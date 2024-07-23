@@ -1,18 +1,18 @@
 {
-  "name" : "hl7.fhir.ee.mpi",
-  "version" : "1.0.1",
+  "name" : "ee.fhir.mpi",
+  "version" : "1.1.0",
   "tools-version" : 3,
   "type" : "IG",
-  "date" : "20230504133925",
+  "date" : "20240722115900",
   "license" : "MIT",
-  "canonical" : "http://fhir.ee/ImplementationGuide/mpi",
-  "url" : "http://fhir.ee/ig/mpi/1.0.1",
+  "canonical" : "https://fhir.ee/mpi",
+  "url" : "https://fhir.ee/ig/mpi/1.1.0",
   "title" : "EEMPI Implementation Guide",
   "description" : "Master Patient Index Implementation Guide.",
   "fhirVersions" : ["5.0.0"],
   "dependencies" : {
-    "hl7.terminology.r5" : "5.0.0",
-    "hl7.fhir.uv.extensions" : "1.0.0"
+    "ee.fhir.terminology": "0.2.0", 
+    "ee.fhir.base": "1.1.0"
   },
   "author" : "http://www.hl7.ee",
   "maintainers" : [
